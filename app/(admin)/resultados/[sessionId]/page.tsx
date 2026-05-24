@@ -10,8 +10,10 @@ import type {
   MemoriaResult,
   StroopResult,
   LuscherResult,
+  DISCResult,
   TestResultData,
 } from '@/types/database'
+import { DISCResultCard } from '@/components/admin/disc-result-card'
 
 export const metadata: Metadata = { title: 'Detalle de evaluación' }
 
@@ -83,6 +85,15 @@ function isStroop(r: TestResultData): r is StroopResult {
 function isLuscher(r: TestResultData): r is LuscherResult {
   return typeof r === 'object' && r !== null && 'grises' in r && 'colores1' in r
 }
+function isDISC(r: TestResultData): r is DISCResult {
+  return (
+    typeof r === 'object' &&
+    r !== null &&
+    'resultado' in r &&
+    typeof (r as DISCResult).resultado === 'object' &&
+    'codigo' in (r as DISCResult).resultado
+  )
+}
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -111,6 +122,10 @@ function Stat({ label, value }: { label: string; value: string | number }) {
 // ─── Result renderers per test type ──────────────────────────────────────────
 
 function ResultCard({ result }: { result: TestResultData }) {
+  if (isDISC(result)) {
+    return <DISCResultCard data={result} />
+  }
+
   if (isHanoi(result)) {
     return (
       <div className="space-y-3">

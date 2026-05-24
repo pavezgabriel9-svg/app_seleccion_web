@@ -34,6 +34,7 @@ const StroopTest  = dynamic<TestComponentProps>(() => import('@/components/tests
 const LuscherTest = dynamic<TestComponentProps>(() => import('@/components/tests/luscher'))
 const MemoriaTest = dynamic<TestComponentProps>(() => import('@/components/tests/memoria'))
 const ICTest      = dynamic<TestComponentProps>(() => import('@/components/tests/ic'))
+const DISCTest    = dynamic<TestComponentProps>(() => import('@/components/tests/disc'))
 const HanoiTest   = dynamic<HanoiTestProps>(() => import('@/components/tests/hanoi'))
 
 // ─── Hook ─────────────────────────────────────────────────────────────────────
@@ -69,6 +70,7 @@ function resolveTestComponent(
   if (path.includes('memoria'))       return <MemoriaTest {...fullProps} />
   if (path.includes('hanoi-dificil')) return <HanoiTest   {...fullProps} variant="dificil" candidateName={candidateName} />
   if (path.includes('hanoi'))         return <HanoiTest   {...fullProps} variant="medio"   candidateName={candidateName} />
+  if (path.includes('disc'))          return <DISCTest    {...fullProps} />
   if (path.includes('ic'))            return <ICTest      {...fullProps} />
 
   // Fallback
