@@ -271,6 +271,39 @@ export interface LuscherResult {
   colores2: number[]
 }
 
+export type DISCAxis = 'D' | 'I' | 'S' | 'C'
+export type DISCAxisOrNeutral = DISCAxis | 'N'
+
+export interface DISCRespuesta {
+  grupo: number
+  mas: number | null
+  menos: number | null
+}
+
+export interface DISCResult {
+  respuestas: DISCRespuesta[]
+  resultado: {
+    conteos: {
+      d_mas: number; d_menos: number
+      i_mas: number; i_menos: number
+      s_mas: number; s_menos: number
+      c_mas: number; c_menos: number
+      n_mas: number; n_menos: number
+    }
+    netos: { d: number; i: number; s: number; c: number }
+    segmentos: { d: number; i: number; s: number; c: number }
+    codigo: string
+    patron: string
+  }
+  metadata: {
+    duracion_total_s: number
+    grupos_sin_responder: number
+    tab_switch_count: number
+    out_of_focus_duration: number
+  }
+  version: '1.0'
+}
+
 export type TestResultData =
   | HanoiResult
   | ICResult
@@ -278,6 +311,7 @@ export type TestResultData =
   | MemoriaResult
   | StroopResult
   | LuscherResult
+  | DISCResult
   | Record<string, unknown>
 
 export interface TestComponentProps {

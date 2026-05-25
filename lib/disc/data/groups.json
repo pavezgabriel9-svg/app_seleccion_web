@@ -1,0 +1,814 @@
+[
+  {
+    "grupo": 1,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Entusiasta",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Rápido(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 3,
+        "texto": "Lógico(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 4,
+        "texto": "Apacible",
+        "mas": "S",
+        "menos": "S"
+      }
+    ]
+  },
+  {
+    "grupo": 2,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Cauteloso(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 2,
+        "texto": "Decidido(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 3,
+        "texto": "Receptivo(a)",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 4,
+        "texto": "Bondadoso(a)",
+        "mas": "S",
+        "menos": "S"
+      }
+    ]
+  },
+  {
+    "grupo": 3,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Amigable",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Preciso(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 3,
+        "texto": "Franco(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 4,
+        "texto": "Tranquilo(a)",
+        "mas": "S",
+        "menos": "S"
+      }
+    ]
+  },
+  {
+    "grupo": 4,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Elocuente",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Controlado(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 3,
+        "texto": "Tolerante",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 4,
+        "texto": "Decisivo(a)",
+        "mas": "D",
+        "menos": "D"
+      }
+    ]
+  },
+  {
+    "grupo": 5,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Atrevido(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 2,
+        "texto": "Concienzudo(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 3,
+        "texto": "Comunicativo(a)",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 4,
+        "texto": "Moderado(a)",
+        "mas": "S",
+        "menos": "S"
+      }
+    ]
+  },
+  {
+    "grupo": 6,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Ameno(a)",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 2,
+        "texto": "Ingenioso(a)",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 3,
+        "texto": "Investigador(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 4,
+        "texto": "Acepta Riesgos",
+        "mas": "D",
+        "menos": "D"
+      }
+    ]
+  },
+  {
+    "grupo": 7,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Expresivo(a)",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Cuidadoso(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 3,
+        "texto": "Dominante",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 4,
+        "texto": "Sensible",
+        "mas": "S",
+        "menos": "S"
+      }
+    ]
+  },
+  {
+    "grupo": 8,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Extrovertido(a)",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Precavido(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 3,
+        "texto": "Constante",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 4,
+        "texto": "Impaciente",
+        "mas": "D",
+        "menos": "D"
+      }
+    ]
+  },
+  {
+    "grupo": 9,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Discreto(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 2,
+        "texto": "Complaciente",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 3,
+        "texto": "Encantador(a)",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 4,
+        "texto": "Insistente",
+        "mas": "D",
+        "menos": "D"
+      }
+    ]
+  },
+  {
+    "grupo": 10,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Valeroso(a)",
+        "mas": "N",
+        "menos": "D"
+      },
+      {
+        "pos": 2,
+        "texto": "Anima a los demás",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 3,
+        "texto": "Pacifico(a)",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 4,
+        "texto": "Perfeccionista",
+        "mas": "C",
+        "menos": "C"
+      }
+    ]
+  },
+  {
+    "grupo": 11,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Reservado(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 2,
+        "texto": "Atento(a)",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 3,
+        "texto": "Osado(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 4,
+        "texto": "Alegre",
+        "mas": "I",
+        "menos": "I"
+      }
+    ]
+  },
+  {
+    "grupo": 12,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Estimulante",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Gentil",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 3,
+        "texto": "Perceptivo(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 4,
+        "texto": "Independiente",
+        "mas": "D",
+        "menos": "D"
+      }
+    ]
+  },
+  {
+    "grupo": 13,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Competitivo(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 2,
+        "texto": "Considerado(a)",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 3,
+        "texto": "Alegre",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 4,
+        "texto": "Sagaz",
+        "mas": "C",
+        "menos": "C"
+      }
+    ]
+  },
+  {
+    "grupo": 14,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Meticuloso(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 2,
+        "texto": "Obediente",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 3,
+        "texto": "Ideas Firmes",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 4,
+        "texto": "Alentador(a)",
+        "mas": "I",
+        "menos": "I"
+      }
+    ]
+  },
+  {
+    "grupo": 15,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Popular",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Reflexivo(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 3,
+        "texto": "Tenaz",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 4,
+        "texto": "Calmado(a)",
+        "mas": "S",
+        "menos": "S"
+      }
+    ]
+  },
+  {
+    "grupo": 16,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Analítico(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 2,
+        "texto": "Audaz",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 3,
+        "texto": "Leal",
+        "mas": "S",
+        "menos": "N"
+      },
+      {
+        "pos": 4,
+        "texto": "Promotor(a)",
+        "mas": "I",
+        "menos": "I"
+      }
+    ]
+  },
+  {
+    "grupo": 17,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Sociable",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Paciente",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 3,
+        "texto": "Autosuficiente",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 4,
+        "texto": "Certero(a)",
+        "mas": "C",
+        "menos": "C"
+      }
+    ]
+  },
+  {
+    "grupo": 18,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Adaptable",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 2,
+        "texto": "Resuelto(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 3,
+        "texto": "Prevenido(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 4,
+        "texto": "Vivaz",
+        "mas": "I",
+        "menos": "I"
+      }
+    ]
+  },
+  {
+    "grupo": 19,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Agresivo(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 2,
+        "texto": "Impetuoso(a)",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 3,
+        "texto": "Amistoso(a)",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 4,
+        "texto": "Discerniente",
+        "mas": "C",
+        "menos": "C"
+      }
+    ]
+  },
+  {
+    "grupo": 20,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "De trato Fácil",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Compasivo(a)",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 3,
+        "texto": "Cauto(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 4,
+        "texto": "Habla Directo",
+        "mas": "D",
+        "menos": "D"
+      }
+    ]
+  },
+  {
+    "grupo": 21,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Evaluador(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 2,
+        "texto": "Generoso(a)",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 3,
+        "texto": "Animado(a)",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 4,
+        "texto": "Persistente",
+        "mas": "D",
+        "menos": "D"
+      }
+    ]
+  },
+  {
+    "grupo": 22,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Impulsivo(a)",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Cuida los Detalles",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 3,
+        "texto": "Enérgico(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 4,
+        "texto": "Tranquilo(a)",
+        "mas": "S",
+        "menos": "S"
+      }
+    ]
+  },
+  {
+    "grupo": 23,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Sociable",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Sistemático(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 3,
+        "texto": "Vigoroso(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 4,
+        "texto": "Tolerante",
+        "mas": "S",
+        "menos": "S"
+      }
+    ]
+  },
+  {
+    "grupo": 24,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Cautivador(a)",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Contento(a)",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 3,
+        "texto": "Exigente",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 4,
+        "texto": "Apegado(a) a las normas",
+        "mas": "C",
+        "menos": "C"
+      }
+    ]
+  },
+  {
+    "grupo": 25,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Le agrada discutir",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 2,
+        "texto": "Metódico(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 3,
+        "texto": "Comedido(a)",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 4,
+        "texto": "Desenvuelto(a)",
+        "mas": "I",
+        "menos": "I"
+      }
+    ]
+  },
+  {
+    "grupo": 26,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Jovial",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 2,
+        "texto": "Preciso(a)",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 3,
+        "texto": "Directo(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 4,
+        "texto": "Ecuánime",
+        "mas": "S",
+        "menos": "S"
+      }
+    ]
+  },
+  {
+    "grupo": 27,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Inquieto(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 2,
+        "texto": "Amable",
+        "mas": "S",
+        "menos": "S"
+      },
+      {
+        "pos": 3,
+        "texto": "Elocuente",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 4,
+        "texto": "Cuidadoso(a)",
+        "mas": "C",
+        "menos": "C"
+      }
+    ]
+  },
+  {
+    "grupo": 28,
+    "palabras": [
+      {
+        "pos": 1,
+        "texto": "Prudente",
+        "mas": "C",
+        "menos": "C"
+      },
+      {
+        "pos": 2,
+        "texto": "Pionero(a)",
+        "mas": "D",
+        "menos": "D"
+      },
+      {
+        "pos": 3,
+        "texto": "Espontáneo(a)",
+        "mas": "I",
+        "menos": "I"
+      },
+      {
+        "pos": 4,
+        "texto": "Colaborador",
+        "mas": "S",
+        "menos": "S"
+      }
+    ]
+  }
+]

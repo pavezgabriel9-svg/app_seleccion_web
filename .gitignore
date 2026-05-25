@@ -46,3 +46,6 @@ next-env.d.ts
 
 # Internal planning/design docs
 docs/
+
+# DISC source data (canonical copies live in lib/disc/data/)
+/DISC/
