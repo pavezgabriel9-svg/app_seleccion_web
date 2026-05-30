@@ -11,9 +11,11 @@ import type {
   StroopResult,
   LuscherResult,
   DISCResult,
+  ZAVICResult,
   TestResultData,
 } from '@/types/database'
 import { DISCResultCard } from '@/components/admin/disc-result-card'
+import { ZAVICResultCard } from '@/components/admin/zavic-result-card'
 
 export const metadata: Metadata = { title: 'Detalle de evaluación' }
 
@@ -94,6 +96,16 @@ function isDISC(r: TestResultData): r is DISCResult {
     'codigo' in (r as DISCResult).resultado
   )
 }
+function isZAVIC(r: TestResultData): r is ZAVICResult {
+  return (
+    typeof r === 'object' &&
+    r !== null &&
+    'resultado' in r &&
+    typeof (r as ZAVICResult).resultado === 'object' &&
+    'valores' in (r as ZAVICResult).resultado &&
+    'intereses' in (r as ZAVICResult).resultado
+  )
+}
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -124,6 +136,10 @@ function Stat({ label, value }: { label: string; value: string | number }) {
 function ResultCard({ result }: { result: TestResultData }) {
   if (isDISC(result)) {
     return <DISCResultCard data={result} />
+  }
+
+  if (isZAVIC(result)) {
+    return <ZAVICResultCard data={result} />
   }
 
   if (isHanoi(result)) {

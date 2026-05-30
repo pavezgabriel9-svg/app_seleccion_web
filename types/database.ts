@@ -304,6 +304,42 @@ export interface DISCResult {
   version: '1.0'
 }
 
+export type ZAVICSeccion = 'valores' | 'intereses'
+export type ZAVICAxisValores = 'MORAL' | 'LEGALIDAD' | 'INDIFERENCIA' | 'CORRUPCION'
+export type ZAVICAxisIntereses = 'ECONOMICO' | 'POLITICO' | 'SOCIAL' | 'RELIGIOSO'
+export type ZAVICAxis = ZAVICAxisValores | ZAVICAxisIntereses
+
+export interface ZAVICRespuesta {
+  item: number
+  /** ranking 1..4 por posición; null = sin ranking */
+  rankings: (number | null)[]
+}
+
+export interface ZAVICResult {
+  respuestas: ZAVICRespuesta[]
+  resultado: {
+    valores: {
+      MORAL: number
+      LEGALIDAD: number
+      INDIFERENCIA: number
+      CORRUPCION: number
+    }
+    intereses: {
+      ECONOMICO: number
+      POLITICO: number
+      SOCIAL: number
+      RELIGIOSO: number
+    }
+  }
+  metadata: {
+    duracion_total_s: number
+    items_sin_responder: number
+    tab_switch_count: number
+    out_of_focus_duration: number
+  }
+  version: '1.0'
+}
+
 export type TestResultData =
   | HanoiResult
   | ICResult
@@ -312,6 +348,7 @@ export type TestResultData =
   | StroopResult
   | LuscherResult
   | DISCResult
+  | ZAVICResult
   | Record<string, unknown>
 
 export interface TestComponentProps {

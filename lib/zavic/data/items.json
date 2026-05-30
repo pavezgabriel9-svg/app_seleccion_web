@@ -1,0 +1,602 @@
+[
+  {
+    "item": 1,
+    "seccion": "intereses",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Lo limpiaría",
+        "eje": "SOCIAL"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Le diría al licenciado que si lo manda a limpiar",
+        "eje": "POLITICO"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Le diría a la señora del aseo que lo haga",
+        "eje": "ECONOMICO"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Me guardaría la pena y me quedaría callado",
+        "eje": "RELIGIOSO"
+      }
+    ]
+  },
+  {
+    "item": 2,
+    "seccion": "intereses",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "A modificar todos los jardines de la ciudad",
+        "eje": "RELIGIOSO"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "A obtener logros por medio de la política",
+        "eje": "SOCIAL"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "A prestar dinero a altos intereses",
+        "eje": "ECONOMICO"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "A cumplir con las obligaciones que su religión le impone",
+        "eje": "POLITICO"
+      }
+    ]
+  },
+  {
+    "item": 3,
+    "seccion": "valores",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Se pone a orar con la persona accidentada",
+        "eje": "MORAL"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Pide una ambulancia",
+        "eje": "LEGALIDAD"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Cuida las pertenencias del accidentado",
+        "eje": "INDIFERENCIA"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Trata de detener al culpable",
+        "eje": "CORRUPCION"
+      }
+    ]
+  },
+  {
+    "item": 4,
+    "seccion": "valores",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Le dedicaría tiempo extra para nivelarlo",
+        "eje": "INDIFERENCIA"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Lo rechazaría amablemente y lo invitaría a estudiar",
+        "eje": "CORRUPCION"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Aceptaría el presente y le daría la calificación deseada por su alumno, porque usted sabe que es inteligente",
+        "eje": "LEGALIDAD"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Llamaría a sus padres para que paguen clases particulares.",
+        "eje": "MORAL"
+      }
+    ]
+  },
+  {
+    "item": 5,
+    "seccion": "intereses",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Arranca su automóvil y deja al agente de transito",
+        "eje": "SOCIAL"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Trata de llegar a un acuerdo encaminado a disminuir la cantidad de dinero",
+        "eje": "POLITICO"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Pide le sea levantada la infracción pertinente",
+        "eje": "RELIGIOSO"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Amenaza al agente con reportarlo con sus superiores",
+        "eje": "ECONOMICO"
+      }
+    ]
+  },
+  {
+    "item": 6,
+    "seccion": "valores",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Sea activo y le guste reparar defectos en su hogar",
+        "eje": "MORAL"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Se interese por ser líder en el sindicato del cual forma parte",
+        "eje": "LEGALIDAD"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Asistir con frecuencia a eventos religiosos",
+        "eje": "CORRUPCION"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Le interesa emprender negocios",
+        "eje": "INDIFERENCIA"
+      }
+    ]
+  },
+  {
+    "item": 7,
+    "seccion": "intereses",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Trataría de encontrar a su dueño.",
+        "eje": "SOCIAL"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Lo reporta a sus superiores y lo entrega,",
+        "eje": "ECONOMICO"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "No hace ningún comentario y espera a que lo busquen",
+        "eje": "POLITICO"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Lo deja donde lo encontró",
+        "eje": "RELIGIOSO"
+      }
+    ]
+  },
+  {
+    "item": 8,
+    "seccion": "valores",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Ayudar a las clases necesitadas",
+        "eje": "LEGALIDAD"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Ampliar las zonas turísticas de cinco estrellas",
+        "eje": "MORAL"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Buscar a los mejores líderes de su partido",
+        "eje": "INDIFERENCIA"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Permitir que la religión sea oficial",
+        "eje": "CORRUPCION"
+      }
+    ]
+  },
+  {
+    "item": 9,
+    "seccion": "valores",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Que sea cumplido y eficiente",
+        "eje": "LEGALIDAD"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Que busque cuales son los errores del jefe para que demuestre que él no es perfecto",
+        "eje": "MORAL"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Que prometa una manda a su santo de preferencia",
+        "eje": "CORRUPCION"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Que ofrezca una excelente comida a los dirigentes de la empresa",
+        "eje": "INDIFERENCIA"
+      }
+    ]
+  },
+  {
+    "item": 10,
+    "seccion": "intereses",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Llamaría a la policía",
+        "eje": "ECONOMICO"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Llamaría a su vecino",
+        "eje": "POLITICO"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Pediría a los asaltantes parte del beneficio que obtendrán en el robo, por guardar silencio",
+        "eje": "RELIGIOSO"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Mejor no haría nada y me metería a mi casa.",
+        "eje": "SOCIAL"
+      }
+    ]
+  },
+  {
+    "item": 11,
+    "seccion": "intereses",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Pedir un aumento de sueldo",
+        "eje": "ECONOMICO"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Recurrir al sindicato para que éste le ayude",
+        "eje": "SOCIAL"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Que recurra a su guía espiritual para que le diga como se le debe ayudar y su trabajo no se le haga pesado",
+        "eje": "RELIGIOSO"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Que solicite una persona para que le ayude",
+        "eje": "POLITICO"
+      }
+    ]
+  },
+  {
+    "item": 12,
+    "seccion": "valores",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Que lo convenza de acudir al seguro social para que su atención médica no le sea costosa",
+        "eje": "INDIFERENCIA"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Proponerle su ayuda cuando él tenga que acudir a sus citas médicas",
+        "eje": "MORAL"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Que como todo le ha salido mal últimamente vea a una persona para que le realice una limpia",
+        "eje": "CORRUPCION"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Decirle lo importante que fueron las juntas de vecinos ahora que él estuvo hospitalizado.",
+        "eje": "LEGALIDAD"
+      }
+    ]
+  },
+  {
+    "item": 13,
+    "seccion": "valores",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Les dice que no debido a que se encuentra muy ocupado en esos días",
+        "eje": "MORAL"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Atiende con gusto la petición de sus vecinos",
+        "eje": "LEGALIDAD"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "A cambio de sus servicios les solicita prestado el automóvil que no utilizarán en su viaje",
+        "eje": "INDIFERENCIA"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Asiste al modulo de vigilancia local, para que le brinde mayor seguridad",
+        "eje": "CORRUPCION"
+      }
+    ]
+  },
+  {
+    "item": 14,
+    "seccion": "intereses",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Lo ayudaría a buscar  a su familia en la tienda",
+        "eje": "ECONOMICO"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Lo llevaría al área de servicios generales para que ahí espere a que lo ayude",
+        "eje": "RELIGIOSO"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Pasaría de largo porque usted tiene prisa",
+        "eje": "SOCIAL"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Lo llevaría a su casa pero le cobra a la mamá por el tiempo que usted perdió por andar buscandola",
+        "eje": "POLITICO"
+      }
+    ]
+  },
+  {
+    "item": 15,
+    "seccion": "valores",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Hacerlo producir para ayudar al desarrollo de la industria",
+        "eje": "CORRUPCION"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Donar el dinero para la construcción de una iglesia",
+        "eje": "INDIFERENCIA"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Darlo a una sociedad para el beneficio de las familias humildes del poblado",
+        "eje": "LEGALIDAD"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Apoyar ayuda al partido político con el cual simpatiza",
+        "eje": "MORAL"
+      }
+    ]
+  },
+  {
+    "item": 16,
+    "seccion": "intereses",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Le sugiere que vea a los maestros para que les proponga que lo ayuden",
+        "eje": "ECONOMICO"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Que haga lo que quiera pues ya está grande",
+        "eje": "POLITICO"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Que curse nuevamente el año para que pase las materias reprobadas",
+        "eje": "RELIGIOSO"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Darle apoyo económico y moral para que supere este tropiezo en sus estudios",
+        "eje": "SOCIAL"
+      }
+    ]
+  },
+  {
+    "item": 17,
+    "seccion": "valores",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Obtener experiencia en otro negocio que no sea el propio",
+        "eje": "INDIFERENCIA"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Participar en la campaña política de diputados que se va a efectuar en su localidad",
+        "eje": "LEGALIDAD"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Asistir a un retiro organizado por la iglesia",
+        "eje": "CORRUPCION"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Visitar un lugar que no conoce, en compañía de su familia",
+        "eje": "MORAL"
+      }
+    ]
+  },
+  {
+    "item": 18,
+    "seccion": "intereses",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Le pide a su hijo que no lo vuelva a ver",
+        "eje": "RELIGIOSO"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Le sugiere a su familia que lo lleven a Centros de Integración Juvenil para que lo ayuden",
+        "eje": "ECONOMICO"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Si el muchacho ya es drogadicto le pide le obsequie un reloj que tanto le gusta a su hijo para no decírselo a sus padres",
+        "eje": "POLITICO"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Lo lleva a un centro de rehabilitación junto con su hijo para que sienta que lo apoya y no es rechazado",
+        "eje": "SOCIAL"
+      }
+    ]
+  },
+  {
+    "item": 19,
+    "seccion": "valores",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Que emplee su tiempo como catequista de la iglesia",
+        "eje": "MORAL"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Que venda artículos femeninos",
+        "eje": "INDIFERENCIA"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Que   promueva   juntas   entre   los   vecinos   encaminadas   a   resolver   los   problemas   de   la comunidad",
+        "eje": "CORRUPCION"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Que asista con sus hijos a centros recreativos sí fuera posible",
+        "eje": "LEGALIDAD"
+      }
+    ]
+  },
+  {
+    "item": 20,
+    "seccion": "intereses",
+    "frases": [
+      {
+        "pos": 1,
+        "letra": "A",
+        "texto": "Le explica los motivos y necesidades por las cuales requiere ese favor",
+        "eje": "ECONOMICO"
+      },
+      {
+        "pos": 2,
+        "letra": "B",
+        "texto": "Le pide el favor sin mayor explicación",
+        "eje": "POLITICO"
+      },
+      {
+        "pos": 3,
+        "letra": "C",
+        "texto": "Le hace creer que él será el más beneficiado al ofrecerle una retribución.",
+        "eje": "RELIGIOSO"
+      },
+      {
+        "pos": 4,
+        "letra": "D",
+        "texto": "Le sugiere a su jefe que sea él quien se lo pida y explique la necesidad",
+        "eje": "SOCIAL"
+      }
+    ]
+  }
+]

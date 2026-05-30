@@ -1,0 +1,46 @@
+{
+  "valores": [
+    {
+      "key": "MORAL",
+      "label": "Moral",
+      "descripcion": "Tendencia a guiarse por principios éticos personales y a hacer lo que considera correcto, aun cuando implique mayor esfuerzo o costo personal."
+    },
+    {
+      "key": "LEGALIDAD",
+      "label": "Legalidad",
+      "descripcion": "Apego a las normas, reglamentos y procedimientos formales. Privilegia los canales oficiales y el cumplimiento estricto de la regla."
+    },
+    {
+      "key": "INDIFERENCIA",
+      "label": "Indiferencia",
+      "descripcion": "Tendencia a mantenerse al margen de situaciones que requieren tomar partido o compromiso, posponer decisiones o eludir responsabilidades."
+    },
+    {
+      "key": "CORRUPCION",
+      "label": "Corrupción",
+      "descripcion": "Disposición a obtener ventajas saltándose normas, aprovechando posiciones de poder o influencia para beneficio personal."
+    }
+  ],
+  "intereses": [
+    {
+      "key": "ECONOMICO",
+      "label": "Económico",
+      "descripcion": "Orientación hacia el dinero, la eficiencia, la productividad y el aprovechamiento de recursos para obtener beneficio material."
+    },
+    {
+      "key": "POLITICO",
+      "label": "Político",
+      "descripcion": "Orientación hacia el ejercicio del poder, la influencia sobre otros, el liderazgo y la posición en estructuras formales."
+    },
+    {
+      "key": "SOCIAL",
+      "label": "Social",
+      "descripcion": "Orientación hacia el bienestar de las personas, la cooperación, el servicio a la comunidad y las relaciones humanas."
+    },
+    {
+      "key": "RELIGIOSO",
+      "label": "Religioso",
+      "descripcion": "Orientación hacia la trascendencia, los valores espirituales, las tradiciones y el cumplimiento de un sistema de creencias."
+    }
+  ]
+}
