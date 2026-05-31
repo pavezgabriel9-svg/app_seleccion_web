@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "letra": "A",
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "FRÁGIL es lo contrario de:",
+    "opciones": ["Delicado", "Resistente", "Quebradizo", "Pequeño", "Liviano"],
+    "respuesta_correcta": 2,
+    "explicacion": "La respuesta correcta es Resistente. Lo opuesto de algo frágil es algo que resiste sin romperse."
+  },
+  {
+    "id": 2,
+    "letra": "B",
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Un libro cuesta $1.500. ¿Cuánto cuestan 3 libros iguales?",
+    "respuesta_correcta": 4500,
+    "unidad": "pesos",
+    "explicacion": "1.500 × 3 = 4.500 pesos."
+  },
+  {
+    "id": 3,
+    "letra": "C",
+    "tipo": "multiple_3",
+    "categoria": "verbal",
+    "enunciado": "CARRO / VEHÍCULO — Estas palabras tienen significado:",
+    "opciones": ["Similar", "Contradictorio", "Ni similar ni contradictorio"],
+    "respuesta_correcta": 1,
+    "explicacion": "Ambas palabras se refieren al mismo tipo de objeto: su significado es similar."
+  }
+]

@@ -1,0 +1,421 @@
+[
+  {
+    "id": 1,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "¿Cuál de los siguientes es un instrumento musical?",
+    "opciones": ["Martillo", "Guitarra", "Cuchara", "Botella", "Teléfono"],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 2,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "GRANDE es lo contrario de:",
+    "opciones": ["Enorme", "Alto", "Pequeño", "Pesado", "Rápido"],
+    "respuesta_correcta": 3
+  },
+  {
+    "id": 3,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "¿Cuál palabra no pertenece al grupo?",
+    "opciones": ["Mesa", "Silla", "Estante", "Avión", "Cama"],
+    "respuesta_correcta": 4
+  },
+  {
+    "id": 4,
+    "tipo": "si_no",
+    "categoria": "logico",
+    "enunciado": "¿Pesa más un kilo de algodón que un kilo de hierro?",
+    "respuesta_correcta": "NO"
+  },
+  {
+    "id": 5,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Si tienes 7 manzanas y compras 5 más, ¿cuántas manzanas tienes en total?",
+    "respuesta_correcta": 12
+  },
+  {
+    "id": 6,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Una caja contiene 6 lápices. ¿Cuántos lápices hay en 4 cajas iguales?",
+    "respuesta_correcta": 24
+  },
+  {
+    "id": 7,
+    "tipo": "multiple_3",
+    "categoria": "verbal",
+    "enunciado": "ENCENDER / APAGAR — Estas palabras tienen significado:",
+    "opciones": ["Similar", "Contradictorio", "Ni similar ni contradictorio"],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 8,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Si repartes 30 caramelos entre 6 niños en partes iguales, ¿cuántos caramelos recibe cada uno?",
+    "respuesta_correcta": 5
+  },
+  {
+    "id": 9,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "¿Cuál palabra no encaja con las demás?",
+    "opciones": ["Manzana", "Pera", "Plátano", "Cebolla", "Naranja"],
+    "respuesta_correcta": 4
+  },
+  {
+    "id": 10,
+    "tipo": "si_no",
+    "categoria": "numerico",
+    "enunciado": "¿Es 11 un número primo?",
+    "respuesta_correcta": "SI"
+  },
+  {
+    "id": 11,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "ANTIGUO es lo contrario de:",
+    "opciones": ["Viejo", "Nuevo", "Usado", "Lento", "Roto"],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 12,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Si el 50% de un grupo de 80 personas son mujeres, ¿cuántos hombres hay?",
+    "respuesta_correcta": 40
+  },
+  {
+    "id": 13,
+    "tipo": "multiple_3",
+    "categoria": "verbal",
+    "enunciado": "FELIZ / ALEGRE — Estas palabras tienen significado:",
+    "opciones": ["Similar", "Contradictorio", "Ni similar ni contradictorio"],
+    "respuesta_correcta": 1
+  },
+  {
+    "id": 14,
+    "tipo": "silogismo",
+    "categoria": "logico",
+    "enunciado": "Suponga que las dos primeras afirmaciones son verdaderas. La conclusión es:",
+    "premisa1": "Todos los pájaros tienen plumas.",
+    "premisa2": "El gorrión es un pájaro.",
+    "conclusion": "El gorrión tiene plumas.",
+    "respuesta_correcta": "verdadero"
+  },
+  {
+    "id": 15,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Si 3 kilos de naranjas cuestan $4.500, ¿cuánto cuestan 5 kilos al mismo precio?",
+    "respuesta_correcta": 7500,
+    "unidad": "pesos"
+  },
+  {
+    "id": 16,
+    "tipo": "multiple_5",
+    "categoria": "atencion",
+    "enunciado": "¿Cuántos de los siguientes pares de palabras son idénticos entre sí?\n\nMariana / Mariana\nGonzales / Gonzalez\nPérez / Pérez\nHernández / Hernandez\nSoto / Soto",
+    "opciones": ["Uno", "Dos", "Tres", "Cuatro", "Cinco"],
+    "respuesta_correcta": 3
+  },
+  {
+    "id": 17,
+    "tipo": "visual",
+    "categoria": "espacial",
+    "enunciado": "¿Qué figura se puede formar al unir las dos figuras de los recuadros?",
+    "visual_id": "ensamble_1",
+    "respuesta_correcta": 1
+  },
+  {
+    "id": 18,
+    "tipo": "texto_corto",
+    "categoria": "logico",
+    "enunciado": "Ordena las siguientes palabras para formar una frase con sentido y escribe la primera letra de la primera palabra de la frase ordenada: \"agua – bebe – el – niño\"",
+    "respuesta_correcta": "E"
+  },
+  {
+    "id": 19,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "¿Qué número sigue en esta serie? 2, 4, 6, 8, ___",
+    "respuesta_correcta": 10
+  },
+  {
+    "id": 20,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "¿Cuál palabra no encaja con las demás?",
+    "opciones": ["Rojo", "Verde", "Azul", "Música", "Amarillo"],
+    "respuesta_correcta": 4
+  },
+  {
+    "id": 21,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "ESCASO es lo contrario de:",
+    "opciones": ["Limitado", "Abundante", "Pobre", "Pequeño", "Rápido"],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 22,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Un libro tiene 240 páginas. Si lees 30 páginas por día, ¿cuántos días tardas en terminarlo?",
+    "respuesta_correcta": 8
+  },
+  {
+    "id": 23,
+    "tipo": "silogismo",
+    "categoria": "logico",
+    "enunciado": "Suponga que las dos primeras afirmaciones son verdaderas. La conclusión es:",
+    "premisa1": "Algunos estudiantes son deportistas.",
+    "premisa2": "Pedro es estudiante.",
+    "conclusion": "Pedro es deportista.",
+    "respuesta_correcta": "dudoso"
+  },
+  {
+    "id": 24,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "¿Qué refrán significa lo mismo que \"Más vale pájaro en mano que cien volando\"?",
+    "opciones": [
+      "A caballo regalado no se le miran los dientes",
+      "No hay mal que por bien no venga",
+      "En boca cerrada no entran moscas",
+      "Más vale lo malo conocido que lo bueno por conocer",
+      "A quien madruga, Dios le ayuda"
+    ],
+    "respuesta_correcta": 4
+  },
+  {
+    "id": 25,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Un estudiante obtuvo notas de 6,0 — 5,5 — 6,5 en tres pruebas. ¿Cuál es su promedio?",
+    "respuesta_correcta": 6,
+    "tolerancia": 0.01
+  },
+  {
+    "id": 26,
+    "tipo": "multiple_5",
+    "categoria": "atencion",
+    "enunciado": "¿Cuántos de los siguientes pares de números son idénticos entre sí?\n\n4729183 / 4729183\n8205317 / 8205137\n6541027 / 6541027\n3982465 / 3984265\n9270836 / 9270836",
+    "opciones": ["Uno", "Dos", "Tres", "Cuatro", "Cinco"],
+    "respuesta_correcta": 3
+  },
+  {
+    "id": 27,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "OBSTACULIZAR significa:",
+    "opciones": ["Facilitar", "Impedir", "Permitir", "Recordar", "Confirmar"],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 28,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Un viaje en bus dura 2 horas y 45 minutos. ¿Cuántos minutos dura el viaje en total?",
+    "respuesta_correcta": 165
+  },
+  {
+    "id": 29,
+    "tipo": "visual",
+    "categoria": "espacial",
+    "enunciado": "¿Qué figura se forma al dividir esta forma por la línea punteada y juntar las dos partes?",
+    "visual_id": "division_1",
+    "respuesta_correcta": 1
+  },
+  {
+    "id": 30,
+    "tipo": "silogismo",
+    "categoria": "logico",
+    "enunciado": "Suponga que las dos primeras afirmaciones son verdaderas. La conclusión es:",
+    "premisa1": "Todos los gatos son mamíferos.",
+    "premisa2": "Algunos mamíferos viven en el agua.",
+    "conclusion": "Algunos gatos viven en el agua.",
+    "respuesta_correcta": "dudoso"
+  },
+  {
+    "id": 31,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "VEHEMENTE es lo contrario de:",
+    "opciones": ["Apasionado", "Apacible", "Energético", "Decidido", "Furioso"],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 32,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "¿Qué número sigue en esta serie? 1, 4, 9, 16, ___",
+    "respuesta_correcta": 25
+  },
+  {
+    "id": 33,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "PERSEVERANCIA significa:",
+    "opciones": ["Decepción", "Constancia", "Cansancio", "Velocidad", "Confusión"],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 34,
+    "tipo": "silogismo",
+    "categoria": "logico",
+    "enunciado": "Suponga que las dos primeras afirmaciones son verdaderas. La conclusión es:",
+    "premisa1": "Todos los empleados de la empresa son chilenos.",
+    "premisa2": "María es empleada de la empresa.",
+    "conclusion": "María es chilena.",
+    "respuesta_correcta": "verdadero"
+  },
+  {
+    "id": 35,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Juan tenía $24.000. Gastó la mitad en comida y un tercio del resto en transporte. ¿Cuánto le queda?",
+    "respuesta_correcta": 8000,
+    "unidad": "pesos"
+  },
+  {
+    "id": 36,
+    "tipo": "multiple_5",
+    "categoria": "atencion",
+    "enunciado": "¿Cuántos de los siguientes pares son idénticos entre sí?\n\nABC-123-XYZ / ABC-123-XYZ\nDEF-456-WUV / DEF-456-WVU\nGHI-789-RST / GHI-789-RST\nJKL-012-OPQ / JLK-012-OPQ\nMNO-345-LMK / MNO-345-LMK",
+    "opciones": ["Uno", "Dos", "Tres", "Cuatro", "Cinco"],
+    "respuesta_correcta": 3
+  },
+  {
+    "id": 37,
+    "tipo": "visual",
+    "categoria": "espacial",
+    "enunciado": "¿Qué dos figuras pueden combinarse para formar un rectángulo perfecto?",
+    "visual_id": "combinar_rectangulo_1",
+    "respuesta_correcta": 1
+  },
+  {
+    "id": 38,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "¿Qué refrán significa lo mismo que \"El que mucho abarca poco aprieta\"?",
+    "opciones": [
+      "Más vale pájaro en mano que cien volando",
+      "Aprendiz de mucho, maestro de nada",
+      "A caballo regalado no se le miran los dientes",
+      "En boca cerrada no entran moscas",
+      "Más vale tarde que nunca"
+    ],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 39,
+    "tipo": "silogismo",
+    "categoria": "logico",
+    "enunciado": "Suponga que las dos primeras afirmaciones son verdaderas. La conclusión es:",
+    "premisa1": "Todos los reptiles ponen huevos.",
+    "premisa2": "La serpiente es un reptil.",
+    "conclusion": "La serpiente no pone huevos.",
+    "respuesta_correcta": "falso"
+  },
+  {
+    "id": 40,
+    "tipo": "visual",
+    "categoria": "espacial",
+    "enunciado": "¿Cuántos cuadrados hay en la figura?",
+    "visual_id": "contar_cuadrados_1",
+    "respuesta_correcta": 1
+  },
+  {
+    "id": 41,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "PRODIGAR es lo contrario de:",
+    "opciones": ["Ahorrar", "Difundir", "Encubrir", "Entregar", "Gastar"],
+    "respuesta_correcta": 1
+  },
+  {
+    "id": 42,
+    "tipo": "visual",
+    "categoria": "espacial",
+    "enunciado": "Esta figura geométrica puede dividirse por una línea recta en dos partes que se pueden unir para formar un cuadrado perfecto. Indica los números donde trazarías la línea.",
+    "visual_id": "dividir_cuadrado_1",
+    "respuesta_correcta": 1
+  },
+  {
+    "id": 43,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Un producto cuesta $50.000. Su precio sube un 20% y luego baja un 25% del nuevo precio. ¿Cuál es el precio final?",
+    "respuesta_correcta": 45000,
+    "unidad": "pesos"
+  },
+  {
+    "id": 44,
+    "tipo": "multiple_5",
+    "categoria": "verbal",
+    "enunciado": "¿Qué refrán significa lo mismo que \"No hay peor sordo que el que no quiere oír\"?",
+    "opciones": [
+      "A palabras necias, oídos sordos",
+      "El que tiene boca se equivoca",
+      "Por la boca muere el pez",
+      "No hay peor ciego que el que no quiere ver",
+      "Más vale lengua callada que palabra dada"
+    ],
+    "respuesta_correcta": 4
+  },
+  {
+    "id": 45,
+    "tipo": "silogismo",
+    "categoria": "logico",
+    "enunciado": "Suponga que las dos primeras afirmaciones son verdaderas. La conclusión es:",
+    "premisa1": "Ningún empleado puede acceder a la sala de servidores sin permiso.",
+    "premisa2": "Algunos empleados tienen permiso para acceder a la sala de servidores.",
+    "conclusion": "Algunos empleados pueden acceder a la sala de servidores.",
+    "respuesta_correcta": "verdadero"
+  },
+  {
+    "id": 46,
+    "tipo": "numerica",
+    "categoria": "numerico",
+    "enunciado": "Tres empleados terminan un trabajo en 6 horas. ¿Cuántas horas tardarían 9 empleados al mismo ritmo?",
+    "respuesta_correcta": 2,
+    "unidad": "horas"
+  },
+  {
+    "id": 47,
+    "tipo": "multiple_5",
+    "categoria": "atencion",
+    "enunciado": "¿Cuántos de los siguientes pares de números son idénticos entre sí?\n\n2849175036 / 2849175036\n6394820517 / 6394820157\n1057392648 / 1057392648\n8264913075 / 8264193075\n4712850639 / 4712850639",
+    "opciones": ["Uno", "Dos", "Tres", "Cuatro", "Cinco"],
+    "respuesta_correcta": 3
+  },
+  {
+    "id": 48,
+    "tipo": "multiple_5",
+    "categoria": "atencion",
+    "enunciado": "¿Cuántos de los siguientes pares son idénticos entre sí?\n\nGonzález M.A. 12345 / González M.A. 12345\nRodríguez P.L. 67890 / Rodríguez P.L. 67980\nVásquez J.R. 24680 / Vasquez J.R. 24680\nMartínez C.D. 13579 / Martínez C.D. 13579\nSoto E.B. 98765 / Soto E.B. 98756",
+    "opciones": ["Uno", "Dos", "Tres", "Cuatro", "Cinco"],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 49,
+    "tipo": "visual",
+    "categoria": "espacial",
+    "enunciado": "Cuatro de las cinco figuras pueden unirse para formar un triángulo perfecto. ¿Cuáles son?",
+    "visual_id": "formar_triangulo_1",
+    "respuesta_correcta": 1
+  },
+  {
+    "id": 50,
+    "tipo": "visual",
+    "categoria": "espacial",
+    "enunciado": "En la figura, ¿cuántos triángulos hay en total (incluyendo los formados por intersecciones)?",
+    "visual_id": "contar_triangulos_1",
+    "respuesta_correcta": 1
+  }
+]
