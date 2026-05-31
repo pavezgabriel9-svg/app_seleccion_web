@@ -12,10 +12,12 @@ import type {
   LuscherResult,
   DISCResult,
   ZAVICResult,
+  CognitivoResult,
   TestResultData,
 } from '@/types/database'
 import { DISCResultCard } from '@/components/admin/disc-result-card'
 import { ZAVICResultCard } from '@/components/admin/zavic-result-card'
+import { CognitivoResultCard } from '@/components/admin/cognitivo-result-card'
 
 export const metadata: Metadata = { title: 'Detalle de evaluación' }
 
@@ -106,6 +108,16 @@ function isZAVIC(r: TestResultData): r is ZAVICResult {
     'intereses' in (r as ZAVICResult).resultado
   )
 }
+function isCognitivo(r: TestResultData): r is CognitivoResult {
+  return (
+    typeof r === 'object' &&
+    r !== null &&
+    'resultado' in r &&
+    typeof (r as CognitivoResult).resultado === 'object' &&
+    'puntaje' in (r as CognitivoResult).resultado &&
+    'por_categoria' in (r as CognitivoResult).resultado
+  )
+}
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
 
@@ -140,6 +152,10 @@ function ResultCard({ result }: { result: TestResultData }) {
 
   if (isZAVIC(result)) {
     return <ZAVICResultCard data={result} />
+  }
+
+  if (isCognitivo(result)) {
+    return <CognitivoResultCard data={result} />
   }
 
   if (isHanoi(result)) {

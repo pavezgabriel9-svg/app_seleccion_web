@@ -1,6 +1,13 @@
 'use client'
 
 import type { CognitivoItemVisual } from '@/types/database'
+import { Ensamble1 } from './visuales/ensamble-1'
+import { Division1 } from './visuales/division-1'
+import { CombinarRectangulo1 } from './visuales/combinar-rectangulo-1'
+import { ContarCuadrados1 } from './visuales/contar-cuadrados-1'
+import { DividirCuadrado1 } from './visuales/dividir-cuadrado-1'
+import { FormarTriangulo1 } from './visuales/formar-triangulo-1'
+import { ContarTriangulos1 } from './visuales/contar-triangulos-1'
 
 interface Props {
   item: CognitivoItemVisual
@@ -10,22 +17,27 @@ interface Props {
   showCorrect?: boolean
 }
 
-// Placeholder hasta Fase 3 (subcomponentes SVG inline por visual_id)
-export function PreguntaVisual({ item }: Props) {
-  return (
-    <div
-      className="rounded-xl px-5 py-6 text-center space-y-2"
-      style={{
-        background: 'oklch(0.96 0.005 80)',
-        border: '1px dashed oklch(0.85 0.01 80)',
-      }}
-    >
-      <p className="text-xs uppercase tracking-widest" style={{ color: 'var(--navy)', opacity: 0.55 }}>
-        Pregunta visual ({item.visual_id})
-      </p>
-      <p className="text-sm" style={{ color: 'var(--navy)' }}>
-        Este tipo de ítem se implementará en la fase 3 (figuras SVG inline).
-      </p>
-    </div>
-  )
+export function PreguntaVisual({ item, value, onChange, disabled }: Props) {
+  const sub = { value, onChange, disabled }
+
+  switch (item.visual_id) {
+    case 'ensamble_1':             return <Ensamble1            {...sub} />
+    case 'division_1':             return <Division1            {...sub} />
+    case 'combinar_rectangulo_1':  return <CombinarRectangulo1  {...sub} />
+    case 'contar_cuadrados_1':     return <ContarCuadrados1     {...sub} />
+    case 'dividir_cuadrado_1':     return <DividirCuadrado1     {...sub} />
+    case 'formar_triangulo_1':     return <FormarTriangulo1     {...sub} />
+    case 'contar_triangulos_1':    return <ContarTriangulos1    {...sub} />
+    default:
+      return (
+        <div
+          className="rounded-xl px-5 py-6 text-center"
+          style={{ background: 'oklch(0.96 0.005 80)', border: '1px dashed oklch(0.85 0.01 80)' }}
+        >
+          <p className="text-sm" style={{ color: 'var(--navy)' }}>
+            Pregunta visual no disponible: <code>{item.visual_id}</code>
+          </p>
+        </div>
+      )
+  }
 }

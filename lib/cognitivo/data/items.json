@@ -227,9 +227,9 @@
     "id": 29,
     "tipo": "visual",
     "categoria": "espacial",
-    "enunciado": "¿Qué figura se forma al dividir esta forma por la línea punteada y juntar las dos partes?",
+    "enunciado": "Al dividir este hexágono por la línea punteada vertical, ¿qué forma tiene cada una de las dos mitades?",
     "visual_id": "division_1",
-    "respuesta_correcta": 1
+    "respuesta_correcta": 2
   },
   {
     "id": 30,
@@ -296,7 +296,7 @@
     "categoria": "espacial",
     "enunciado": "¿Qué dos figuras pueden combinarse para formar un rectángulo perfecto?",
     "visual_id": "combinar_rectangulo_1",
-    "respuesta_correcta": 1
+    "respuesta_correcta": "1,3"
   },
   {
     "id": 38,
@@ -326,9 +326,9 @@
     "id": 40,
     "tipo": "visual",
     "categoria": "espacial",
-    "enunciado": "¿Cuántos cuadrados hay en la figura?",
+    "enunciado": "¿Cuántos cuadrados hay en la figura (de cualquier tamaño)?",
     "visual_id": "contar_cuadrados_1",
-    "respuesta_correcta": 1
+    "respuesta_correcta": 14
   },
   {
     "id": 41,
@@ -342,9 +342,9 @@
     "id": 42,
     "tipo": "visual",
     "categoria": "espacial",
-    "enunciado": "Esta figura geométrica puede dividirse por una línea recta en dos partes que se pueden unir para formar un cuadrado perfecto. Indica los números donde trazarías la línea.",
+    "enunciado": "Este rectángulo puede dividirse por una línea recta en dos partes que se pueden unir para formar un cuadrado perfecto. Indica los números de los dos puntos por donde trazarías la línea.",
     "visual_id": "dividir_cuadrado_1",
-    "respuesta_correcta": 1
+    "respuesta_correcta": "2,5"
   },
   {
     "id": 43,
@@ -408,7 +408,7 @@
     "categoria": "espacial",
     "enunciado": "Cuatro de las cinco figuras pueden unirse para formar un triángulo perfecto. ¿Cuáles son?",
     "visual_id": "formar_triangulo_1",
-    "respuesta_correcta": 1
+    "respuesta_correcta": "1,2,4,5"
   },
   {
     "id": 50,
@@ -416,6 +416,6 @@
     "categoria": "espacial",
     "enunciado": "En la figura, ¿cuántos triángulos hay en total (incluyendo los formados por intersecciones)?",
     "visual_id": "contar_triangulos_1",
-    "respuesta_correcta": 1
+    "respuesta_correcta": 6
   }
 ]

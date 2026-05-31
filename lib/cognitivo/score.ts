@@ -42,11 +42,20 @@ function esCorrecta(item: CognitivoItem, respuesta: unknown): boolean {
       return r === item.respuesta_correcta
     }
     case 'visual': {
+      // Respuesta numérica directa (e.g., contar elementos)
       if (typeof item.respuesta_correcta === 'number') {
         const r = typeof respuesta === 'number' ? respuesta : parseInt(String(respuesta), 10)
-        return r === item.respuesta_correcta
+        return !Number.isNaN(r) && r === item.respuesta_correcta
       }
-      return String(respuesta).trim().toLowerCase() === String(item.respuesta_correcta).toLowerCase()
+      // Respuesta CSV (single o multi). Normaliza: split, trim, sort numérico, join.
+      const norm = (s: string) =>
+        s
+          .split(',')
+          .map((x) => x.trim())
+          .filter(Boolean)
+          .sort((a, b) => Number(a) - Number(b))
+          .join(',')
+      return norm(String(respuesta)) === norm(String(item.respuesta_correcta))
     }
   }
 }

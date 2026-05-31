@@ -18,9 +18,14 @@ export function PreguntaNumerica({ item, value, onChange, disabled, showCorrect 
           type="text"
           inputMode="decimal"
           value={value ?? ''}
-          onChange={(e) => !disabled && onChange(e.target.value)}
+          onChange={(e) => {
+            if (disabled) return
+            // Solo dígitos, coma, punto y signo menos (al inicio)
+            const cleaned = e.target.value.replace(/[^\d.,\-]/g, '')
+            onChange(cleaned)
+          }}
           disabled={disabled}
-          placeholder="Tu respuesta"
+          placeholder="Solo números"
           className="flex-1 px-4 py-3 rounded-lg text-lg outline-none"
           style={{
             background: 'oklch(0.97 0.005 80)',
