@@ -340,6 +340,103 @@ export interface ZAVICResult {
   version: '1.0'
 }
 
+export type CognitivoCategoria = 'verbal' | 'numerico' | 'logico' | 'espacial' | 'atencion'
+
+export type CognitivoTipo =
+  | 'multiple_5'
+  | 'multiple_3'
+  | 'si_no'
+  | 'numerica'
+  | 'texto_corto'
+  | 'silogismo'
+  | 'visual'
+
+export interface CognitivoItemBase {
+  id: number
+  categoria: CognitivoCategoria
+  enunciado: string
+  letra?: string         // solo para items de práctica (A, B, C)
+  explicacion?: string   // solo para items de práctica
+}
+
+export interface CognitivoItemMultiple5 extends CognitivoItemBase {
+  tipo: 'multiple_5'
+  opciones: [string, string, string, string, string]
+  respuesta_correcta: 1 | 2 | 3 | 4 | 5
+}
+
+export interface CognitivoItemMultiple3 extends CognitivoItemBase {
+  tipo: 'multiple_3'
+  opciones: [string, string, string]
+  respuesta_correcta: 1 | 2 | 3
+}
+
+export interface CognitivoItemSiNo extends CognitivoItemBase {
+  tipo: 'si_no'
+  respuesta_correcta: 'SI' | 'NO'
+}
+
+export interface CognitivoItemNumerica extends CognitivoItemBase {
+  tipo: 'numerica'
+  respuesta_correcta: number
+  tolerancia?: number
+  unidad?: string
+}
+
+export interface CognitivoItemTextoCorto extends CognitivoItemBase {
+  tipo: 'texto_corto'
+  respuesta_correcta: string
+  respuestas_aceptadas?: string[]
+}
+
+export interface CognitivoItemSilogismo extends CognitivoItemBase {
+  tipo: 'silogismo'
+  premisa1: string
+  premisa2: string
+  conclusion: string
+  respuesta_correcta: 'verdadero' | 'falso' | 'dudoso'
+}
+
+export interface CognitivoItemVisual extends CognitivoItemBase {
+  tipo: 'visual'
+  visual_id: string
+  respuesta_correcta: string | number
+}
+
+export type CognitivoItem =
+  | CognitivoItemMultiple5
+  | CognitivoItemMultiple3
+  | CognitivoItemSiNo
+  | CognitivoItemNumerica
+  | CognitivoItemTextoCorto
+  | CognitivoItemSilogismo
+  | CognitivoItemVisual
+
+export type CognitivoRespuestaValor = number | string | null
+
+export interface CognitivoRespuesta {
+  item: number
+  respuesta: CognitivoRespuestaValor
+}
+
+export interface CognitivoResult {
+  respuestas: CognitivoRespuesta[]
+  resultado: {
+    puntaje: number
+    categoria: 'Bajo' | 'Promedio' | 'Alto' | 'Muy alto'
+    por_categoria: Record<CognitivoCategoria, { correctas: number; total: number }>
+    items_respondidos: number
+  }
+  metadata: {
+    duracion_total_s: number
+    tiempo_agotado: boolean
+    items_sin_responder: number
+    tab_switch_count: number
+    out_of_focus_duration: number
+  }
+  version: '1.0'
+}
+
 export type TestResultData =
   | HanoiResult
   | ICResult
@@ -349,6 +446,7 @@ export type TestResultData =
   | LuscherResult
   | DISCResult
   | ZAVICResult
+  | CognitivoResult
   | Record<string, unknown>
 
 export interface TestComponentProps {

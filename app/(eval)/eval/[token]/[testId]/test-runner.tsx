@@ -33,10 +33,11 @@ interface HanoiTestProps extends TestComponentProps {
 const StroopTest  = dynamic<TestComponentProps>(() => import('@/components/tests/stroop'))
 const LuscherTest = dynamic<TestComponentProps>(() => import('@/components/tests/luscher'))
 const MemoriaTest = dynamic<TestComponentProps>(() => import('@/components/tests/memoria'))
-const ICTest      = dynamic<TestComponentProps>(() => import('@/components/tests/ic'))
-const DISCTest    = dynamic<TestComponentProps>(() => import('@/components/tests/disc'))
-const ZAVICTest   = dynamic<TestComponentProps>(() => import('@/components/tests/zavic'))
-const HanoiTest   = dynamic<HanoiTestProps>(() => import('@/components/tests/hanoi'))
+const ICTest        = dynamic<TestComponentProps>(() => import('@/components/tests/ic'))
+const DISCTest      = dynamic<TestComponentProps>(() => import('@/components/tests/disc'))
+const ZAVICTest     = dynamic<TestComponentProps>(() => import('@/components/tests/zavic'))
+const CognitivoTest = dynamic<TestComponentProps>(() => import('@/components/tests/cognitivo'))
+const HanoiTest     = dynamic<HanoiTestProps>(() => import('@/components/tests/hanoi'))
 
 // ─── Hook ─────────────────────────────────────────────────────────────────────
 
@@ -73,6 +74,7 @@ function resolveTestComponent(
   if (path.includes('hanoi'))         return <HanoiTest   {...fullProps} variant="medio"   candidateName={candidateName} />
   if (path.includes('disc'))          return <DISCTest    {...fullProps} />
   if (path.includes('zavic'))         return <ZAVICTest   {...fullProps} />
+  if (path.includes('tcg'))           return <CognitivoTest {...fullProps} />
   if (path.includes('ic'))            return <ICTest      {...fullProps} />
 
   // Fallback
