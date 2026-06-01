@@ -35,6 +35,7 @@ const LuscherTest = dynamic<TestComponentProps>(() => import('@/components/tests
 const MemoriaTest = dynamic<TestComponentProps>(() => import('@/components/tests/memoria'))
 const ICTest      = dynamic<TestComponentProps>(() => import('@/components/tests/ic'))
 const DISCTest    = dynamic<TestComponentProps>(() => import('@/components/tests/disc'))
+const ZAVICTest   = dynamic<TestComponentProps>(() => import('@/components/tests/zavic'))
 const HanoiTest   = dynamic<HanoiTestProps>(() => import('@/components/tests/hanoi'))
 
 // ─── Hook ─────────────────────────────────────────────────────────────────────
@@ -71,6 +72,7 @@ function resolveTestComponent(
   if (path.includes('hanoi-dificil')) return <HanoiTest   {...fullProps} variant="dificil" candidateName={candidateName} />
   if (path.includes('hanoi'))         return <HanoiTest   {...fullProps} variant="medio"   candidateName={candidateName} />
   if (path.includes('disc'))          return <DISCTest    {...fullProps} />
+  if (path.includes('zavic'))         return <ZAVICTest   {...fullProps} />
   if (path.includes('ic'))            return <ICTest      {...fullProps} />
 
   // Fallback
@@ -192,8 +194,9 @@ export function TestRunner({
   const { completeTest, isPending } = useTestNavigation(sessionId, testId, token)
   const completedCount = completedTestIds.length
 
-  // IC provee su propio contenedor wide; el resto usa la card estrecha estándar
-  const isICTest = testPath.toLowerCase().includes('ic')
+  // IC provee su propio contenedor wide; el resto usa la card estrecha estándar.
+  // Comparación exacta: 'zavic' / 'disc' también contienen 'ic' como subcadena.
+  const isICTest = testPath.toLowerCase() === 'ic'
   const testContent = resolveTestComponent(
     testPath, hasPractice,
     { onComplete: completeTest, isPending },
