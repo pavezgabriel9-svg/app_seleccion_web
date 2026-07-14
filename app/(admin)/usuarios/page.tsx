@@ -3,6 +3,7 @@ import { createClient, createServiceClient } from '@/lib/supabase/server'
 import { getUserRole, getRoleLabel, isUserBanned, canBanTarget, type UserRole } from '@/lib/auth/roles'
 import { CreateAdminForm } from './create-admin-form'
 import { ToggleBanButton } from './toggle-ban-button'
+import { RecoveryLinkButton } from './recovery-link-button'
 import { Users, ShieldCheck, Clock } from 'lucide-react'
 import type { User } from '@supabase/supabase-js'
 import { redirect } from 'next/navigation'
@@ -170,13 +171,18 @@ export default async function UsuariosPage() {
                         </div>
                       </div>
 
-                      {/* Action */}
-                      {showBanButton && (
-                        <ToggleBanButton
-                          userId={user.id}
-                          isBanned={banned}
-                        />
-                      )}
+                      {/* Actions */}
+                      <div className="flex items-center gap-2 flex-shrink-0">
+                        {showBanButton && !banned && (
+                          <RecoveryLinkButton userId={user.id} />
+                        )}
+                        {showBanButton && (
+                          <ToggleBanButton
+                            userId={user.id}
+                            isBanned={banned}
+                          />
+                        )}
+                      </div>
                     </div>
                   )
                 })}

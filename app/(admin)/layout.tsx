@@ -12,8 +12,8 @@ export default async function AdminLayout({
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
-  // El middleware ya protege estas rutas, pero mantenemos la verificación
-  // en el layout como segunda línea de defensa.
+  // No hay middleware: este layout es el único gate de autenticación para
+  // las rutas admin. Cada Server Action valida permisos por su cuenta.
   if (!user) redirect('/login')
 
   const role = getUserRole(user)
