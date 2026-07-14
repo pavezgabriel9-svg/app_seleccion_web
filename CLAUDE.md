@@ -40,7 +40,6 @@ Next.js App Router + Supabase (PostgreSQL + Auth). TypeScript throughout.
   - `hub/page.tsx` — Candidate hub: shows all tests with completion state, progress bar, any-order navigation
   - `[testId]/page.tsx` + `test-runner.tsx` — Test runner (client component)
   - `gracias/` — Legacy completion page (hub now handles the completed state inline)
-- `app/reset-pass/route.ts` — Dev-only GET route that creates or resets the hardcoded admin account (`admin123@admin.com` / `Admin123!`) using the service role. Remove before going to production.
 
 ### Server Actions
 
