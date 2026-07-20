@@ -1,4 +1,5 @@
 export type SessionStatus = 'pending' | 'in_progress' | 'completed'
+export type UserRole = 'user' | 'admin' | 'super_admin'
 
 export type Database = {
   public: {
@@ -94,6 +95,7 @@ export type Database = {
           token: string
           battery_id: string | null
           admin_id: string
+          creator_role: UserRole
           status: SessionStatus
           created_at: string
           started_at: string | null
@@ -105,6 +107,7 @@ export type Database = {
           token?: string
           battery_id?: string | null
           admin_id: string
+          creator_role?: UserRole
           status?: SessionStatus
           created_at?: string
           started_at?: string | null
@@ -114,6 +117,7 @@ export type Database = {
         Update: Partial<{
           battery_id: string | null
           admin_id: string
+          creator_role: UserRole
           status: SessionStatus
           started_at: string | null
           completed_at: string | null

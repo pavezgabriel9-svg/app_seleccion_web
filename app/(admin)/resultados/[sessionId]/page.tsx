@@ -1,5 +1,7 @@
 import { Metadata } from 'next'
+import type { User } from '@supabase/supabase-js'
 import { createClient } from '@/lib/supabase/server'
+import { applySessionVisibility } from '@/lib/auth/session-visibility'
 import { notFound } from 'next/navigation'
 import Link from 'next/link'
 import { ChevronRight } from 'lucide-react'
@@ -43,10 +45,10 @@ interface SessionDetail {
 
 async function getSessionDetail(
   sessionId: string,
-  adminId: string
+  user: User
 ): Promise<SessionDetail | null> {
   const supabase = await createClient()
-  const { data } = await supabase
+  const query = supabase
     .from('evaluation_sessions')
     .select(`
       id, completed_at, started_at,
@@ -55,9 +57,10 @@ async function getSessionDetail(
       test_results(test_id, results, completed_at, tests(name, path))
     `)
     .eq('id', sessionId)
-    .eq('admin_id', adminId)
     .eq('status', 'completed')
-    .single()
+
+  // Misma regla de visibilidad que la lista — fuente única en session-visibility.ts.
+  const { data } = await applySessionVisibility(query, user).maybeSingle()
 
   if (!data) return null
 
@@ -291,7 +294,7 @@ export default async function SessionDetailPage({ params }: Props) {
   } = await supabase.auth.getUser()
   if (!user) return null
 
-  const session = await getSessionDetail(sessionId, user.id)
+  const session = await getSessionDetail(sessionId, user)
   if (!session) notFound()
 
   const candidate = Array.isArray(session.candidates)
