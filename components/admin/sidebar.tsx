@@ -111,7 +111,10 @@ export default function AdminSidebar({ role }: Props) {
           style={{ color: 'oklch(0.90 0.01 85)' }}
         >
           <p className="font-medium">App Selección</p>
-          <p>v2.0.0 — Web</p>
+          <p>v{process.env.NEXT_PUBLIC_APP_VERSION} — Web</p>
+          <p className="text-[10px]">
+            {process.env.NEXT_PUBLIC_APP_COMMIT} · {process.env.NEXT_PUBLIC_APP_BUILD_DATE}
+          </p>
         </div>
       </div>
     </aside>

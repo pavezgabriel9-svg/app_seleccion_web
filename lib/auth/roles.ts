@@ -1,6 +1,7 @@
 import type { User } from '@supabase/supabase-js'
+import type { UserRole } from '@/types/database'
 
-export type UserRole = 'user' | 'admin' | 'super_admin'
+export type { UserRole }
 
 export function getUserRole(user: User): UserRole {
   return (user.app_metadata?.role as UserRole) ?? 'user'

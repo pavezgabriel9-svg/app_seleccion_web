@@ -1,7 +1,9 @@
 import { Metadata } from 'next'
+import type { User } from '@supabase/supabase-js'
 import { createClient, createServiceClient } from '@/lib/supabase/server'
 import { ResultadosTable } from '@/components/admin/resultados-table'
 import { isAdminOrAbove } from '@/lib/auth/roles'
+import { applySessionVisibility } from '@/lib/auth/session-visibility'
 
 export const metadata: Metadata = { title: 'Resultados' }
 
@@ -22,9 +24,9 @@ export interface SessionSummary {
 
 // ─── Data fetching ─────────────────────────────────────────────────────────────
 
-async function getResultados(adminId: string, superAdmin: boolean): Promise<SessionSummary[]> {
+async function getResultados(user: User): Promise<SessionSummary[]> {
   const supabase = await createClient()
-  let query = supabase
+  const query = supabase
     .from('evaluation_sessions')
     .select(`
       id, admin_id, completed_at,
@@ -35,13 +37,8 @@ async function getResultados(adminId: string, superAdmin: boolean): Promise<Sess
     .eq('status', 'completed')
     .order('completed_at', { ascending: false })
 
-  // Super admin ve todas las evaluaciones; admin normal solo las suyas.
-  // RLS también lo aplica a nivel de BD como segunda línea de defensa.
-  if (!superAdmin) {
-    query = query.eq('admin_id', adminId)
-  }
-
-  const { data } = await query
+  // Visibilidad por jerarquía de roles — fuente única en session-visibility.ts.
+  const { data } = await applySessionVisibility(query, user)
   return (data ?? []) as unknown as SessionSummary[]
 }
 
@@ -64,12 +61,12 @@ export default async function ResultadosPage() {
   const { data: { user } } = await supabase.auth.getUser()
   if (!user) return null
 
-  const superAdmin = isAdminOrAbove(user)
-  const sessions = await getResultados(user.id, superAdmin)
+  const canSeeOthers = isAdminOrAbove(user)
+  const sessions = await getResultados(user)
 
   // Mapa de atribución: para admin y superior (requiere service role)
   let adminEmails: Record<string, string> = {}
-  if (superAdmin && sessions.length > 0) {
+  if (canSeeOthers && sessions.length > 0) {
     const uniqueAdminIds = [...new Set(sessions.map((s) => s.admin_id))]
     adminEmails = await getAdminEmailMap(uniqueAdminIds)
   }
@@ -81,13 +78,13 @@ export default async function ResultadosPage() {
         <p className="text-sm text-muted-foreground mt-4">
           {sessions.length === 0
             ? 'No hay evaluaciones completadas todavía.'
-            : `${sessions.length} evaluación${sessions.length !== 1 ? 'es' : ''} completada${sessions.length !== 1 ? 's' : ''}${superAdmin ? ' · visión completa' : ''}.`}
+            : `${sessions.length} evaluación${sessions.length !== 1 ? 'es' : ''} completada${sessions.length !== 1 ? 's' : ''}${canSeeOthers ? ' · visión completa' : ''}.`}
         </p>
       </div>
 
       <ResultadosTable
         sessions={sessions}
-        adminEmails={superAdmin ? adminEmails : undefined}
+        adminEmails={canSeeOthers ? adminEmails : undefined}
       />
     </div>
   )

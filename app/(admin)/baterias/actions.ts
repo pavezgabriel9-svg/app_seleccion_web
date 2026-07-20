@@ -1,6 +1,7 @@
 'use server'
 
 import { createClient } from '@/lib/supabase/server'
+import { getUserRole } from '@/lib/auth/roles'
 import { redirect } from 'next/navigation'
 import { revalidatePath } from 'next/cache'
 import { z } from 'zod'
@@ -126,6 +127,7 @@ export async function createEvaluationAction(
     .insert({
       battery_id: batteryId,
       admin_id: user.id,
+      creator_role: getUserRole(user),
       tests_snapshot: testsSnapshot as never,
       status: 'pending',
     })
