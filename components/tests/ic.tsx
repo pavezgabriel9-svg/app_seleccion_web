@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useCallback } from 'react'
 import type { TestComponentProps, ICResultV2 } from '@/types/database'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Separator } from '@/components/ui/separator'
@@ -67,6 +67,11 @@ const CRITERIA_DATA = [
 ] as const
 
 type Fase = 'instrucciones' | 'test' | 'resultado'
+type SubmissionMode = 'manual' | 'timeout'
+
+function createEmptyAnswers() {
+  return TABLE_ROWS.map(() => [false, false, false])
+}
 
 // ─── Panel de criterios (componente estático, sin props, hoistado) ─────────────
 
@@ -131,15 +136,15 @@ function CriteriaCard() {
 
 export default function ICTest({ onComplete, isPending }: TestComponentProps) {
   const [fase, setFase]       = useState<Fase>('instrucciones')
-  const [answers, setAnswers] = useState<boolean[][]>(
-    () => TABLE_ROWS.map(() => [false, false, false])
-  )
+  const [answers, setAnswers] = useState<boolean[][]>(createEmptyAnswers)
   const [timeLeft, setTimeLeft]         = useState(TIMER_SECONDS)
   const [timerStarted, setTimerStarted] = useState(false)
   const [submitted, setSubmitted]       = useState(false)
 
   const timerRef  = useRef<ReturnType<typeof setInterval> | null>(null)
   const resultRef = useRef<ICResultV2 | null>(null)
+  const answersRef = useRef<boolean[][]>(createEmptyAnswers())
+  const submittedRef = useRef(false)
 
   // Telemetría — sin re-renders
   const mountTimeRef            = useRef(Date.now())
@@ -152,14 +157,7 @@ export default function ICTest({ onComplete, isPending }: TestComponentProps) {
     if (timerRef.current) return
     setTimerStarted(true)
     timerRef.current = setInterval(() => {
-      setTimeLeft(t => {
-        if (t <= 1) {
-          clearInterval(timerRef.current!)
-          handleSubmit()
-          return 0
-        }
-        return t - 1
-      })
+      setTimeLeft(t => Math.max(t - 1, 0))
     }, 1000)
   }
 
@@ -169,22 +167,22 @@ export default function ICTest({ onComplete, isPending }: TestComponentProps) {
       firstInteractionTimeRef.current = Date.now()
     }
     if (!timerStarted) startTimer()
-    setAnswers(prev => {
-      const next = prev.map(r => [...r])
-      next[rowIdx][colIdx] = !next[rowIdx][colIdx]
-      return next
-    })
+    const next = answersRef.current.map(r => [...r])
+    next[rowIdx][colIdx] = !next[rowIdx][colIdx]
+    answersRef.current = next
+    setAnswers(next)
   }
 
-  function handleSubmit() {
-    if (submitted) return
+  const handleSubmit = useCallback((mode: SubmissionMode = 'manual') => {
+    if (submittedRef.current) return
+    submittedRef.current = true
     setSubmitted(true)
     if (timerRef.current) clearInterval(timerRef.current)
 
     let puntaje = 0, incorrectas = 0, omisiones = 0
     TABLE_ROWS.forEach((_, i) => {
       const correctCols = CORRECT_ANSWERS[i]
-      const userCols    = answers[i]
+      const userCols    = answersRef.current[i]
       correctCols.forEach(col => {
         if (userCols[col - 1]) puntaje++
         else omisiones++
@@ -229,7 +227,13 @@ export default function ICTest({ onComplete, isPending }: TestComponentProps) {
     }
 
     setFase('resultado')
-  }
+    if (mode === 'timeout') onComplete(resultRef.current)
+  }, [onComplete])
+
+  useEffect(() => {
+    if (!timerStarted || timeLeft !== 0 || submittedRef.current) return
+    handleSubmit('timeout')
+  }, [handleSubmit, timeLeft, timerStarted])
 
   useEffect(() => () => { if (timerRef.current) clearInterval(timerRef.current) }, [])
 
@@ -338,7 +342,7 @@ export default function ICTest({ onComplete, isPending }: TestComponentProps) {
             <span className="text-xs text-muted-foreground">Cronómetro inicia al marcar</span>
           )}
           <button
-            onClick={handleSubmit}
+            onClick={() => handleSubmit()}
             disabled={submitted}
             className="px-4 py-1.5 rounded-lg text-xs font-medium disabled:opacity-50"
             style={{ background: 'var(--navy)', color: 'var(--cream)' }}
@@ -428,7 +432,7 @@ export default function ICTest({ onComplete, isPending }: TestComponentProps) {
 
           <div className="flex justify-end pt-2">
             <button
-              onClick={handleSubmit}
+              onClick={() => handleSubmit()}
               disabled={submitted}
               className="px-8 py-3 rounded-lg text-sm font-medium disabled:opacity-50"
               style={{ background: 'var(--navy)', color: 'var(--cream)' }}
