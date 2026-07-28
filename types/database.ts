@@ -315,7 +315,11 @@ export type ZAVICAxis = ZAVICAxisValores | ZAVICAxisIntereses
 
 export interface ZAVICRespuesta {
   item: number
-  /** ranking 1..4 por posición; null = sin ranking */
+  /**
+   * Puntaje 1..4 por posición; null = sin respuesta.
+   * En resultados v2: 4 = mayor preferencia y 1 = menor preferencia.
+   * La versión v1 usaba la convención inversa.
+   */
   rankings: (number | null)[]
 }
 
@@ -341,7 +345,7 @@ export interface ZAVICResult {
     tab_switch_count: number
     out_of_focus_duration: number
   }
-  version: '1.0'
+  version: '1.0' | '2.0'
 }
 
 export type CognitivoCategoria = 'verbal' | 'numerico' | 'logico' | 'espacial' | 'atencion'
