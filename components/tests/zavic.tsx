@@ -32,8 +32,7 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
   )
 
   const resultRef = useRef<ZAVICResult | null>(null)
-  const mountTimeRef = useRef(Date.now())
-  const firstInteractionTimeRef = useRef<number | null>(null)
+  const startTimeRef = useRef<number | null>(null)
   const tabSwitchCountRef = useRef(0)
   const outOfFocusDurationRef = useRef(0)
   const lastHiddenAtRef = useRef<number | null>(null)
@@ -42,9 +41,11 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
     function handleVisibility() {
       if (document.hidden) {
         tabSwitchCountRef.current++
-        lastHiddenAtRef.current = Date.now()
+        lastHiddenAtRef.current = performance.now()
       } else if (lastHiddenAtRef.current !== null) {
-        outOfFocusDurationRef.current += Math.round((Date.now() - lastHiddenAtRef.current) / 1000)
+        outOfFocusDurationRef.current += Math.round(
+          (performance.now() - lastHiddenAtRef.current) / 1000
+        )
         lastHiddenAtRef.current = null
       }
     }
@@ -59,7 +60,6 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
   const esUltimo = index === TOTAL - 1
 
   function clickFrase(pos: number) {
-    if (firstInteractionTimeRef.current === null) firstInteractionTimeRef.current = Date.now()
     setRankings((prev) => {
       const next = prev.map((r) => [...r])
       const cur = next[index][pos - 1]
@@ -67,8 +67,8 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
         next[index][pos - 1] = null
       } else {
         const local = new Set(next[index].filter((r): r is number => r !== null))
-        let assign = 4
-        for (let r = 1; r <= 4; r++) if (!local.has(r)) { assign = r; break }
+        let assign = 1
+        for (let r = 4; r >= 1; r--) if (!local.has(r)) { assign = r; break }
         next[index][pos - 1] = assign
       }
       return next
@@ -94,7 +94,7 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
   }
 
   function finalizar() {
-    const now = Date.now()
+    const now = performance.now()
     if (lastHiddenAtRef.current !== null) {
       outOfFocusDurationRef.current += Math.round((now - lastHiddenAtRef.current) / 1000)
       lastHiddenAtRef.current = null
@@ -109,14 +109,19 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
       respuestas,
       resultado: scoreZAVIC(respuestas),
       metadata: {
-        duracion_total_s: Math.round((now - mountTimeRef.current) / 1000),
+        duracion_total_s: Math.round((now - (startTimeRef.current ?? now)) / 1000),
         items_sin_responder: itemsSinResponder,
         tab_switch_count: tabSwitchCountRef.current,
         out_of_focus_duration: outOfFocusDurationRef.current,
       },
-      version: '1.0',
+      version: '2.0',
     }
     setFase('resultado')
+  }
+
+  function comenzar() {
+    startTimeRef.current = performance.now()
+    setFase('test')
   }
 
   // ── Instrucciones ────────────────────────────────────────────────────────
@@ -133,12 +138,12 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
           <p className="text-sm leading-relaxed text-muted-foreground">
             Verás 20 situaciones, cada una con 4 alternativas. En cada situación debes
             ordenar las 4 alternativas según qué tanto te representan, asignando
-            <strong style={{ color: 'var(--navy)' }}> 1 a la más representativa</strong> y{' '}
-            <strong style={{ color: 'var(--navy)' }}>4 a la menos representativa</strong>.
+            <strong style={{ color: 'var(--navy)' }}> 4 a la más representativa</strong> y{' '}
+            <strong style={{ color: 'var(--navy)' }}>1 a la menos representativa</strong>.
           </p>
           <p className="text-sm leading-relaxed text-muted-foreground">
             Haz clic en cada alternativa en el orden de tu preferencia: la primera que
-            elijas recibirá un 1, la segunda un 2, y así sucesivamente. Si te equivocas,
+            elijas recibirá un 4, la segunda un 3, y así sucesivamente. Si te equivocas,
             puedes hacer clic de nuevo para quitar el número, o usar el botón
             &quot;Limpiar&quot;.
           </p>
@@ -160,7 +165,7 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
         </div>
 
         <button
-          onClick={() => setFase('test')}
+          onClick={comenzar}
           className="px-8 py-3 rounded-lg text-sm font-medium"
           style={{ background: 'var(--navy)', color: 'var(--cream)' }}
         >
@@ -215,7 +220,7 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
   // ── Test — un ítem por pantalla, click secuencial ─────────────────────────
   const progreso = ((index + 1) / TOTAL) * 100
   const nextRank = (() => {
-    for (let r = 1; r <= 4; r++) if (!used.has(r)) return r
+    for (let r = 4; r >= 1; r--) if (!used.has(r)) return r
     return null
   })()
 
@@ -268,9 +273,9 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
       >
         {completo
           ? 'Listo. Puedes ajustar tu respuesta o continuar.'
-          : nextRank === 1
-          ? 'Haz clic en la alternativa que MÁS te representa.'
           : nextRank === 4
+          ? 'Haz clic en la alternativa que MÁS te representa.'
+          : nextRank === 1
           ? 'Haz clic en la alternativa que MENOS te representa.'
           : `Haz clic en la alternativa que ocupa el lugar ${nextRank}.`}
       </div>
