@@ -79,18 +79,20 @@ export function IntakeForm({ token, totalTests }: Props) {
             className="block text-[11px] font-semibold uppercase tracking-widest"
             style={{ color: 'var(--navy)' }}
           >
-            RUT
+            Documento de identidad
           </label>
           <input
             id="rut"
             name="rut"
             type="text"
             autoComplete="off"
-            placeholder="12.345.678-9"
+            autoCapitalize="characters"
+            spellCheck={false}
+            placeholder="12.345.678-9  ·  45678912"
             className="w-full px-4 py-3 rounded-lg border border-border bg-white text-sm transition-all duration-200 focus:outline-none focus:ring-2 focus:border-transparent placeholder:text-muted-foreground/50"
           />
           <p className="text-[11px] text-muted-foreground">
-            Con o sin puntos y guión
+            RUT chileno (con o sin puntos y guión) o DNI peruano
           </p>
         </div>
 

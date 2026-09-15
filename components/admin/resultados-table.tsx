@@ -3,6 +3,7 @@
 import { useState, useMemo } from 'react'
 import Link from 'next/link'
 import { Search, Download, ArrowRight } from 'lucide-react'
+import { normalizarDocumento } from '@/lib/documento'
 import type { SessionSummary } from '@/app/(admin)/resultados/page'
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
@@ -24,7 +25,7 @@ function unwrap<T>(val: T | T[] | null | undefined): T | null {
 function exportCSV(sessions: SessionSummary[], adminEmails?: Record<string, string>) {
   const withAttribution = !!adminEmails
   const header = [
-    'Candidato', 'RUT', 'Batería', 'Fecha completado', 'Tests completados',
+    'Candidato', 'RUT / DNI', 'Batería', 'Fecha completado', 'Tests completados',
     ...(withAttribution ? ['Creado por'] : []),
   ]
 
@@ -73,11 +74,14 @@ export function ResultadosTable({ sessions, adminEmails }: Props) {
   const filtered = useMemo(() => {
     if (!search.trim()) return sessions
     const q = search.toLowerCase().trim()
+    // Los documentos se guardan normalizados (sin puntos ni guión), así que
+    // la búsqueda también se normaliza para encontrar "12.345.678-9".
+    const qDoc = normalizarDocumento(search).toLowerCase()
     return sessions.filter((s) => {
       const c = unwrap(s.candidates)
       return (
         c?.nombre?.toLowerCase().includes(q) ||
-        c?.rut?.toLowerCase().includes(q)
+        c?.rut?.toLowerCase().includes(qDoc)
       )
     })
   }, [sessions, search])
@@ -93,7 +97,7 @@ export function ResultadosTable({ sessions, adminEmails }: Props) {
   }
 
   const tableHeaders = [
-    'Candidato', 'RUT', 'Batería',
+    'Candidato', 'RUT / DNI', 'Batería',
     ...(withAttribution ? ['Creado por'] : []),
     'Completado', 'Tests', '',
   ]
@@ -106,7 +110,7 @@ export function ResultadosTable({ sessions, adminEmails }: Props) {
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-muted-foreground pointer-events-none" />
           <input
             type="text"
-            placeholder="Buscar por nombre o RUT…"
+            placeholder="Buscar por nombre o documento…"
             value={search}
             onChange={(e) => setSearch(e.target.value)}
             className="w-full pl-9 pr-4 py-2 text-sm rounded-lg border border-border/50 bg-white focus:outline-none focus:ring-2 focus:ring-accent/30 transition-shadow"

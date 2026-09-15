@@ -36,7 +36,7 @@ Next.js App Router + Supabase (PostgreSQL + Auth). TypeScript throughout.
   - `resultados/` — Session results with search and CSV export; `[sessionId]/` for per-candidate detail
   - `usuarios/` — Admin user management (list, create, ban/unban); restricted to `super_admin` only
 - `app/(eval)/eval/[token]/` — Public candidate-facing evaluation
-  - `page.tsx` — Intake form (name + RUT)
+  - `page.tsx` — Intake form (name + identity document: Chilean RUT or Peruvian DNI)
   - `hub/page.tsx` — Candidate hub: shows all tests with completion state, progress bar, any-order navigation
   - `[testId]/page.tsx` + `test-runner.tsx` — Test runner (client component)
   - `gracias/` — Legacy completion page (hub now handles the completed state inline)
@@ -86,7 +86,7 @@ Test dispatch: `test-runner.tsx` uses `next/dynamic` to load the active test com
 ### Evaluation Flow
 
 1. Admin creates a battery → generates a UUID token link via `createEvaluationAction`
-2. Candidate opens `/eval/[token]` → enters name + RUT (Chilean checksum validated in `startEvaluationAction`)
+2. Candidate opens `/eval/[token]` → enters name + identity document, validated by `validarDocumento()` (`lib/documento.ts`): if the input has a hyphen or trailing K it is treated as a Chilean RUT and the module-11 checksum is enforced; otherwise 7–12 digits are accepted (Peruvian DNI = 8). Stored normalized (no dots/hyphen, uppercase) in `candidates.rut`.
 3. `startEvaluationAction` inserts `candidates` record, sets session to `in_progress`, redirects to `/eval/[token]/hub`
 4. Hub shows all tests with completion state; candidate picks any uncompleted test in any order
 5. `completeTestAction` saves each `test_results` row and always redirects back to hub

@@ -2,31 +2,8 @@
 
 import { createServiceClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
+import { validarDocumento } from '@/lib/documento'
 import type { TestResultData, TestSnapshot } from '@/types/database'
-
-// ─── RUT Validation ───────────────────────────────────────────────────────────
-
-function validateRut(raw: string): boolean {
-  const clean = raw.replace(/\./g, '').replace(/-/g, '').toUpperCase().trim()
-  if (!/^\d{7,8}[0-9K]$/.test(clean)) return false
-
-  const body = clean.slice(0, -1)
-  const dv = clean.slice(-1)
-
-  let sum = 0
-  let multiplier = 2
-
-  for (let i = body.length - 1; i >= 0; i--) {
-    sum += parseInt(body[i]) * multiplier
-    multiplier = multiplier === 7 ? 2 : multiplier + 1
-  }
-
-  const remainder = 11 - (sum % 11)
-  const expected =
-    remainder === 11 ? '0' : remainder === 10 ? 'K' : String(remainder)
-
-  return dv === expected
-}
 
 // ─── Start Evaluation ─────────────────────────────────────────────────────────
 
@@ -36,13 +13,13 @@ export async function startEvaluationAction(
 ): Promise<{ error: string } | null> {
   const token = formData.get('token') as string
   const nombre = (formData.get('nombre') as string)?.trim()
-  const rut = (formData.get('rut') as string)?.trim()
 
   if (!nombre || nombre.length < 2)
     return { error: 'Por favor ingresa tu nombre completo' }
 
-  if (!rut || !validateRut(rut))
-    return { error: 'RUT inválido. Formato: 12.345.678-9' }
+  // Acepta RUT chileno (con dígito verificador) o DNI peruano / documento numérico.
+  const documento = validarDocumento(formData.get('rut') as string | null)
+  if (!documento.ok) return { error: documento.error }
 
   const supabase = createServiceClient()
 
@@ -75,7 +52,7 @@ export async function startEvaluationAction(
 
   const { error: candidateError } = await supabase
     .from('candidates')
-    .insert({ session_id: session.id, nombre, rut })
+    .insert({ session_id: session.id, nombre, rut: documento.valor })
 
   if (candidateError)
     return { error: 'Error al registrar tus datos. Intenta nuevamente.' }
