@@ -1,6 +1,8 @@
 'use client'
 
 import { useState, useRef } from 'react'
+import type { ReactNode } from 'react'
+import Image from 'next/image'
 import type { TestComponentProps, LuscherResult } from '@/types/database'
 
 // ─── Constantes hoistadas ─────────────────────────────────────────────────────
@@ -33,20 +35,45 @@ const FORMAS = [
 const STEP_LABELS  = ['Grises', 'Colores I', 'Formas', 'Colores II'] as const
 const STEP_COUNTS  = [GRISES.length, COLORES.length, FORMAS.length, COLORES.length]
 
-// ─── SVG por ID de forma ──────────────────────────────────────────────────────
+// ─── Imagen por ID de forma ───────────────────────────────────────────────────
+// Los archivos viven en /public (0.png … 6.png), por lo que el id de la forma
+// mapea directo al nombre del archivo.
+
+const FORMA_ALT: Record<number, string> = {
+  0: 'Hexágono',
+  1: 'Círculo',
+  2: 'Cuadrado concéntrico',
+  3: 'Triángulo',
+  4: 'Círculo inscrito en cuadrado',
+  5: 'Estrella de cuatro puntas',
+  6: 'Figura ondulada',
+}
 
 function FormaShape({ id }: { id: number }) {
-  const svgProps = { fill: 'var(--navy)' as string, width: 52, height: 52 }
-  switch (id) {
-    case 0: return <svg {...svgProps} viewBox="0 0 56 56"><rect x="22" y="4" width="12" height="48" rx="2" /><rect x="4" y="22" width="48" height="12" rx="2" /></svg>
-    case 1: return <svg {...svgProps} viewBox="0 0 56 56"><polygon points="28,4 52,52 4,52" /></svg>
-    case 2: return <svg {...svgProps} viewBox="0 0 56 56"><circle cx="28" cy="28" r="24" /></svg>
-    case 3: return <svg {...svgProps} viewBox="0 0 56 56"><rect x="6" y="6" width="44" height="44" rx="3" /></svg>
-    case 4: return <svg {...svgProps} viewBox="0 0 56 56"><path d="M28 4 C42 4 52 14 52 28 C52 40 44 52 30 52 C18 52 4 44 4 30 C4 16 14 4 28 4Z" /></svg>
-    case 5: return <svg {...svgProps} viewBox="0 0 56 56"><polygon points="28,4 52,28 28,52 4,28" /></svg>
-    case 6: return <svg {...svgProps} viewBox="0 0 56 56"><path d="M4 36 A24 24 0 0 1 52 36 Z" /><rect x="4" y="36" width="48" height="6" rx="2" /></svg>
-    default: return <svg {...svgProps} viewBox="0 0 56 56"><circle cx="28" cy="28" r="20" /></svg>
-  }
+  return (
+    <Image
+      src={`/${id}.png`}
+      alt={FORMA_ALT[id] ?? `Forma ${id}`}
+      width={56}
+      height={56}
+      draggable={false}
+      style={{ width: 52, height: 52, objectFit: 'contain', userSelect: 'none' }}
+    />
+  )
+}
+
+// ─── Layout en filas ──────────────────────────────────────────────────────────
+
+/** Parte un arreglo en filas de `size` elementos (la última puede ser menor). */
+function chunk<T>(arr: readonly T[], size: number): T[][] {
+  const filas: T[][] = []
+  for (let i = 0; i < arr.length; i += size) filas.push(arr.slice(i, i + size))
+  return filas
+}
+
+/** Fila centrada de ítems; hace wrap solo si la pantalla es muy angosta. */
+function ItemRow({ children }: { children: ReactNode }) {
+  return <div className="flex flex-wrap justify-center gap-3 sm:gap-4">{children}</div>
 }
 
 // ─── Componente principal ─────────────────────────────────────────────────────
@@ -150,12 +177,18 @@ export default function LuscherTest({ onComplete, isPending }: TestComponentProp
         </div>
       </div>
 
-      {/* Items — branch per step para tipos correctos */}
-      <div className="flex flex-wrap justify-center gap-4 py-4">
-        {step === 0 && GRISES.map(item => colorBox(item.id, item.color, 72, item.border))}
-        {step === 1 && COLORES.map(item => colorBox(item.id, item.color, 64, false))}
-        {step === 2 && FORMAS.map(item => formaBox(item.id))}
-        {step === 3 && COLORES.map(item => colorBox(item.id, item.color, 64, false))}
+      {/* Items — branch per step para tipos correctos.
+          Grises: 5 en una fila · Colores I/II: 4 + 4 · Formas: 4 + 3 */}
+      <div className="flex flex-col items-center gap-3 sm:gap-4 py-4">
+        {step === 0 && chunk(GRISES, 5).map((fila, i) => (
+          <ItemRow key={i}>{fila.map(item => colorBox(item.id, item.color, 72, item.border))}</ItemRow>
+        ))}
+        {(step === 1 || step === 3) && chunk(COLORES, 4).map((fila, i) => (
+          <ItemRow key={i}>{fila.map(item => colorBox(item.id, item.color, 64, false))}</ItemRow>
+        ))}
+        {step === 2 && chunk(FORMAS, 4).map((fila, i) => (
+          <ItemRow key={i}>{fila.map(item => formaBox(item.id))}</ItemRow>
+        ))}
       </div>
 
       {/* Contador */}
