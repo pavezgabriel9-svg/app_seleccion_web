@@ -1,5 +1,6 @@
 import { createServiceClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
+import { cookies } from 'next/headers'
 import Link from 'next/link'
 import type { TestSnapshot } from '@/types/database'
 
@@ -17,7 +18,7 @@ export default async function HubPage({ params }: Props) {
 
   const { data: session } = await supabase
     .from('evaluation_sessions')
-    .select('id, status, tests_snapshot')
+    .select('id, status, tests_snapshot, convocatoria_id')
     .eq('token', token)
     .single()
 
@@ -34,6 +35,25 @@ export default async function HubPage({ params }: Props) {
 
   if (session.status === 'pending') {
     redirect(`/eval/${token}`)
+  }
+
+  // Sesiones que provienen de una convocatoria (link compartido) llevan una
+  // cookie httpOnly puesta por ingresarConvocatoriaAction al validar el RUT.
+  // Sin ella, alguien no puede retomar el hub de otra persona simplemente
+  // adivinando o copiando el token de sesión.
+  if (session.convocatoria_id) {
+    const cookieStore = await cookies()
+    const cookieValue = cookieStore.get(`cv_${session.id}`)?.value
+    if (cookieValue !== token) {
+      return (
+        <HubMessage
+          icon="🔒"
+          title="Acceso no verificado"
+          message="Para continuar, ingresa nuevamente desde el enlace de la convocatoria con tu nombre y RUT."
+          variant="error"
+        />
+      )
+    }
   }
 
   const snapshot = session.tests_snapshot as TestSnapshot[]

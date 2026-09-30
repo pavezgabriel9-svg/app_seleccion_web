@@ -3,12 +3,13 @@
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from '@/lib/utils'
-import { LayoutDashboard, FlaskConical, BarChart3, Users } from 'lucide-react'
+import { LayoutDashboard, FlaskConical, Megaphone, BarChart3, Users } from 'lucide-react'
 
 const baseNavItems = [
-  { href: '/dashboard',  label: 'Dashboard',  icon: LayoutDashboard },
-  { href: '/baterias',   label: 'Baterías',   icon: FlaskConical },
-  { href: '/resultados', label: 'Resultados', icon: BarChart3 },
+  { href: '/dashboard',      label: 'Dashboard',      icon: LayoutDashboard },
+  { href: '/baterias',       label: 'Baterías',       icon: FlaskConical },
+  { href: '/convocatorias',  label: 'Convocatorias',  icon: Megaphone },
+  { href: '/resultados',     label: 'Resultados',     icon: BarChart3 },
 ]
 
 const superAdminNavItems = [

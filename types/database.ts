@@ -101,6 +101,7 @@ export type Database = {
           started_at: string | null
           completed_at: string | null
           tests_snapshot: TestSnapshot[]
+          convocatoria_id: string | null
         }
         Insert: {
           id?: string
@@ -113,6 +114,7 @@ export type Database = {
           started_at?: string | null
           completed_at?: string | null
           tests_snapshot?: TestSnapshot[]
+          convocatoria_id?: string | null
         }
         Update: Partial<{
           battery_id: string | null
@@ -122,6 +124,7 @@ export type Database = {
           started_at: string | null
           completed_at: string | null
           tests_snapshot: TestSnapshot[]
+          convocatoria_id: string | null
         }>
         Relationships: [
           {
@@ -204,6 +207,106 @@ export type Database = {
             columns: ['test_id']
             isOneToOne: false
             referencedRelation: 'tests'
+            referencedColumns: ['id']
+          }
+        ]
+      }
+      convocatorias: {
+        Row: {
+          id: string
+          token: string
+          nombre: string
+          cargo: string | null
+          battery_id: string
+          tests_snapshot: TestSnapshot[]
+          admin_id: string
+          creator_role: UserRole
+          activa: boolean
+          expira_at: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          token?: string
+          nombre: string
+          cargo?: string | null
+          battery_id: string
+          tests_snapshot?: TestSnapshot[]
+          admin_id: string
+          creator_role?: UserRole
+          activa?: boolean
+          expira_at?: string | null
+          created_at?: string
+        }
+        Update: Partial<{
+          nombre: string
+          cargo: string | null
+          battery_id: string
+          tests_snapshot: TestSnapshot[]
+          admin_id: string
+          creator_role: UserRole
+          activa: boolean
+          expira_at: string | null
+        }>
+        Relationships: [
+          {
+            foreignKeyName: 'convocatorias_battery_id_fkey'
+            columns: ['battery_id']
+            isOneToOne: false
+            referencedRelation: 'batteries'
+            referencedColumns: ['id']
+          },
+          {
+            foreignKeyName: 'convocatorias_admin_id_fkey'
+            columns: ['admin_id']
+            isOneToOne: false
+            referencedRelation: 'users'
+            referencedColumns: ['id']
+          }
+        ]
+      }
+      convocatoria_habilitados: {
+        Row: {
+          id: string
+          convocatoria_id: string
+          rut: string
+          nombre: string | null
+          telefono: string | null
+          session_id: string | null
+          ingresado_at: string | null
+          created_at: string
+        }
+        Insert: {
+          id?: string
+          convocatoria_id: string
+          rut: string
+          nombre?: string | null
+          telefono?: string | null
+          session_id?: string | null
+          ingresado_at?: string | null
+          created_at?: string
+        }
+        Update: Partial<{
+          convocatoria_id: string
+          rut: string
+          nombre: string | null
+          telefono: string | null
+          session_id: string | null
+          ingresado_at: string | null
+        }>
+        Relationships: [
+          {
+            foreignKeyName: 'convocatoria_habilitados_convocatoria_id_fkey'
+            columns: ['convocatoria_id']
+            isOneToOne: false
+            referencedRelation: 'convocatorias'
+            referencedColumns: ['id']
+          },
+          {
+            foreignKeyName: 'convocatoria_habilitados_session_id_fkey'
+            columns: ['session_id']
+            isOneToOne: false
+            referencedRelation: 'evaluation_sessions'
             referencedColumns: ['id']
           }
         ]
