@@ -4,9 +4,22 @@ import { useActionState } from 'react'
 import { useFormStatus } from 'react-dom'
 import { startEvaluationAction } from '../actions'
 
+type IntakeActionState = { error: string } | null
+type IntakeAction = (
+  state: IntakeActionState,
+  formData: FormData
+) => Promise<IntakeActionState>
+
 interface Props {
   token: string
   totalTests: number
+  /**
+   * Server action invocada al enviar el formulario. Por defecto usa el flujo
+   * de evaluación individual (startEvaluationAction); /postular/[token] pasa
+   * ingresarConvocatoriaAction para reutilizar este mismo formulario y la
+   * validación de documento sin duplicar nada.
+   */
+  action?: IntakeAction
 }
 
 function SubmitButton() {
@@ -30,8 +43,8 @@ function SubmitButton() {
   )
 }
 
-export function IntakeForm({ token, totalTests }: Props) {
-  const [state, action] = useActionState(startEvaluationAction, null)
+export function IntakeForm({ token, totalTests, action: submitAction = startEvaluationAction }: Props) {
+  const [state, action] = useActionState(submitAction, null)
 
   return (
     <div className="space-y-10">
