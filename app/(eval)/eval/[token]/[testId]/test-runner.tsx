@@ -28,6 +28,10 @@ interface HanoiTestProps extends TestComponentProps {
   candidateName?: string
 }
 
+interface IPVTestProps extends TestComponentProps {
+  sessionId: string
+}
+
 // ─── Dynamic imports — bundle-dynamic-imports: solo carga el test activo ──────
 
 const StroopTest  = dynamic<TestComponentProps>(() => import('@/components/tests/stroop'))
@@ -38,6 +42,7 @@ const DISCTest      = dynamic<TestComponentProps>(() => import('@/components/tes
 const ZAVICTest     = dynamic<TestComponentProps>(() => import('@/components/tests/zavic'))
 const CognitivoTest = dynamic<TestComponentProps>(() => import('@/components/tests/cognitivo'))
 const HanoiTest     = dynamic<HanoiTestProps>(() => import('@/components/tests/hanoi'))
+const IPVTest       = dynamic<IPVTestProps>(() => import('@/components/tests/ipv'))
 
 // ─── Hook ─────────────────────────────────────────────────────────────────────
 
@@ -63,10 +68,13 @@ function resolveTestComponent(
   baseProps: Omit<TestComponentProps, 'hasPractice'>,
   testName: string,
   candidateName?: string,
+  sessionId?: string,
 ): React.ReactNode {
   const path = testPath.toLowerCase()
   const fullProps: TestComponentProps = { ...baseProps, hasPractice }
 
+  // IPV: comparación exacta y ANTES de path.includes('ic') (el resto de los tests usan includes)
+  if (path === 'ipv')                 return <IPVTest     {...fullProps} sessionId={sessionId ?? ''} />
   if (path.includes('stroop'))        return <StroopTest  {...fullProps} />
   if (path.includes('luscher'))       return <LuscherTest {...fullProps} />
   if (path.includes('memoria'))       return <MemoriaTest {...fullProps} />
@@ -202,7 +210,7 @@ export function TestRunner({
   const testContent = resolveTestComponent(
     testPath, hasPractice,
     { onComplete: completeTest, isPending },
-    testName, candidateName,
+    testName, candidateName, sessionId,
   )
 
   return (
