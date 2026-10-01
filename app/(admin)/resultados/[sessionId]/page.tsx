@@ -15,11 +15,13 @@ import type {
   DISCResult,
   ZAVICResult,
   CognitivoResult,
+  IPVResult,
   TestResultData,
 } from '@/types/database'
 import { DISCResultCard } from '@/components/admin/disc-result-card'
 import { ZAVICResultCard } from '@/components/admin/zavic-result-card'
 import { CognitivoResultCard } from '@/components/admin/cognitivo-result-card'
+import { IPVResultCard } from '@/components/admin/ipv-result-card'
 
 export const metadata: Metadata = { title: 'Detalle de evaluación' }
 
@@ -111,6 +113,10 @@ function isZAVIC(r: TestResultData): r is ZAVICResult {
     'intereses' in (r as ZAVICResult).resultado
   )
 }
+// Debe evaluarse PRIMERO en ResultCard: isICv2 ('respuestas' + 'metadata') también captura al IPV.
+function isIPV(r: TestResultData): r is IPVResult {
+  return typeof r === 'object' && r !== null && (r as { tipo?: unknown }).tipo === 'ipv'
+}
 function isCognitivo(r: TestResultData): r is CognitivoResult {
   return (
     typeof r === 'object' &&
@@ -149,6 +155,10 @@ function Stat({ label, value }: { label: string; value: string | number }) {
 // ─── Result renderers per test type ──────────────────────────────────────────
 
 function ResultCard({ result }: { result: TestResultData }) {
+  if (isIPV(result)) {
+    return <IPVResultCard data={result} />
+  }
+
   if (isDISC(result)) {
     return <DISCResultCard data={result} />
   }
