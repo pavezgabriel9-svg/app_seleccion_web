@@ -568,7 +568,7 @@ export default function IPVTest({ onComplete, isPending, sessionId }: IPVTestPro
         <button
           onClick={retroceder}
           disabled={index === 0}
-          className="px-5 py-2.5 rounded-lg text-sm font-medium disabled:opacity-40"
+          className="px-5 py-2.5 rounded-lg text-sm font-medium disabled:opacity-40 whitespace-nowrap shrink-0"
           style={{ background: 'oklch(0.96 0.005 80)', color: 'var(--navy)' }}
         >
           ← Anterior
@@ -582,7 +582,7 @@ export default function IPVTest({ onComplete, isPending, sessionId }: IPVTestPro
             {index === TOTAL - 1 ? 'Revisar →' : 'Siguiente →'}
           </button>
         ) : (
-          <span className="text-xs text-muted-foreground">Elige una alternativa para continuar</span>
+          <span className="text-xs text-muted-foreground text-right">Elige una alternativa</span>
         )}
       </div>
     </div>
