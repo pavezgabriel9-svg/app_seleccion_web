@@ -1,0 +1,1139 @@
+{
+ "prueba": "IPV — Inventario de Personalidad para Vendedores",
+ "fuente": "IPV_ CORRECTOR.xlsm (hojas pre1, resultados, Interpretación) — extraído y verificado con recálculo del Excel",
+ "items": 87,
+ "opciones_por_item": {
+  "default": [
+   "a",
+   "b",
+   "c"
+  ],
+  "excepciones": {
+   "14": [
+    "a",
+    "b"
+   ],
+   "78": [
+    "a",
+    "b"
+   ]
+  }
+ },
+ "regla_pt": "PT = decatipo cuyo rango [pd_min, pd_max] contiene la PD. Corrección del bug del Excel: la escala I usa SU propio baremo (el Excel usaba el de DGV).",
+ "niveles_nota": "El nivel (muy bajo/bajo/promedio/mayor promedio/alto) sale del archivo de interpretación según PT; los cortes no son iguales en todas las escalas.",
+ "escalas": [
+  {
+   "codigo": "DGV",
+   "nombre": "Disposición general para la venta",
+   "orden_perfil": 1,
+   "tipo": "directa",
+   "claves": [
+    {
+     "item": 1,
+     "opcion": "b"
+    },
+    {
+     "item": 2,
+     "opcion": "b"
+    },
+    {
+     "item": 3,
+     "opcion": "b"
+    },
+    {
+     "item": 4,
+     "opcion": "b"
+    },
+    {
+     "item": 5,
+     "opcion": "a"
+    },
+    {
+     "item": 6,
+     "opcion": "c"
+    },
+    {
+     "item": 7,
+     "opcion": "a"
+    },
+    {
+     "item": 8,
+     "opcion": "a"
+    },
+    {
+     "item": 8,
+     "opcion": "c"
+    },
+    {
+     "item": 9,
+     "opcion": "a"
+    },
+    {
+     "item": 10,
+     "opcion": "b"
+    },
+    {
+     "item": 11,
+     "opcion": "b"
+    },
+    {
+     "item": 12,
+     "opcion": "c"
+    },
+    {
+     "item": 13,
+     "opcion": "b"
+    },
+    {
+     "item": 14,
+     "opcion": "b"
+    },
+    {
+     "item": 15,
+     "opcion": "a"
+    },
+    {
+     "item": 16,
+     "opcion": "c"
+    },
+    {
+     "item": 17,
+     "opcion": "b"
+    },
+    {
+     "item": 18,
+     "opcion": "c"
+    }
+   ],
+   "formula": "PD = cantidad de coincidencias con las claves",
+   "baremo_decatipos": [
+    {
+     "pt": 1,
+     "pd_min": 0,
+     "pd_max": 5
+    },
+    {
+     "pt": 2,
+     "pd_min": 6,
+     "pd_max": 6
+    },
+    {
+     "pt": 3,
+     "pd_min": 7,
+     "pd_max": 8
+    },
+    {
+     "pt": 4,
+     "pd_min": 9,
+     "pd_max": 9
+    },
+    {
+     "pt": 5,
+     "pd_min": 10,
+     "pd_max": 10
+    },
+    {
+     "pt": 6,
+     "pd_min": 11,
+     "pd_max": 11
+    },
+    {
+     "pt": 7,
+     "pd_min": 12,
+     "pd_max": 12
+    },
+    {
+     "pt": 8,
+     "pd_min": 13,
+     "pd_max": 14
+    },
+    {
+     "pt": 9,
+     "pd_min": 15,
+     "pd_max": 15
+    },
+    {
+     "pt": 10,
+     "pd_min": 16,
+     "pd_max": 21
+    }
+   ],
+   "pt_no_alcanzables": []
+  },
+  {
+   "codigo": "R",
+   "nombre": "Receptividad",
+   "orden_perfil": 2,
+   "tipo": "compuesta",
+   "componentes": [
+    "I",
+    "II",
+    "III",
+    "IV"
+   ],
+   "formula": "PD = suma de PD de I+II+III+IV",
+   "baremo_decatipos": [
+    {
+     "pt": 1,
+     "pd_min": 0,
+     "pd_max": 14
+    },
+    {
+     "pt": 2,
+     "pd_min": 15,
+     "pd_max": 15
+    },
+    {
+     "pt": 3,
+     "pd_min": 16,
+     "pd_max": 17
+    },
+    {
+     "pt": 4,
+     "pd_min": 18,
+     "pd_max": 19
+    },
+    {
+     "pt": 5,
+     "pd_min": 20,
+     "pd_max": 20
+    },
+    {
+     "pt": 6,
+     "pd_min": 21,
+     "pd_max": 22
+    },
+    {
+     "pt": 7,
+     "pd_min": 23,
+     "pd_max": 24
+    },
+    {
+     "pt": 8,
+     "pd_min": 25,
+     "pd_max": 26
+    },
+    {
+     "pt": 9,
+     "pd_min": 27,
+     "pd_max": 28
+    },
+    {
+     "pt": 10,
+     "pd_min": 29,
+     "pd_max": 41
+    }
+   ],
+   "pt_no_alcanzables": []
+  },
+  {
+   "codigo": "A",
+   "nombre": "Agresividad",
+   "orden_perfil": 3,
+   "tipo": "compuesta",
+   "componentes": [
+    "V",
+    "VI",
+    "VII",
+    "VIII"
+   ],
+   "formula": "PD = suma de PD de V+VI+VII+VIII",
+   "baremo_decatipos": [
+    {
+     "pt": 1,
+     "pd_min": 0,
+     "pd_max": 7
+    },
+    {
+     "pt": 2,
+     "pd_min": 8,
+     "pd_max": 8
+    },
+    {
+     "pt": 3,
+     "pd_min": 9,
+     "pd_max": 10
+    },
+    {
+     "pt": 4,
+     "pd_min": 11,
+     "pd_max": 12
+    },
+    {
+     "pt": 5,
+     "pd_min": 13,
+     "pd_max": 13
+    },
+    {
+     "pt": 6,
+     "pd_min": 14,
+     "pd_max": 15
+    },
+    {
+     "pt": 7,
+     "pd_min": 16,
+     "pd_max": 16
+    },
+    {
+     "pt": 8,
+     "pd_min": 17,
+     "pd_max": 18
+    },
+    {
+     "pt": 9,
+     "pd_min": 19,
+     "pd_max": 20
+    },
+    {
+     "pt": 10,
+     "pd_min": 21,
+     "pd_max": 38
+    }
+   ],
+   "pt_no_alcanzables": []
+  },
+  {
+   "codigo": "I",
+   "nombre": "Comprensión",
+   "orden_perfil": 4,
+   "tipo": "directa",
+   "claves": [
+    {
+     "item": 1,
+     "opcion": "b"
+    },
+    {
+     "item": 2,
+     "opcion": "b"
+    },
+    {
+     "item": 19,
+     "opcion": "c"
+    },
+    {
+     "item": 20,
+     "opcion": "b"
+    },
+    {
+     "item": 37,
+     "opcion": "a"
+    },
+    {
+     "item": 38,
+     "opcion": "c"
+    },
+    {
+     "item": 55,
+     "opcion": "b"
+    },
+    {
+     "item": 56,
+     "opcion": "a"
+    },
+    {
+     "item": 73,
+     "opcion": "c"
+    },
+    {
+     "item": 74,
+     "opcion": "a"
+    },
+    {
+     "item": 75,
+     "opcion": "c"
+    }
+   ],
+   "formula": "PD = cantidad de coincidencias con las claves",
+   "baremo_decatipos": [
+    {
+     "pt": 1,
+     "pd_min": 0,
+     "pd_max": 1
+    },
+    {
+     "pt": 2,
+     "pd_min": 2,
+     "pd_max": 2
+    },
+    {
+     "pt": 3,
+     "pd_min": 3,
+     "pd_max": 3
+    },
+    {
+     "pt": 4,
+     "pd_min": 4,
+     "pd_max": 4
+    },
+    {
+     "pt": 6,
+     "pd_min": 5,
+     "pd_max": 5
+    },
+    {
+     "pt": 7,
+     "pd_min": 6,
+     "pd_max": 6
+    },
+    {
+     "pt": 8,
+     "pd_min": 7,
+     "pd_max": 7
+    },
+    {
+     "pt": 9,
+     "pd_min": 8,
+     "pd_max": 8
+    },
+    {
+     "pt": 10,
+     "pd_min": 9,
+     "pd_max": 11
+    }
+   ],
+   "pt_no_alcanzables": [
+    5
+   ]
+  },
+  {
+   "codigo": "II",
+   "nombre": "Adaptabilidad",
+   "orden_perfil": 5,
+   "tipo": "directa",
+   "claves": [
+    {
+     "item": 3,
+     "opcion": "b"
+    },
+    {
+     "item": 4,
+     "opcion": "b"
+    },
+    {
+     "item": 21,
+     "opcion": "c"
+    },
+    {
+     "item": 22,
+     "opcion": "c"
+    },
+    {
+     "item": 39,
+     "opcion": "a"
+    },
+    {
+     "item": 40,
+     "opcion": "a"
+    },
+    {
+     "item": 57,
+     "opcion": "a"
+    },
+    {
+     "item": 58,
+     "opcion": "c"
+    },
+    {
+     "item": 59,
+     "opcion": "b"
+    },
+    {
+     "item": 76,
+     "opcion": "c"
+    },
+    {
+     "item": 77,
+     "opcion": "b"
+    }
+   ],
+   "formula": "PD = cantidad de coincidencias con las claves",
+   "baremo_decatipos": [
+    {
+     "pt": 1,
+     "pd_min": 0,
+     "pd_max": 1
+    },
+    {
+     "pt": 2,
+     "pd_min": 2,
+     "pd_max": 2
+    },
+    {
+     "pt": 3,
+     "pd_min": 3,
+     "pd_max": 3
+    },
+    {
+     "pt": 4,
+     "pd_min": 4,
+     "pd_max": 4
+    },
+    {
+     "pt": 6,
+     "pd_min": 5,
+     "pd_max": 5
+    },
+    {
+     "pt": 7,
+     "pd_min": 6,
+     "pd_max": 6
+    },
+    {
+     "pt": 8,
+     "pd_min": 7,
+     "pd_max": 7
+    },
+    {
+     "pt": 9,
+     "pd_min": 8,
+     "pd_max": 8
+    },
+    {
+     "pt": 10,
+     "pd_min": 9,
+     "pd_max": 11
+    }
+   ],
+   "pt_no_alcanzables": [
+    5
+   ]
+  },
+  {
+   "codigo": "III",
+   "nombre": "Control de sí mismo",
+   "orden_perfil": 6,
+   "tipo": "directa",
+   "claves": [
+    {
+     "item": 5,
+     "opcion": "a"
+    },
+    {
+     "item": 6,
+     "opcion": "c"
+    },
+    {
+     "item": 7,
+     "opcion": "a"
+    },
+    {
+     "item": 23,
+     "opcion": "b"
+    },
+    {
+     "item": 24,
+     "opcion": "c"
+    },
+    {
+     "item": 25,
+     "opcion": "c"
+    },
+    {
+     "item": 41,
+     "opcion": "a"
+    },
+    {
+     "item": 42,
+     "opcion": "a"
+    },
+    {
+     "item": 43,
+     "opcion": "b"
+    },
+    {
+     "item": 60,
+     "opcion": "a"
+    },
+    {
+     "item": 78,
+     "opcion": "b"
+    }
+   ],
+   "formula": "PD = cantidad de coincidencias con las claves",
+   "baremo_decatipos": [
+    {
+     "pt": 1,
+     "pd_min": 0,
+     "pd_max": 1
+    },
+    {
+     "pt": 2,
+     "pd_min": 2,
+     "pd_max": 2
+    },
+    {
+     "pt": 3,
+     "pd_min": 3,
+     "pd_max": 3
+    },
+    {
+     "pt": 4,
+     "pd_min": 4,
+     "pd_max": 4
+    },
+    {
+     "pt": 5,
+     "pd_min": 5,
+     "pd_max": 5
+    },
+    {
+     "pt": 6,
+     "pd_min": 6,
+     "pd_max": 6
+    },
+    {
+     "pt": 8,
+     "pd_min": 7,
+     "pd_max": 7
+    },
+    {
+     "pt": 9,
+     "pd_min": 8,
+     "pd_max": 8
+    },
+    {
+     "pt": 10,
+     "pd_min": 9,
+     "pd_max": 11
+    }
+   ],
+   "pt_no_alcanzables": [
+    7
+   ]
+  },
+  {
+   "codigo": "IV",
+   "nombre": "Tolerancia a la frustración",
+   "orden_perfil": 7,
+   "tipo": "directa",
+   "claves": [
+    {
+     "item": 8,
+     "opcion": "b"
+    },
+    {
+     "item": 26,
+     "opcion": "b"
+    },
+    {
+     "item": 44,
+     "opcion": "a"
+    },
+    {
+     "item": 61,
+     "opcion": "b"
+    },
+    {
+     "item": 62,
+     "opcion": "a"
+    },
+    {
+     "item": 79,
+     "opcion": "b"
+    },
+    {
+     "item": 80,
+     "opcion": "c"
+    },
+    {
+     "item": 81,
+     "opcion": "c"
+    }
+   ],
+   "formula": "PD = cantidad de coincidencias con las claves",
+   "baremo_decatipos": [
+    {
+     "pt": 1,
+     "pd_min": 0,
+     "pd_max": 3
+    },
+    {
+     "pt": 2,
+     "pd_min": 4,
+     "pd_max": 4
+    },
+    {
+     "pt": 4,
+     "pd_min": 5,
+     "pd_max": 5
+    },
+    {
+     "pt": 5,
+     "pd_min": 6,
+     "pd_max": 6
+    },
+    {
+     "pt": 7,
+     "pd_min": 7,
+     "pd_max": 7
+    },
+    {
+     "pt": 9,
+     "pd_min": 8,
+     "pd_max": 8
+    },
+    {
+     "pt": 10,
+     "pd_min": 9,
+     "pd_max": 11
+    }
+   ],
+   "pt_no_alcanzables": [
+    3,
+    6,
+    8
+   ]
+  },
+  {
+   "codigo": "V",
+   "nombre": "Combatividad",
+   "orden_perfil": 8,
+   "tipo": "directa",
+   "claves": [
+    {
+     "item": 9,
+     "opcion": "a"
+    },
+    {
+     "item": 10,
+     "opcion": "b"
+    },
+    {
+     "item": 11,
+     "opcion": "b"
+    },
+    {
+     "item": 27,
+     "opcion": "a"
+    },
+    {
+     "item": 28,
+     "opcion": "c"
+    },
+    {
+     "item": 29,
+     "opcion": "c"
+    },
+    {
+     "item": 45,
+     "opcion": "b"
+    },
+    {
+     "item": 46,
+     "opcion": "b"
+    },
+    {
+     "item": 63,
+     "opcion": "b"
+    },
+    {
+     "item": 64,
+     "opcion": "a"
+    },
+    {
+     "item": 82,
+     "opcion": "c"
+    }
+   ],
+   "formula": "PD = cantidad de coincidencias con las claves",
+   "baremo_decatipos": [
+    {
+     "pt": 1,
+     "pd_min": 0,
+     "pd_max": 1
+    },
+    {
+     "pt": 2,
+     "pd_min": 2,
+     "pd_max": 2
+    },
+    {
+     "pt": 3,
+     "pd_min": 3,
+     "pd_max": 3
+    },
+    {
+     "pt": 4,
+     "pd_min": 4,
+     "pd_max": 4
+    },
+    {
+     "pt": 5,
+     "pd_min": 5,
+     "pd_max": 5
+    },
+    {
+     "pt": 7,
+     "pd_min": 6,
+     "pd_max": 6
+    },
+    {
+     "pt": 8,
+     "pd_min": 7,
+     "pd_max": 7
+    },
+    {
+     "pt": 9,
+     "pd_min": 8,
+     "pd_max": 8
+    },
+    {
+     "pt": 10,
+     "pd_min": 9,
+     "pd_max": 11
+    }
+   ],
+   "pt_no_alcanzables": [
+    6
+   ]
+  },
+  {
+   "codigo": "VI",
+   "nombre": "Dominio",
+   "orden_perfil": 9,
+   "tipo": "directa",
+   "claves": [
+    {
+     "item": 12,
+     "opcion": "c"
+    },
+    {
+     "item": 13,
+     "opcion": "b"
+    },
+    {
+     "item": 30,
+     "opcion": "b"
+    },
+    {
+     "item": 31,
+     "opcion": "c"
+    },
+    {
+     "item": 47,
+     "opcion": "c"
+    },
+    {
+     "item": 48,
+     "opcion": "a"
+    },
+    {
+     "item": 49,
+     "opcion": "a"
+    },
+    {
+     "item": 65,
+     "opcion": "c"
+    },
+    {
+     "item": 66,
+     "opcion": "a"
+    },
+    {
+     "item": 83,
+     "opcion": "b"
+    },
+    {
+     "item": 84,
+     "opcion": "a"
+    }
+   ],
+   "formula": "PD = cantidad de coincidencias con las claves",
+   "baremo_decatipos": [
+    {
+     "pt": 1,
+     "pd_min": 0,
+     "pd_max": 0
+    },
+    {
+     "pt": 2,
+     "pd_min": 1,
+     "pd_max": 1
+    },
+    {
+     "pt": 3,
+     "pd_min": 2,
+     "pd_max": 2
+    },
+    {
+     "pt": 4,
+     "pd_min": 3,
+     "pd_max": 3
+    },
+    {
+     "pt": 6,
+     "pd_min": 4,
+     "pd_max": 4
+    },
+    {
+     "pt": 7,
+     "pd_min": 5,
+     "pd_max": 5
+    },
+    {
+     "pt": 8,
+     "pd_min": 6,
+     "pd_max": 6
+    },
+    {
+     "pt": 10,
+     "pd_min": 7,
+     "pd_max": 11
+    }
+   ],
+   "pt_no_alcanzables": [
+    5,
+    9
+   ]
+  },
+  {
+   "codigo": "VII",
+   "nombre": "Seguridad",
+   "orden_perfil": 10,
+   "tipo": "directa",
+   "claves": [
+    {
+     "item": 14,
+     "opcion": "a"
+    },
+    {
+     "item": 32,
+     "opcion": "c"
+    },
+    {
+     "item": 50,
+     "opcion": "c"
+    },
+    {
+     "item": 67,
+     "opcion": "b"
+    },
+    {
+     "item": 68,
+     "opcion": "a"
+    },
+    {
+     "item": 85,
+     "opcion": "c"
+    },
+    {
+     "item": 86,
+     "opcion": "a"
+    },
+    {
+     "item": 87,
+     "opcion": "a"
+    }
+   ],
+   "formula": "PD = cantidad de coincidencias con las claves",
+   "baremo_decatipos": [
+    {
+     "pt": 1,
+     "pd_min": 0,
+     "pd_max": 0
+    },
+    {
+     "pt": 2,
+     "pd_min": 1,
+     "pd_max": 1
+    },
+    {
+     "pt": 4,
+     "pd_min": 2,
+     "pd_max": 2
+    },
+    {
+     "pt": 5,
+     "pd_min": 3,
+     "pd_max": 3
+    },
+    {
+     "pt": 7,
+     "pd_min": 4,
+     "pd_max": 4
+    },
+    {
+     "pt": 8,
+     "pd_min": 5,
+     "pd_max": 5
+    },
+    {
+     "pt": 10,
+     "pd_min": 6,
+     "pd_max": 8
+    }
+   ],
+   "pt_no_alcanzables": [
+    3,
+    6,
+    9
+   ]
+  },
+  {
+   "codigo": "VIII",
+   "nombre": "Actividad",
+   "orden_perfil": 11,
+   "tipo": "invertida",
+   "claves": [
+    {
+     "item": 15,
+     "opcion": "a"
+    },
+    {
+     "item": 33,
+     "opcion": "b"
+    },
+    {
+     "item": 34,
+     "opcion": "c"
+    },
+    {
+     "item": 51,
+     "opcion": "b"
+    },
+    {
+     "item": 52,
+     "opcion": "a"
+    },
+    {
+     "item": 69,
+     "opcion": "b"
+    },
+    {
+     "item": 70,
+     "opcion": "c"
+    },
+    {
+     "item": 71,
+     "opcion": "b"
+    }
+   ],
+   "formula": "PD = 8 - (cantidad de coincidencias con las claves)",
+   "baremo_decatipos": [
+    {
+     "pt": 2,
+     "pd_min": 0,
+     "pd_max": 0
+    },
+    {
+     "pt": 4,
+     "pd_min": 1,
+     "pd_max": 1
+    },
+    {
+     "pt": 6,
+     "pd_min": 2,
+     "pd_max": 2
+    },
+    {
+     "pt": 8,
+     "pd_min": 3,
+     "pd_max": 3
+    },
+    {
+     "pt": 9,
+     "pd_min": 4,
+     "pd_max": 4
+    },
+    {
+     "pt": 10,
+     "pd_min": 5,
+     "pd_max": 8
+    }
+   ],
+   "pt_no_alcanzables": [
+    1,
+    3,
+    5,
+    7
+   ]
+  },
+  {
+   "codigo": "IX",
+   "nombre": "Sociabilidad",
+   "orden_perfil": 12,
+   "tipo": "directa",
+   "claves": [
+    {
+     "item": 16,
+     "opcion": "c"
+    },
+    {
+     "item": 17,
+     "opcion": "b"
+    },
+    {
+     "item": 18,
+     "opcion": "c"
+    },
+    {
+     "item": 35,
+     "opcion": "a"
+    },
+    {
+     "item": 36,
+     "opcion": "c"
+    },
+    {
+     "item": 53,
+     "opcion": "b"
+    },
+    {
+     "item": 54,
+     "opcion": "a"
+    },
+    {
+     "item": 72,
+     "opcion": "a"
+    }
+   ],
+   "formula": "PD = cantidad de coincidencias con las claves",
+   "baremo_decatipos": [
+    {
+     "pt": 1,
+     "pd_min": 0,
+     "pd_max": 1
+    },
+    {
+     "pt": 2,
+     "pd_min": 2,
+     "pd_max": 2
+    },
+    {
+     "pt": 3,
+     "pd_min": 3,
+     "pd_max": 3
+    },
+    {
+     "pt": 4,
+     "pd_min": 4,
+     "pd_max": 4
+    },
+    {
+     "pt": 6,
+     "pd_min": 5,
+     "pd_max": 5
+    },
+    {
+     "pt": 7,
+     "pd_min": 6,
+     "pd_max": 6
+    },
+    {
+     "pt": 9,
+     "pd_min": 7,
+     "pd_max": 7
+    },
+    {
+     "pt": 10,
+     "pd_min": 8,
+     "pd_max": 8
+    }
+   ],
+   "pt_no_alcanzables": [
+    5,
+    8
+   ]
+  }
+ ]
+}

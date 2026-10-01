@@ -1,0 +1,509 @@
+{
+ "fuente": "Hoja Interpretación (BASE1..BASE12) del Excel. Clave = PT (decatipo 1-10).",
+ "escalas": {
+  "DGV": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "DGV.- Disposición General para la Venta: No muestra una disposición general para la venta, es decir, le cuesta trabajo establecer relaciones con los demás, no cuenta con una actitud combativa ni control de sí mismo. Características indispensables para realizar la venta."
+   },
+   "2": {
+    "nivel": "bajo",
+    "texto": "DGV.- Disposición General para la Venta: Muestra una disposición general para la venta ligeramente menor que el promedio de la mayoría de la gente, es decir, posee cierta facilidad para establecer relaciones con los demás, tiene una actitud hasta cierto punto combativa que le permite persuadir al cliente."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "DGV.- Disposición General para la Venta: Muestra una disposición general para la venta ligeramente menor que el promedio de la mayoría de la gente, es decir, posee cierta facilidad para establecer relaciones con los demás, tiene una actitud hasta cierto punto combativa que le permite persuadir al cliente."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "DGV.- Disposición General para la Venta: Posee facilidad para establecer relaciones con los demás, muestra combatividad que le permite persuadir al cliente, pero al mismo tiempo, control de sí mismo. En sí, cuenta con rasgos de personalidad acordes a actividades relacionadas con la venta."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "DGV.- Disposición General para la Venta: Posee facilidad para establecer relaciones con los demás, muestra combatividad que le permite persuadir al cliente, pero al mismo tiempo, control de sí mismo. En sí, cuenta con rasgos de personalidad acordes a actividades relacionadas con la venta."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "DGV.- Disposición General para la Venta: Posee facilidad para establecer relaciones con los demás, muestra combatividad que le permite persuadir al cliente, pero al mismo tiempo, control de sí mismo. En sí, cuenta con rasgos de personalidad acordes a actividades relacionadas con la venta."
+   },
+   "7": {
+    "nivel": "promedio",
+    "texto": "DGV.- Disposición General para la Venta: Posee facilidad para establecer relaciones con los demás, muestra combatividad que le permite persuadir al cliente, pero al mismo tiempo, control de sí mismo. En sí, cuenta con rasgos de personalidad acordes a actividades relacionadas con la venta."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "DGV.- Disposición General para la Venta: Muestra una disposición general para la venta ligeramente mayor que el promedio, es decir, posee facilidad para establecer relaciones con los demás, muestra combatividad que le permite persuadir al cliente y tiene bastante control de si mismo."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "DGV.- Disposición General para la Venta: El índice de disposición general para la venta arriba del promedio, señala a una persona que posee una gran capacidad para establecer relaciones con los demás, muestra combatividad y bastante control de sí mismo que lo lleva a elevar ventas y persuadir a clientes."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "DGV.- Disposición General para la Venta: El índice de disposición general para la venta arriba del promedio, señala a una persona que posee una gran capacidad para establecer relaciones con los demás, muestra combatividad y bastante control de sí mismo que lo lleva a elevar ventas y persuadir a clientes."
+   }
+  },
+  "R": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "R.- Receptividad: Es una persona que no es empática con los demás, se limita a oír, no escucha ni comprende, le cuesta mucho trabajo adaptarse a personas y circunstancias nuevas, tiene poco control de si mismo y poca resistencia a la frustración."
+   },
+   "2": {
+    "nivel": "bajo",
+    "texto": "R.- Receptividad: Es una persona que intenta entrar en empatía con los demás. Su capacidad de escuchar, comprender, adaptarse a personas y circunstancias, de autocontrol y resistencia a la frustración, están ligeramente abajo del promedio."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "R.- Receptividad: Es una persona que intenta entrar en empatía con los demás. Su capacidad de escuchar, comprender, adaptarse a personas y circunstancias, de autocontrol y resistencia a la frustración, están ligeramente abajo del promedio."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "R.- Receptividad: Es una persona que sabe ponerse en lugar de los demás, sabe escuchar y comprender, cuenta con capacidad de adaptación a personas y circunstancias, posee control de si mismo y resistencia a la frustración."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "R.- Receptividad: Es una persona que sabe ponerse en lugar de los demás, sabe escuchar y comprender, cuenta con capacidad de adaptación a personas y circunstancias, posee control de si mismo y resistencia a la frustración."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "R.- Receptividad: Es una persona que sabe ponerse en lugar de los demás, sabe escuchar y comprender, cuenta con capacidad de adaptación a personas y circunstancias, posee control de si mismo y resistencia a la frustración."
+   },
+   "7": {
+    "nivel": "mayor promedio",
+    "texto": "R.- Receptividad: Es una persona que sabe ponerse en lugar de los demás, sabe escuchar y comprender, cuenta con capacidad de adaptación a personas y circunstancias, posee control de si mismo y resistencia a la frustración."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "R.- Receptividad: El índice de receptividad está ligeramente mayor que el promedio, por tanto, se puede decir, que es una persona que sabe ponerse en lugar de los demás, sabe escuchar y comprender, cuenta con capacidad de adaptación a personas y circunstancias."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "R.- Receptividad: El índice de receptividad por arriba del promedio, muestra a una persona con gran capacidad de empatía, que sabe escuchar y comprender, que se adapta fácilmente a personas y circunstancias y que posee control de si mismo y resistencia a la frustracion."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "R.- Receptividad: El índice de receptividad por arriba del promedio, muestra a una persona con gran capacidad de empatía, que sabe escuchar y comprender, que se adapta fácilmente a personas y circunstancias y que posee control de si mismo y resistencia a la frustracion."
+   }
+  },
+  "A": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "A.- Agresividad: No se caracteriza por ser un persona activa y dinámica, no le gusta participar en actividades deportivas, no soporta situaciones conflictivas, no demuestra una actitud de poder o ascendencia suficiente para dominar, es inseguro e incapazde integrar en su contexto un suceso cualquiera."
+   },
+   "2": {
+    "nivel": "bajo",
+    "texto": "A.- Agresividad: No se caracteriza por ser un persona activa y dinámica, no le gusta participar en actividades deportivas, no soporta situaciones conflictivas, no demuestra una actitud de poder o ascendencia suficiente para dominar, es inseguro e incapazde integrar en su contexto un suceso cualquiera."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "A.- Agresividad: Es una persona que muestra un índice de agresividad comercial ligeramente menor que el promedio de la mayoría de la gente, es decir, es un tanto activo y dinámico, cuenta con cierta capacidad para soportar situaciones conflictivas."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "A.- Agresividad: Es una persona activa y dinámico, cuenta con capacidad para soportar y provocar situaciones conflictivas con el deseo de ganar, posee una actitud dominante por poder o ascendencia, seguro de sí, gusta de riesgos."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "A.- Agresividad: Es una persona activa y dinámico, cuenta con capacidad para soportar y provocar situaciones conflictivas con el deseo de ganar, posee una actitud dominante por poder o ascendencia, seguro de sí, gusta de riesgos."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "A.- Agresividad: Es una persona activa y dinámico, cuenta con capacidad para soportar y provocar situaciones conflictivas con el deseo de ganar, posee una actitud dominante por poder o ascendencia, seguro de sí, gusta de riesgos."
+   },
+   "7": {
+    "nivel": "mayor promedio",
+    "texto": "A.- Agresividad: Es una persona activa y dinámico, cuenta con capacidad para soportar y provocar situaciones conflictivas con el deseo de ganar, posee una actitud dominante por poder o ascendencia, seguro de sí, gusta de riesgos."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "A.- Agresividad: El índice de agresividad está ligeramente mayor que el promedio, es decir, es una persona activa y dinámico, cuenta con capacidad para soportar y provocar situaciones conflictivas con el deseo de ganar, domina por poder o ascendencia, seguro de sí y le gustan asumir riesgos."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "A.- Agresividad: El índice de agresividad comercial por arriba del promedio, señala a una persona sumamente activo y dinámico, que cuenta con gran capacidad para soportar y provocar situaciones conflictivas, orientado a ganar, a dominar, a persuadir, es seguro de si mismo y no teme enfrentarse a riesgos."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "A.- Agresividad: El índice de agresividad comercial por arriba del promedio, señala a una persona sumamente activo y dinámico, que cuenta con gran capacidad para soportar y provocar situaciones conflictivas, orientado a ganar, a dominar, a persuadir, es seguro de si mismo y no teme enfrentarse a riesgos."
+   }
+  },
+  "I": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "I.- Comprensión: Es una persona que no lo caracteriza la empatía y objetividad en sus relaciones humanas, no es intuitivo ni integrador."
+   },
+   "2": {
+    "nivel": "muy bajo",
+    "texto": "I.- Comprensión: Es una persona que no lo caracteriza la empatía y objetividad en sus relaciones humanas, no es intuitivo ni integrador."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "I.- Comprensión: Posee empatía y objetividad en sus relaciones humanas ligeramente por debajo del promedio, es intuitivo e integradorI.- Comprensión: Posee empatía y objetividad en sus relaciones humanas ligeramente por debajo del promedio, es intuitivo e integrador de las situaciones en su contexto."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "I.- Comprensión: Es empático y objetivo en sus relaciones humanas, intuitivo y capaz de integrar en su contexto un suceso cualquiera."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "I.- Comprensión: Es empático y objetivo en sus relaciones humanas, intuitivo y capaz de integrar en su contexto un suceso cualquiera."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "I.- Comprensión: Es empático y objetivo en sus relaciones humanas, intuitivo y capaz de integrar en su contexto un suceso cualquiera."
+   },
+   "7": {
+    "nivel": "promedio",
+    "texto": "I.- Comprensión: Es empático y objetivo en sus relaciones humanas, intuitivo y capaz de integrar en su contexto un suceso cualquiera."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "I.- Comprensión: El índice de comprensión está ligeramente arriba del promedio, por tanto, se puede decir que es empático y objetivo en sus relaciones humanas, intuitivo y capaz de integrar en su contexto un suceso cualquiera."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "I.- Comprensión: El índice de comprensión por arriba del promedio, muestra a una persona por demás empático y objetivo en sus relaciones humanas, con gran capacidad intuitiva y capaz de integrar en su contexto un suceso cualquiera."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "I.- Comprensión: El índice de comprensión por arriba del promedio, muestra a una persona por demás empático y objetivo en sus relaciones humanas, con gran capacidad intuitiva y capaz de integrar en su contexto un suceso cualquiera."
+   }
+  },
+  "II": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "II.- Adaptabilidad: No se adapta a situaciones y personas nuevas, es inflexible en sus actividades intelectuales y de relación."
+   },
+   "2": {
+    "nivel": "muy bajo",
+    "texto": "II.- Adaptabilidad: No se adapta a situaciones y personas nuevas, es inflexible en sus actividades intelectuales y de relación."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "II.- Adaptabilidad: Puede llegar a adaptarse a situaciones y personas, y ser flexible en actividades tanto intelectuales como de relación, estás cualidades están ligeramente abajo del promedio de la norma."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "II.- Adaptabilidad: Cuenta con una habilidad para adaptarse fácil y rápidamente a situaciones y personas diferentes, es flexible en sus actividades tanto intelectuales como de relación."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "II.- Adaptabilidad: Cuenta con una habilidad para adaptarse fácil y rápidamente a situaciones y personas diferentes, es flexible en sus actividades tanto intelectuales como de relación."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "II.- Adaptabilidad: Cuenta con una habilidad para adaptarse fácil y rápidamente a situaciones y personas diferentes, es flexible en sus actividades tanto intelectuales como de relación."
+   },
+   "7": {
+    "nivel": "promedio",
+    "texto": "II.- Adaptabilidad: Cuenta con una habilidad para adaptarse fácil y rápidamente a situaciones y personas diferentes, es flexible en sus actividades tanto intelectuales como de relación."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "II.- Adaptabilidad: Su capacidad para adaptarse se encuentra ligeramente arriba del promedio, por lo que se adapta fácil y rápidamente a situaciones y personas, es flexible en sus actividades tanto intelectuales como de relación."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "II.- Adaptabilidad: El índice de adaptabilidad por arriba del promedio, muestra a una persona con una gran habilidad para adaptarse a situaciones y personas de manera fácil y rápida, es muy flexible en sus actividades tanto intelectuales como de relación."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "II.- Adaptabilidad: El índice de adaptabilidad por arriba del promedio, muestra a una persona con una gran habilidad para adaptarse a situaciones y personas de manera fácil y rápida, es muy flexible en sus actividades tanto intelectuales como de relación."
+   }
+  },
+  "III": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "III.- Control de sí mismo: No posee control en sí mismo, no logra administrar su potencial psicológico y/o físico, regularmente no es organizado ni perseverante."
+   },
+   "2": {
+    "nivel": "muy bajo",
+    "texto": "III.- Control de sí mismo: No posee control en sí mismo, no logra administrar su potencial psicológico y/o físico, regularmente no es organizado ni perseverante."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "III.- Control de sí mismo: Es una persona que muestra un índice de control en sí mismo ligeramente menor que el promedio de la mayoría de la gente, intenta ser dueño de sí mismo a través de la administración de su potencial psicológico y/o físico, regular organizacion y perseverancia."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "III.- Control de sí mismo: Es un individuo controlado, dueño de sí mismo, capaz de una buena administración de su potencial psicológico o físico, es una persona organizada y perseverante, hábil para ocultar sus sentimientos."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "III.- Control de sí mismo: Es un individuo controlado, dueño de sí mismo, capaz de una buena administración de su potencial psicológico o físico, es una persona organizada y perseverante, hábil para ocultar sus sentimientos."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "III.- Control de sí mismo: Es un individuo controlado, dueño de sí mismo, capaz de una buena administración de su potencial psicológico o físico, es una persona organizada y perseverante, hábil para ocultar sus sentimientos."
+   },
+   "7": {
+    "nivel": "promedio",
+    "texto": "III.- Control de sí mismo: Es un individuo controlado, dueño de sí mismo, capaz de una buena administración de su potencial psicológico o físico, es una persona organizada y perseverante, hábil para ocultar sus sentimientos."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "III.- Control de sí mismo: El índice de control de sí mismo está ligeramente arriba del promedio, es decir, es un individuo controlado, dueño de sí mismo, capaz de una buena administración de su potencial psicológico o físico, es una persona organizada y perseverante."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "III.- Control de sí mismo: El índice de control de si mismo por arriba del promedio, muestra a una persona con gran capacidad de autocontrol, dueño de sí mismo, el cual, administra eficientemente su potencial psicológico y físico, muy organizado y perseverante."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "III.- Control de sí mismo: El índice de control de si mismo por arriba del promedio, muestra a una persona con gran capacidad de autocontrol, dueño de sí mismo, el cual, administra eficientemente su potencial psicológico y físico, muy organizado y perseverante."
+   }
+  },
+  "IV": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "IV.- Tolerancia a la frustración: Es muy poco tolerante y aveces no logra dejar de personalizar las situaciones en que se ve implicado."
+   },
+   "2": {
+    "nivel": "muy bajo",
+    "texto": "IV.- Tolerancia a la frustración: Es muy poco tolerante y aveces no logra dejar de personalizar las situaciones en que se ve implicado."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "IV.- Tolerancia a la frustración: Es una persona que muestra un índice de tolerancia a la frustración ligeramente menor que el promedio de la mayoría de la gente, no siempre es capaz de soporta adecuadamente las acciones frustrantes, y aveces no logra dejar de personalizar las situaciones en que se ve implicado."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "IV.- Tolerancia a la frustración: Es una persona que soporta adecuadamente las acciones frustrantes, capaz de comprender los fracasos y de no personalizar las situaciones en que se ve implicado."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "IV.- Tolerancia a la frustración: Es una persona que soporta adecuadamente las acciones frustrantes, capaz de comprender los fracasos y de no personalizar las situaciones en que se ve implicado."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "IV.- Tolerancia a la frustración: Es una persona que soporta adecuadamente las acciones frustrantes, capaz de comprender los fracasos y de no personalizar las situaciones en que se ve implicado."
+   },
+   "7": {
+    "nivel": "promedio",
+    "texto": "IV.- Tolerancia a la frustración: Es una persona que soporta adecuadamente las acciones frustrantes, capaz de comprender los fracasos y de no personalizar las situaciones en que se ve implicado."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "IV.- Tolerancia a la frustración: El índice de tolerancia está ligeramente mayor que el promedio, es decir, es una persona que soporta adecuadamente las acciones frustrantes, capaz de comprender los fracasos y de no personalizar las situaciones en que se ve implicado."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "IV.- Tolerancia a la frustración: El índice de tolerancia a la frustración por arriba del promedio, muestra a una persona que posee una gran capacidad para soportar acciones frustrantes, que comprende los fracasos, e incluso puede llegar a aprender de ellas."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "IV.- Tolerancia a la frustración: El índice de tolerancia a la frustración por arriba del promedio, muestra a una persona que posee una gran capacidad para soportar acciones frustrantes, que comprende los fracasos, e incluso puede llegar a aprender de ellas."
+   }
+  },
+  "V": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "V.- Combatividad: Le cuesta mucho trabajo soportar desacuerdos y no cuenta con una agresividad comercial."
+   },
+   "2": {
+    "nivel": "muy bajo",
+    "texto": "V.- Combatividad: Le cuesta mucho trabajo soportar desacuerdos y no cuenta con una agresividad comercial."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "V.- Combatividad: Es una persona que no gusta de provocar conflictos y no siempre soporta los desacuerdos, su agresividad comercial está ligeramente menor que el promedio de la mayoría de la gente."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "V.- Combatividad: Es una persona capaz de entrar conflictos y soportar los desacuerdos, posee agresividad comercial."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "V.- Combatividad: Es una persona capaz de entrar conflictos y soportar los desacuerdos, posee agresividad comercial."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "V.- Combatividad: Es una persona capaz de entrar conflictos y soportar los desacuerdos, posee agresividad comercial."
+   },
+   "7": {
+    "nivel": "promedio",
+    "texto": "V.- Combatividad: Es una persona capaz de entrar conflictos y soportar los desacuerdos, posee agresividad comercial."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "V.- Combatividad: El índice de combatividad está ligeramente mayor que el promedio, es decir, es una persona capaz de entrar en conflictos y soportar los desacuerdos. Posee agresividad comercial."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "V.- Combatividad: El índice de combatividad por arriba del promedio, muestra a una persona capaz de provocar conflictos con la finalidad de persuadir, es capaz de soportar los desacuerdos, se caracteriza por ser polémico y porfiado. Posee una excelente agresividad comercial."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "V.- Combatividad: El índice de combatividad por arriba del promedio, muestra a una persona capaz de provocar conflictos con la finalidad de persuadir, es capaz de soportar los desacuerdos, se caracteriza por ser polémico y porfiado. Posee una excelente agresividad comercial."
+   }
+  },
+  "VI": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "VI.- Dominio: Señala a una persona con poca voluntad de dominio, de manipular, persuadir y/o cautivar."
+   },
+   "2": {
+    "nivel": "muy bajo",
+    "texto": "VI.- Dominio: Señala a una persona con poca voluntad de dominio, de manipular, persuadir y/o cautivar."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "VI.- Dominio: Es una persona que muestra un índice de dominio ligeramente menor que el promedio de la mayoría de la gente, es decir, tiene el potencial para dominar, manipular, persuadir y cautivar, aún cuando la mayoría de las veces no lo hace."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "VI.- Dominio: Señala a una persona con voluntad de dominio, con deseos de ganar, de manipular, persuasivo y cautivador, es dominante y con actitud ascendente propia de personas con jerarquía."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "VI.- Dominio: Señala a una persona con voluntad de dominio, con deseos de ganar, de manipular, persuasivo y cautivador, es dominante y con actitud ascendente propia de personas con jerarquía."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "VI.- Dominio: Señala a una persona con voluntad de dominio, con deseos de ganar, de manipular, persuasivo y cautivador, es dominante y con actitud ascendente propia de personas con jerarquía."
+   },
+   "7": {
+    "nivel": "promedio",
+    "texto": "VI.- Dominio: Señala a una persona con voluntad de dominio, con deseos de ganar, de manipular, persuasivo y cautivador, es dominante y con actitud ascendente propia de personas con jerarquía."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "VI.- Dominio: El índice de dominio está ligeramente mayor que el promedio, por tanto, señala a una persona con voluntad de dominio, con deseos de ganar, de manipular, persuasivo y cautivador, es dominante y con actitud ascendente propia de personas con jerarquia."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "VI.- Dominio: El índice de domino por arriba del promedio, señala a una persona con una gran voluntad de dominio, con una actitud ganadora, manipulador, persuasivo y cautivador, es dominante y con actitud ascendente propia de personas con jerarquía."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "VI.- Dominio: El índice de domino por arriba del promedio, señala a una persona con una gran voluntad de dominio, con una actitud ganadora, manipulador, persuasivo y cautivador, es dominante y con actitud ascendente propia de personas con jerarquía."
+   }
+  },
+  "VII": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "VII.- Seguridad: Es inseguro, no goza de situaciones novedosas e inesperadas, difícilmente se enfrentaría a riesgos."
+   },
+   "2": {
+    "nivel": "muy bajo",
+    "texto": "VII.- Seguridad: Es inseguro, no goza de situaciones novedosas e inesperadas, difícilmente se enfrentaría a riesgos."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "VII.- Seguridad: Es una persona que muestra un índice de seguridad ligeramente menor que el promedio de la mayoría de la gente, es decir, no es tan seguro de sí, ni necesariamente goza de situaciones novedosas e inesperadas, es capaz de enfrentarse a riesgos."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "VII.- Seguridad: Es un individuo seguro de sí mismo, que le gustan las situaciones novedosas e inesperadas, capaz de enfrentarse a riesgos."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "VII.- Seguridad: Es un individuo seguro de sí mismo, que le gustan las situaciones novedosas e inesperadas, capaz de enfrentarse a riesgos."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "VII.- Seguridad: Es un individuo seguro de sí mismo, que le gustan las situaciones novedosas e inesperadas, capaz de enfrentarse a riesgos."
+   },
+   "7": {
+    "nivel": "promedio",
+    "texto": "VII.- Seguridad: Es un individuo seguro de sí mismo, que le gustan las situaciones novedosas e inesperadas, capaz de enfrentarse a riesgos."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "VII.- Seguridad: El índice de seguridad ligeramente arriba del promedio, señala a un individuo seguro de sí mismo, que le gustan las situaciones novedosas e inesperadas, capaz de enfrentarse a riesgos."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "VII.- Seguridad: El índice de seguridad por arriba del promedio, muestra a un individuo por demás seguro de sí mismo, que gusta de situaciones novedosas e inesperadas, capaz de enfrentarse a riesgos e incluso atreverse a buscarlos, siempre y cuando lo estima necesario."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "VII.- Seguridad: El índice de seguridad por arriba del promedio, muestra a un individuo por demás seguro de sí mismo, que gusta de situaciones novedosas e inesperadas, capaz de enfrentarse a riesgos e incluso atreverse a buscarlos, siempre y cuando lo estima necesario."
+   }
+  },
+  "VIII": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "VIII.- Actividad: Es una persona que no gusta de actividades deportivas, suele ser pasivo."
+   },
+   "2": {
+    "nivel": "muy bajo",
+    "texto": "VIII.- Actividad: Es una persona que no gusta de actividades deportivas, suele ser pasivo."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "VIII.- Actividad: Es una persona lo suficientemente activa para una actividad comercial (no lo idóneo, ya que su índice de actividad muestra un promedio ligeramente menor que el de la mayoría de la gente)."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "VIII.- Actividad: Es una persona activa que no le gusta la pasividad."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "VIII.- Actividad: Es una persona activa que no le gusta la pasividad."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "VIII.- Actividad: Es una persona activa que no le gusta la pasividad."
+   },
+   "7": {
+    "nivel": "promedio",
+    "texto": "VIII.- Actividad: Es una persona activa que no le gusta la pasividad."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "VIII.- Actividad: El índice de actividad ligeramente mayor que el promedio, señala a una persona activa que no le gusta la pasividad."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "VIII.- Actividad: El índice de actividad por arriba del promedio, muestra a una persona que gusta de actividades deportivas, no soporta la pasividad física."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "VIII.- Actividad: El índice de actividad por arriba del promedio, muestra a una persona que gusta de actividades deportivas, no soporta la pasividad física."
+   }
+  },
+  "IX": {
+   "1": {
+    "nivel": "muy bajo",
+    "texto": "IX.- Sociabilidad: Es introvertido, le cuesta trabajo crear nuevos contactos y convivir con los demás, puede llegar a preferir estar solo que acompañado."
+   },
+   "2": {
+    "nivel": "muy bajo",
+    "texto": "IX.- Sociabilidad: Es introvertido, le cuesta trabajo crear nuevos contactos y convivir con los demás, puede llegar a preferir estar solo que acompañado."
+   },
+   "3": {
+    "nivel": "bajo",
+    "texto": "IX.- Sociabilidad: Es una persona que muestra un índice de sociabilidad ligeramente menor que el promedio de la mayoría de la gente, así bien, muestra ser hasta cierto punto extrovertido y capaz de crear nuevos contactos; gusta de convivir con los demás y prefiere estar solo que acompañado."
+   },
+   "4": {
+    "nivel": "promedio",
+    "texto": "IX.- Sociabilidad: Es extrovertido, capaz de crear nuevos contactos y convivir con los demás, es sensible a las relaciones humanas y prefiere estar acompañado que solo."
+   },
+   "5": {
+    "nivel": "promedio",
+    "texto": "IX.- Sociabilidad: Es extrovertido, capaz de crear nuevos contactos y convivir con los demás, es sensible a las relaciones humanas y prefiere estar acompañado que solo."
+   },
+   "6": {
+    "nivel": "promedio",
+    "texto": "IX.- Sociabilidad: Es extrovertido, capaz de crear nuevos contactos y convivir con los demás, es sensible a las relaciones humanas y prefiere estar acompañado que solo."
+   },
+   "7": {
+    "nivel": "promedio",
+    "texto": "IX.- Sociabilidad: Es extrovertido, capaz de crear nuevos contactos y convivir con los demás, es sensible a las relaciones humanas y prefiere estar acompañado que solo."
+   },
+   "8": {
+    "nivel": "mayor promedio",
+    "texto": "IX.- Sociabilidad: El índice de sociabilidad ligeramente mayor que el promedio, muestra a una persona extrovertido, capaz de crear nuevos contactos y convivir con los demás, sensible a las relaciones humanas y el cual prefiere estar acompañado que solo."
+   },
+   "9": {
+    "nivel": "alto",
+    "texto": "IX.- Sociabilidad: El índice de sociabilidad por arriba del promedio, muestra a una persona extrovertido, que busca y crea nuevos contactos, gusta de convivir con los demás, es sensible a las relaciones humanas y prefiere estar acompañado que solo."
+   },
+   "10": {
+    "nivel": "alto",
+    "texto": "IX.- Sociabilidad: El índice de sociabilidad por arriba del promedio, muestra a una persona extrovertido, que busca y crea nuevos contactos, gusta de convivir con los demás, es sensible a las relaciones humanas y prefiere estar acompañado que solo."
+   }
+  }
+ }
+}

@@ -548,6 +548,45 @@ export interface CognitivoResult {
   version: '1.0'
 }
 
+// ─── IPV — Inventario de Personalidad para Vendedores ────────────────────────
+
+export type IPVOpcion = 'a' | 'b' | 'c'
+export type IPVEscala =
+  | 'DGV' | 'R' | 'A' | 'I' | 'II' | 'III' | 'IV' | 'V' | 'VI' | 'VII' | 'VIII' | 'IX'
+
+export interface IPVRespuesta {
+  item: number
+  /** null = sin responder. Los ítems 14 y 78 solo admiten 'a' | 'b'. */
+  respuesta: IPVOpcion | null
+}
+
+export interface IPVEscalaResultado {
+  /** Puntuación directa. */
+  pd: number
+  /** Decatipo 1–10. */
+  pt: number
+  /** 'muy bajo' | 'bajo' | 'promedio' | 'mayor promedio' | 'alto' (según la hoja Interpretación). */
+  nivel: string
+}
+
+export interface IPVResult {
+  /** Discriminador explícito: isICv2 también captura objetos con respuestas + metadata. */
+  tipo: 'ipv'
+  /** 87 respuestas; es la fuente de verdad (la tarjeta admin recalcula desde acá). */
+  respuestas: IPVRespuesta[]
+  resultado: {
+    escalas: Record<IPVEscala, IPVEscalaResultado>
+    items_respondidos: number
+  }
+  metadata: {
+    duracion_total_s: number
+    items_sin_responder: number
+    tab_switch_count: number
+    out_of_focus_duration: number
+  }
+  version: '1.0'
+}
+
 export type TestResultData =
   | HanoiResult
   | ICResult
@@ -558,6 +597,7 @@ export type TestResultData =
   | DISCResult
   | ZAVICResult
   | CognitivoResult
+  | IPVResult
   | Record<string, unknown>
 
 export interface TestComponentProps {
