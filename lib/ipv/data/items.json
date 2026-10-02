@@ -1,0 +1,788 @@
+{
+ "fuente": "Cuestionario IPV.doc",
+ "tiempo_limite": null,
+ "instruccion": "Elegir una sola alternativa por pregunta, la que de manera espontánea parezca preferible. Responder todas. No hay respuestas buenas ni malas.",
+ "items": [
+  {
+   "item": 1,
+   "enunciado": "T... debe salir de viaje con una persona de la que no conoce nada. ¿Sobre cuál de los siguientes aspectos de esa persona es preferible informar a T... para que el viaje resulte mejor?",
+   "opciones": {
+    "a": "Su estilo de vida.",
+    "b": "Los puntos que tengan en común.",
+    "c": "Su actividad y responsabilidades personales."
+   }
+  },
+  {
+   "item": 2,
+   "enunciado": "Entre los siguientes tipos de vendedores de prendas confeccionadas ¿Cuál es el que tiene más probabilidades de éxito?",
+   "opciones": {
+    "a": "El que presente las últimas novedades.",
+    "b": "El que, tratando de conocer el estilo de su cliente se interese por su modo de vida.",
+    "c": "El que posea una buena capacidad de convencer."
+   }
+  },
+  {
+   "item": 3,
+   "enunciado": "B... tiene un proyecto importante para la promoción de un nuevo producto y va a exponer su idea ante el Comité de Dirección. ¿Cuál de las siguientes cualidades le será más útil para persuadir a su auditorio?",
+   "opciones": {
+    "a": "Competencia técnica y un conocimiento perfecto del tema.",
+    "b": "Capacidad para modificar su razonamiento según la actitud del auditorio.",
+    "c": "Facultad para mantener el orden de sus ideas a pesar las interrupciones."
+   }
+  },
+  {
+   "item": 4,
+   "enunciado": "Se envía a G... contra su voluntad, a un país extranjero, por el cual no se siente atraído en principio, para una estancia de varias semanas. ¿Cuál será su actitud?",
+   "opciones": {
+    "a": "Estimar que la duración de su estancia es demasiado corta para conseguir interesarse.",
+    "b": "Tratar de aprender la lengua para comprender mejor a este país y vivir más gusto en él.",
+    "c": "No tener más que los contactos estrictamente necesarios para la buena marcha de su trabajo."
+   }
+  },
+  {
+   "item": 5,
+   "enunciado": "Según su opinión, las personas que dicen siempre \"su\" verdad a los demás, aunque ésta sea desagradable, lo hacen, en general porque:",
+   "opciones": {
+    "a": "No saben controlar sus impulsos y dicen espontáneamente lo que piensan.",
+    "b": "No les gusta la hipocresía.",
+    "c": "Piensan que esto simplifica las relaciones."
+   }
+  },
+  {
+   "item": 6,
+   "enunciado": "Un buen amigo de C... había comenzado bastante brillantemente su carrera profesional, pero los resul-tados no han sido los que cabría esperar y terminó teniendo numerosos fracasos ¿Qué piensa C... acerca de esto?",
+   "opciones": {
+    "a": "Que las condiciones no le han sido favorable.",
+    "b": "Que no estaba a la altura necesaria.",
+    "c": "Que no ha utilizado bien los medios para salir adelante."
+   }
+  },
+  {
+   "item": 7,
+   "enunciado": "B... encuentra, en casa de unos amigos, a una persona que aparenta una edad muy inferior a la que realmente tiene. ¿Qué opinara B...?",
+   "opciones": {
+    "a": "\"Probablemente ha encontrado en la vida lo que le convenía\"",
+    "b": "Tiene buena suerte, es cuestión de naturaleza\"",
+    "c": "\"Seguramente ha tenido una vida fácil\""
+   }
+  },
+  {
+   "item": 8,
+   "enunciado": "Para mejorar su estado físico, S... decide aprender judo. Después de unos meses de entrenamiento se da cuenta de que progresa muy lentamente. ¿Cuál será su reacción?",
+   "opciones": {
+    "a": "Pensando que realmente no está hecho para el judo, elegirá otro deporte.",
+    "b": "Convencido de que no está dotado para las actividades corporales buscará otra forma de actividad.",
+    "c": "Continuará sus esfuerzos con la esperanza de que seguramente serán un día coronados por el éxito."
+   }
+  },
+  {
+   "item": 9,
+   "enunciado": "P... se acuesta una noche muy fatigado, pero no puede dormirse porque sus vecinos del piso superior han organizado una fiesta muy ruidosa. ¿Qué hará?",
+   "opciones": {
+    "a": "Subir y advertir a sus vecinos.",
+    "b": "Dar con la escoba algunos golpes en el techo.",
+    "c": "Tomar un somnífero y tratar de dormir cueste lo que cueste."
+   }
+  },
+  {
+   "item": 10,
+   "enunciado": "Dado que no tiene computador, G... llega a un local de internet para enviar un mail justo a la hora de cerrar. El encargado le dice que es demasiado tarde, que va a cerrar. ¿Qué hace C...?",
+   "opciones": {
+    "a": "Ir a casa de un amigo donde puede poner el mail.",
+    "b": "Convencer al encargado de que su mail es muy urgente y que debe salir inmediatamente.",
+    "c": "Ir a un local que cierra más tarde."
+   }
+  },
+  {
+   "item": 11,
+   "enunciado": "X... hace un viaje de turismo por un país en que es costumbre discutir los precios. ¿Cuál será su actitud?",
+   "opciones": {
+    "a": "Hará pocas compras porque le molesta tener que discutir siempre.",
+    "b": "Hará numerosas compras, incluso un poco inútiles, por que le encanta discutir los precios.",
+    "c": "Convencido de que le timarían, preferirá los almacenes de precio fijo."
+   }
+  },
+  {
+   "item": 12,
+   "enunciado": "Sin tener en cuenta la formación y competencias necesarias. ¿Cuál de las siguientes direcciones y servicios le gustaría asumir.",
+   "opciones": {
+    "a": "Gestión.",
+    "b": "Personal.",
+    "c": "Publicidad."
+   }
+  },
+  {
+   "item": 13,
+   "enunciado": "Un escritor poco conocido acaba de recibir el premio Planeta. ¿Qué cree usted que preferirá hacer?",
+   "opciones": {
+    "a": "Escribir menos y aprovecharse de su éxito para salir, recibir a la gente y hacer una vida de sociedad.",
+    "b": "Intentar escribir una obra maestra.",
+    "c": "Dedicarse a la pintura e intentar triunfar también en ella."
+   }
+  },
+  {
+   "item": 14,
+   "enunciado": "Si usted se encontrara en una situación de examen en la que pudiera elegir entre los temas, ¿Cuál escogería?",
+   "opciones": {
+    "a": "Un tema ampliamente tratado durante el curso con el que tiene, casi la plena seguridad de alcanzar la nota necesaria.",
+    "b": "Un tema que le permita, con un mínimo de conocimientos pero con mucha lógica e imaginación, obtener una calificación muy buena pero, quizás, también muy mala."
+   }
+  },
+  {
+   "item": 15,
+   "enunciado": "Entre las siguientes actividades de descanso físico en la naturaleza ¿Cuál prefiere usted?",
+   "opciones": {
+    "a": "Una vuelta por la bahía cuando el mar este agitado.",
+    "b": "Un baño de sol en una playa de arena fina, en un hermoso día de verano con el aire en calma.",
+    "c": "Un paseo por el campo en primavera."
+   }
+  },
+  {
+   "item": 16,
+   "enunciado": "¿Qué es, a su juicio, lo que atrae a más gente en los viajes o estancias en el extranjero?",
+   "opciones": {
+    "a": "Los paisajes nuevos.",
+    "b": "El descubrimiento de otra civilización artística.",
+    "c": "El contacto con una población de costumbres muy diferentes."
+   }
+  },
+  {
+   "item": 17,
+   "enunciado": "P... camina rápidamente por la calle y parece que tiene prisa. Un joven que realiza una encuesta le detiene para hacerle unas preguntas extrañas, pero divertidas. ¿Qué hará P...?",
+   "opciones": {
+    "a": "Rehúsa con firmeza contestar a las preguntas.",
+    "b": "Responde rápidamente, porque lo encuentra divertido.",
+    "c": "Excusarse de no tener tiempo para responder, sintiendo de verdad no poder hacerlo."
+   }
+  },
+  {
+   "item": 18,
+   "enunciado": "L... trabaja en una empresa en que recibe muy pocas informaciones a nivel oficial. ¿Qué opina usted de ello?",
+   "opciones": {
+    "a": "Que será muy difícil obtener información.",
+    "b": "Que con los \"rumores de pasillo\", eso no constituye problema.",
+    "c": "Que, de hecho, es muy difícil estar informado; bastara conocer a algunas personas bien situadas."
+   }
+  },
+  {
+   "item": 19,
+   "enunciado": "Son las 11 de la noche. Hay numerosos vehículos estacionados en la calle, algunos sobre las aceras. P... ve desde su ventana a uno que trata de abrir la puerta de un auto; parece que no tiene llave y utiliza un destornillador. ¿Cuál será la reacción de P...?",
+   "opciones": {
+    "a": "Probablemente es un ratero que trata de robar. ¿Y si yo llamase a la policía?",
+    "b": "\"Alguien ha quedado atrapado en la vereda y trata de mover un coche para salir\".",
+    "c": "\"¿Qué estará haciendo? Parece que utiliza un destornillador\"."
+   }
+  },
+  {
+   "item": 20,
+   "enunciado": "Cuando un niño ha cometido una gran tontería. ¿Cuál es, a su modo de ver, la mejor reacción?",
+   "opciones": {
+    "a": "Castigarle, explicándole por qué se hace.",
+    "b": "Explicarle la significación de su tontería situándolo en su contexto.",
+    "c": "Apelar al amor propio del niño"
+   }
+  },
+  {
+   "item": 21,
+   "enunciado": "B... tiene varios hijos y ha decidido intervenir en la educación sexual de cada uno de ellos. ¿Qué procedimiento le parece a usted que adoptará probablemente?",
+   "opciones": {
+    "a": "Reflexionar sobre el asunto y preparar, con el hijo mayor, un tipo de intervención que luego mantendrá con los demás hijos.",
+    "b": "Seguir su intuición o sus sentimientos.",
+    "c": "Adoptar un modo de proceder distinto con cada hijo."
+   }
+  },
+  {
+   "item": 22,
+   "enunciado": "¿Cuál es para un niño la manera más \"astuta\" de presentar unas calificaciones escolares poco brillantes.",
+   "opciones": {
+    "a": "Enseñarlas lo antes posible para librarse de ello.",
+    "b": "Presentarlas el lunes a la hora del desayuno.",
+    "c": "Presentarlas en el momento en que se pueda apostar, además, alguna compensación."
+   }
+  },
+  {
+   "item": 23,
+   "enunciado": "El hijo de G... ha entrado en el despacho de su padre a pesar de que éste se lo tiene prohibido, y ha derramado un vaso sobre papeles importantes. G... furioso, le da un buen tortazo. ¿Qué pensará G... algún tiempo después?",
+   "opciones": {
+    "a": "Que un buen azote de vez en cuando no viene mal.",
+    "b": "Que tal vez se ha excedido un poco.",
+    "c": "Que es conveniente enfadarse de verdad una vez para no tener que volver a hacerlo."
+   }
+  },
+  {
+   "item": 24,
+   "enunciado": "Una persona con la que D... se relaciona muy frecuentemente acaba de jugarle una mala pasada. ¿Cuál será la reacción de D...?",
+   "opciones": {
+    "a": "No muestra ninguna, pero se da cuenta de que le será muy difícil ocultar durante mucho tiempo su resentimiento.",
+    "b": "No dice nada porque piensa que el daño causado es tal vez menor del que había creído.",
+    "c": "Se esfuerza en ocultar su resentimiento para no entorpecer sus futuras relaciones."
+   }
+  },
+  {
+   "item": 25,
+   "enunciado": "N... asiste a una comida. Se da cuenta de que, a causa de una opinión que se le ha escapado, acaba de provocar una situación tensa en el grupo. ¿Qué cree usted que será para él lo más desagradable?",
+   "opciones": {
+    "a": "El sentimiento de que algo va a dificultar notablemente el contacto.",
+    "b": "El pensamiento de que se le va a juzgar a causa de esta observación.",
+    "c": "El disgusto de haber hablado sin pensar."
+   }
+  },
+  {
+   "item": 26,
+   "enunciado": "P... está jugando a las cartas con sus amigos, a pesar de sus esfuerzos, pierde varias veces seguidas. ¿Cuál es, según usted, su reacción más probable?",
+   "opciones": {
+    "a": "\"Después de todo, esta tarde he perdido bastante. Seguramente ganaré la próxima vez\".",
+    "b": "\"Siempre ocurre lo mismo; el juego de las cartas no se me da bien\".",
+    "c": "\"Realmente no estoy en forma esta tarde\"."
+   }
+  },
+  {
+   "item": 27,
+   "enunciado": "R... está sentado en un cine al lado de personas que no se callan y hacen frecuentes comentarios. ¿Qué hará R...?",
+   "opciones": {
+    "a": "Rogarles que se callen",
+    "b": "Cambiar de lugar",
+    "c": "Concentrarse más en la película para evitar la molestia."
+   }
+  },
+  {
+   "item": 28,
+   "enunciado": "T... trabaja en una gran empresa. Ha efectuado algunos cambios en la organización de trabajo y es muy criticado por gran parte de sus colegas. ¿Cuál será la reacción de T...?",
+   "opciones": {
+    "a": "Tratar de justificar su posición ante sus colegas.",
+    "b": "Pensar que, en cualquier caso, nunca se consigue la unanimidad.",
+    "c": "Replantearse el problema."
+   }
+  },
+  {
+   "item": 29,
+   "enunciado": "¿Qué piensa usted cuando ve a un niño enfrentarse a los adultos?",
+   "opciones": {
+    "a": "Está mal educado.",
+    "b": "Probablemente tiene serias dificultades en sus relaciones con los demás.",
+    "c": "Posee una fuerte personalidad."
+   }
+  },
+  {
+   "item": 30,
+   "enunciado": "M... debe contratar a un colaborador que se encargará de la dirección de su servicio. Teniendo en cuenta que tendrá responsabilidades jerárquicas, ¿a cual de las cualidades siguientes dará M... más importancia?",
+   "opciones": {
+    "a": "Tener autoridad.",
+    "b": "Ser convincente.",
+    "c": "Ser justo."
+   }
+  },
+  {
+   "item": 31,
+   "enunciado": "Entre los siguientes estilos de conducir un automóvil en carretera, ¿cuál es, a su parecer, el más frecuente adoptado por los automovilistas?",
+   "opciones": {
+    "a": "Pensando en la mecánica y en la seguridad, apenas fuerzan la velocidad de su vehículo.",
+    "b": "Estimando que es tan peligroso circular demasiado despacio como demasiado a prisa, adelantan a los vehículos que les obligan a ir lentamente.",
+    "c": "Toleran de mala gana no tener vía libre y adelantan sistemáticamente a los vehículos que van delante de ellos."
+   }
+  },
+  {
+   "item": 32,
+   "enunciado": "¿Qué es lo que más valora cuando usted va a un restaurante?",
+   "opciones": {
+    "a": "Una buena cocina.",
+    "b": "Un ambiente agradable.",
+    "c": "La posibilidad de comer el plato especial de la casa."
+   }
+  },
+  {
+   "item": 33,
+   "enunciado": "Una señora va de compras a un almacén que se encuentra bastante lejos de su casa. A la puerta del almacén se da cuenta de que ha olvidado su monedero y su talonario de cheques. Sin tener en cuenta el tiempo que dispone, ¿Qué piensa usted que hará?",
+   "opciones": {
+    "a": "Volver a su casa a buscar lo que ha olvidado.",
+    "b": "Ver sí conoce a alguien por la zona que pueda prestarle dinero o tratar de que le vendan a crédito.",
+    "c": "Dejar las compras para otra ocasión y aprovecha la oportunidad para dar un paseo por el barrio."
+   }
+  },
+  {
+   "item": 34,
+   "enunciado": "M... está soltero. Ha tenido un año de trabajo muy fuerte y debe tomar una decisión sobre sus vacaciones. ¿Qué elegirá?",
+   "opciones": {
+    "a": "Pasar un mes en la costa para poder leer, caminar y descansar.",
+    "b": "Visitar una región del país que no conoce.",
+    "c": "Hacer una larga marcha a pie o en bicicleta porque piensa que el deporte es el mejor de los descansos."
+   }
+  },
+  {
+   "item": 35,
+   "enunciado": "¿Cuál es, a su modo de ver, la mejor manera de descansar durante el fin de semana para un hombre que trabaja todos los demás días?",
+   "opciones": {
+    "a": "Reunirse con los amigos.",
+    "b": "Ir al cine.",
+    "c": "Leer."
+   }
+  },
+  {
+   "item": 36,
+   "enunciado": "Si usted dispusiera de un año de libertad y de los medios necesarios para hacer lo que quisiera, ¿cuál elegiría entre las actividades siguientes?",
+   "opciones": {
+    "a": "Dar la vuelta al mundo en solitario a borde de un velero.",
+    "b": "Participar en una carrera automovilística Madrid-Bombay.",
+    "c": "Visitar el mayor número posible de países."
+   }
+  },
+  {
+   "item": 37,
+   "enunciado": "Un empleado administrativo, incorporado reciente-mente a la empresa, pide a X..., uno de sus compañeros, que le preste una pequeña suma de dinero hasta el mes siguiente. ¿Qué hará X...?",
+   "opciones": {
+    "a": "Le prestará el dinero sin hacerle ninguna pregunta para no ponerle en un aprieto.",
+    "b": "Le prestará el dinero porque a él le gustaría que le hicieran lo mismo si lo necesitara.",
+    "c": "No le dará el dinero, considerando que su compañero tiene, probablemente, buenos amigos dispuestos a ayudarle."
+   }
+  },
+  {
+   "item": 38,
+   "enunciado": "B... se ha puesto, sin quererlo, fuera de la legalidad y debe escoger a un abogado para que le defienda. ¿Sobre cual de los criterios siguientes basará su elección?",
+   "opciones": {
+    "a": "Su reputación de elocuencia.",
+    "b": "Sus buenas relaciones con la magistratura.",
+    "c": "Su perspicacia psicológica."
+   }
+  },
+  {
+   "item": 39,
+   "enunciado": "E... ha sido nombrado recientemente para un puesto que implica responsabilidades jerárquicas importan-tes. ¿Qué actitud tomará probablemente frente a sus subordinados?",
+   "opciones": {
+    "a": "Modificar su forma de mandar según las personas y las circunstancias.",
+    "b": "Fijarse un sistema de mando bien elaborado e idéntico para todos.",
+    "c": "Basándose en la experiencia, dejarse guiar por su intuición."
+   }
+  },
+  {
+   "item": 40,
+   "enunciado": "R... tiene que hablar sobre informática a empleados que no tienen ningún conocimiento en este campo. ¿Cuál de las siguientes alternativas le planteará menos problemas?",
+   "opciones": {
+    "a": "Utilizar un vocabulario comprensible para todo el mundo.",
+    "b": "Interesar al auditorio y mantener su atención.",
+    "c": "Hacer participar a todos los asistentes."
+   }
+  },
+  {
+   "item": 41,
+   "enunciado": "L... asiste a un partido de fútbol entre dos equipos muy conocidos. El partido es muy disputado y los dos equipos rinden al máximo. Entre los espectadores el entusiasmo es tremendo:",
+   "opciones": {
+    "a": "L... se contenta con aplaudir las jugadas más brillantes.",
+    "b": "L... es dominado por la agitación general: grita y gesticula como los otros.",
+    "c": "L... discute con sus vecinos sobre las jugadas de los futbolistas."
+   }
+  },
+  {
+   "item": 42,
+   "enunciado": "B... atraviesa la calle por un paso de peatones con el semáforo en rojo. Un auto aparece a gran velocidad y se detiene repentinamente a pocos centímetros de B... ¿Cuál va a ser la reacción inmediata de éste?",
+   "opciones": {
+    "a": "Hará una observación irónica al mismo tiempo que le maldice interiormente al conductor.",
+    "b": "Dará airadamente su opinión al conductor sobre su manera de conducir.",
+    "c": "Lanzará al conductor algunos insultos que no puede reprimir."
+   }
+  },
+  {
+   "item": 43,
+   "enunciado": "A su modo de ver, ¿cuál es, entre los siguientes aspectos, el más desatendido actualmente en la educación de su hijo?",
+   "opciones": {
+    "a": "La aceptación de responsabilidades.",
+    "b": "El gusto por el trabajo bien hecho.",
+    "c": "La capacidad de desenvolverse solo rápidamente."
+   }
+  },
+  {
+   "item": 44,
+   "enunciado": "T... acaba de fracasar en un examen. Uno de sus amigos le dice que algunos fracasos son útiles en la vida. ¿Qué responderá él?",
+   "opciones": {
+    "a": "\"Se ve que no estás en mi lugar, yo preferiría no pasar por esto\".",
+    "b": "\"Puede que tengas razón\".",
+    "c": "\"Admite, por lo menos, que cuando ocurre es difícil de aceptar\"."
+   }
+  },
+  {
+   "item": 45,
+   "enunciado": "L... se encuentra en una reunión amistosa. Sabe muy bien que la mayor parte de las personas presentes tienen opiniones muy diferentes a las suyas. ¿Qué piensa usted que hará?",
+   "opciones": {
+    "a": "Evitar toda discusión.",
+    "b": "Provocar la discusión.",
+    "c": "Dar su opinión al no poder evitarlo."
+   }
+  },
+  {
+   "item": 46,
+   "enunciado": "¿Qué cualidad le parece más útil en las relaciones sociales?",
+   "opciones": {
+    "a": "La tolerancia.",
+    "b": "La sinceridad.",
+    "c": "La aceptación de compromisos."
+   }
+  },
+  {
+   "item": 47,
+   "enunciado": "M... acaba de modificar totalmente sus apartamento e invita a sus amigos a la inauguración. Entre los cumplidos que le hagan ¿Cuál será para él más agradable?",
+   "opciones": {
+    "a": "Una felicitación sobre su buen gusto.",
+    "b": "Un elogio sobre la forma en que ha sacado partido de la disposición de las habitaciones.",
+    "c": "Una alabanza a su originalidad, porque su decora-ción no se parece a ninguna otra ya vista."
+   }
+  },
+  {
+   "item": 48,
+   "enunciado": "S... llega en el momento de una discusión entre dos personas a las que conoce poco. El tema del que hablan, muy especifico, le es totalmente descono-cido y apenas le interesa. ¿Cuál será su reacción?",
+   "opciones": {
+    "a": "Interviene para informarse, aún a riesgo de parecer ignorante.",
+    "b": "Trata de interesarse porque no quiere parecer incorrecto",
+    "c": "No interviene, porque no puede aportar un punto de vista interesante sobre el asunto."
+   }
+  },
+  {
+   "item": 49,
+   "enunciado": "R... llega con retraso a una reunión de copropietarios. ¿Qué es lo que probablemente le molestará más?",
+   "opciones": {
+    "a": "La idea de que hayan podido aprovecharse de su ausencia para tomar una decisión con la que él no esté de acuerdo.",
+    "b": "El temor de tener dificultad para integrarse en la discusión.",
+    "c": "La perspectiva de parecer descortés."
+   }
+  },
+  {
+   "item": 50,
+   "enunciado": "Se ha pedido a F... un informe lo más objetivo posible sobre su modo de ser. ¿Quién decidirá el que lo haga?",
+   "opciones": {
+    "a": "Su mujer.",
+    "b": "Su grupo de amigos.",
+    "c": "El mismo."
+   }
+  },
+  {
+   "item": 51,
+   "enunciado": "X... quiere construir una casa. ¿Cuál de las siguientes soluciones elegirá?",
+   "opciones": {
+    "a": "Llamar a un arquitecto.",
+    "b": "Hacer los planes él mismo y trabajar directamente con un constructor.",
+    "c": "Hacer los planos con un amigo que acaba de hacer una casa."
+   }
+  },
+  {
+   "item": 52,
+   "enunciado": "T... es un hombre de negocios generalmente muy ocupado. Una cita anulada a última hora le permite tener una mañana libre totalmente imprevista ¿Cómo cree usted que la utilizara?",
+   "opciones": {
+    "a": "Aprovechará para levantarse pronto y pasar la mañana practicando su deporte favorito.",
+    "b": "Hará el balance de la semana que acaba de pasar.",
+    "c": "Constituye para él una ocasión muy poco habitual de poder \"perder su tiempo\" y la aprovechará"
+   }
+  },
+  {
+   "item": 53,
+   "enunciado": "D... va a ir a un país del que no conoce nada. Para preparar su viaje, ¿Qué cree usted que hará?",
+   "opciones": {
+    "a": "Leer libros y guías sobre ese país.",
+    "b": "Preguntar a amigos o parientes que conocen bien el país.",
+    "c": "Esperar a estar en el país ara ver e informarse."
+   }
+  },
+  {
+   "item": 54,
+   "enunciado": "Una persona cae de repente sobre la acera a las seis de la tarde, momento en que las calles están abarrotadas de gente, nadie se detiene a ofrecer su ayuda a la persona en dificultades ¿A que cree usted que se debe esta conducta?",
+   "opciones": {
+    "a": "A una total indiferencia por lo que puede ocurrir a los demás.",
+    "b": "Al miedo ante una situación inesperada.",
+    "c": "Al temor de ocuparse de lo que no le compete a uno."
+   }
+  },
+  {
+   "item": 55,
+   "enunciado": "Una señora va a consultar a un médico sobre una infección que le parece bastante banal. El médico la interroga ampliamente antes de examinarla. Ella contesta, por supuesto, a las preguntas, pero, en el fondo ¿Qué pensará?",
+   "opciones": {
+    "a": "\"En su lugar, yo comenzaría por hacer el examen y preguntaría después\".",
+    "b": "\"El debe intentar conocer en que circunstancias he cogido esta enfermedad\".",
+    "c": "\"Está bien que me haga preguntas, pero hay algunas en las que no veo relación ninguna con lo que yo tengo\"."
+   }
+  },
+  {
+   "item": 56,
+   "enunciado": "C... tiene que contratar empleados de oficina; dispone de poco tiempo. ¿Qué método empleara'?",
+   "opciones": {
+    "a": "Tener una entrevista con los candidatos.",
+    "b": "Examinar sus \"currículum vitae\" y sus referencias.",
+    "c": "Hacerles una prueba práctica en el trabajo."
+   }
+  },
+  {
+   "item": 57,
+   "enunciado": "El mejor delegado de personal es aquel que:",
+   "opciones": {
+    "a": "Es un buen negociador.",
+    "b": "Está convencido de la justicia de la reivindicación.",
+    "c": "Esta bien integrado con el personal."
+   }
+  },
+  {
+   "item": 58,
+   "enunciado": "La señora D... trata inútilmente de hacer que coma su hijo de cinco años; éste se resiste violentamente. ¿Qué hará ella?",
+   "opciones": {
+    "a": "Forzarle a comer considerando que el niño lo hace por capricho.",
+    "b": "Hacerle un pequeño chantaje de tipo \"Demuestra a Mamá que eres bueno y que la quieres\".",
+    "c": "Dejar al niño, pensando que comerá más en la comida siguiente."
+   }
+  },
+  {
+   "item": 59,
+   "enunciado": "Se habla frecuentemente del respeto a las \"reglas del juego\". En general, se trata:",
+   "opciones": {
+    "a": "De una disposición profunda, estable y claramente definida.",
+    "b": "De la aceptación a desempeñar en cada instante el papel que conviene.",
+    "c": "De una sumisión sincera a las costumbres de un grupo."
+   }
+  },
+  {
+   "item": 60,
+   "enunciado": "C... que es aficionado al bricolage, decide tapizar él mismo un sillón valioso. Cuando llega a la mitad de su trabajo se da cuenta de que corre el peligro de fracasar en su intento. ¿Cuál será su decisión?",
+   "opciones": {
+    "a": "Confiar el sillón a un especialista que realizará un trabajo impecable.",
+    "b": "Deshacer lo que ya ha hecho y comenzar otra vez desde cero.",
+    "c": "Dejar durante unos días su trabajo para reempren-derlo cuando esté en mejores condiciones."
+   }
+  },
+  {
+   "item": 61,
+   "enunciado": "C... va a ir con su mujer al campo durante los días de Pascua. Previendo la afluencia, ha reservado pasajes en ferrocarril. Salen de su casa a la hora justa, pero un embotellamiento en los alrededores de la estación les hace perder el tren. ¿Cómo cree usted que reaccionará?",
+   "opciones": {
+    "a": "\"Siempre pasa lo mismo. Si hubieras estado preparada antes no hubiera ocurrido esto\".",
+    "b": "\"Se han fastidiado las vacaciones... No me parece nada viajar de pie en el tren siguiente\".",
+    "c": "\"¡Que le vamos a hacer! Voy a devolver los boletos y nos quedaremos en casa\"."
+   }
+  },
+  {
+   "item": 62,
+   "enunciado": "A su juicio, la mayoría de los fracasos son debido a:",
+   "opciones": {
+    "a": "Incapacidad.",
+    "b": "Coincidencia de circunstancias negativas.",
+    "c": "Fallos ocasionales."
+   }
+  },
+  {
+   "item": 63,
+   "enunciado": "F... ha encargado un frigorífico. En su ausencia, lo depositan en casa del conserje. El embalaje está estropeado, por lo cual el frigorífico ha sufrido algunos daños. F... decide hacer una gestión ante los servicios de distribución. ¿De qué forma se comportará?",
+   "opciones": {
+    "a": "Escribirá a los citados servicios conservando una copia de la carta.",
+    "b": "Irá personalmente a reclamar.",
+    "c": "Rogará a uno de sus amigos, empleado en esa casa, que intervenga."
+   }
+  },
+  {
+   "item": 64,
+   "enunciado": "Con ocasión de un viaje organizado, B... se encuentra con personas que no conoce. Al cabo de unos días se da cuenta de que la mayoría de las personas le tienen poca simpatía. ¿Cómo cree usted que reaccionará?",
+   "opciones": {
+    "a": "Leo tiene sin cuidado, porque para él lo importante es que el viaje esté bien organizado y que el guía sea eficaz.",
+    "b": "Está un poco molesto y trata de hacer un esfuerzo para resultar más simpático.",
+    "c": "Esto le amarga, en parte, sus vacaciones y propone que, en la próxima ocasión, se irá con sus amigos."
+   }
+  },
+  {
+   "item": 65,
+   "enunciado": "R... hace un viaje con algunos amigos. Una tarde el grupo se separa después de haberse puesto de acuerdo en la hora para la salida. A lo largo de esta tarde, R... descubre un monumento que le interesa mucho visitar, pero, si lo hace, le será imposible llegar a la cita. ¿Qué hará?",
+   "opciones": {
+    "a": "Hacer la visita porque piensa que no tendrá ya ocasión de volver a este lugar y que de todas maneras habrá otros que llegarán tarde también.",
+    "b": "Renuncia a esta visita porque le parece más importante no hacer esperar a los demás.",
+    "c": "Trata de encontrar a sus amigos para persuadirles de que hagan la visita con él, aún a riesgo de desorganizar la última parte del viaje."
+   }
+  },
+  {
+   "item": 66,
+   "enunciado": "¿Cuál de estas profesiones le parece a usted la más envidiable?",
+   "opciones": {
+    "a": "Gerente de una pequeña empresa.",
+    "b": "Director adjunto de una empresa internacional.",
+    "c": "Asesor científico de alto nivel."
+   }
+  },
+  {
+   "item": 67,
+   "enunciado": "A causa de un accidente que ha causado la muerte de los padres de un niño pequeño, J... tiene que encargarse del niño con carácter definitivo. ¿Cuál será la actitud más probable que tendrá a este respecto?",
+   "opciones": {
+    "a": "Teme verse obligado a revisar su sistema de educación.",
+    "b": "Confía en el buen carácter del niño.",
+    "c": "Busca otras alternativas para el niño."
+   }
+  },
+  {
+   "item": 68,
+   "enunciado": "Un amigo propone a T... llevarle en su velero a hacer un pequeño crucero. T... nunca ha practicado la vela. ¿Qué cree usted que decidirá?",
+   "opciones": {
+    "a": "Aceptar, pensando que podrá desenvolverse bien.",
+    "b": "Arreglárselas para hacer antes algunas horas de vela en una escuela.",
+    "c": "No aceptar, ante el temor de ser una molestia para su amigo."
+   }
+  },
+  {
+   "item": 69,
+   "enunciado": "T... va hacia el trabajo por su camino habitual. Una furgoneta de reparto le bloquea durante un buen rato en una calle estrecha. A juicio de usted, ¿qué será lo mas desagradable para T...?",
+   "opciones": {
+    "a": "La perspectiva de llegar con retraso a su despacho.",
+    "b": "El hecho de tener que esperar sin poder moverse ni hacer nada.",
+    "c": "Los bocinazos -inútiles-- de otros automovilistas."
+   }
+  },
+  {
+   "item": 70,
+   "enunciado": "G... trabaja en una empresa para la cual debe efectuar frecuentes desplazamientos. Acostumbra a hacer dos horas de atletismo todas las semanas en una sesión de entrenamiento colectivo. A juicio de usted, ¿cuál es su actitud en el curso de esta sesión?",
+   "opciones": {
+    "a": "Insiste en ciertas especialidades que le permitan mantenerse en buena forma.",
+    "b": "Realiza todas las actividades propuestas, pero sin esforzarse demasiado, porque tiene un trabajo cansado.",
+    "c": "Se entrega a fondo y frecuentemente termina agotado, porque no concibe el deporte de otra manera."
+   }
+  },
+  {
+   "item": 71,
+   "enunciado": "Según su criterio, ¿cuál es la ventaja de tener un perro en un apartamento de la ciudad?",
+   "opciones": {
+    "a": "Permite sentirse menos solo.",
+    "b": "Favorece la ocasión de caminar un poco cada día paseando el perro.",
+    "c": "Vigila el apartamento."
+   }
+  },
+  {
+   "item": 72,
+   "enunciado": "En el transcurso de una reunión en que S... se ha encontrado con amigos, les propone terminar la velada en su casa. Al enterarse, se une a ellos una persona que se mantenía alejada del grupo y a la cual él estima poco. ¿Cuál será la reacción de S...?",
+   "opciones": {
+    "a": "Piensa que, después de todo, tendrá ocasión de conocer mejor a esta persona.",
+    "b": "Estimando que se ha invitado a sí misma, no se ocupará de ella en toda la noche.",
+    "c": "Lamenta haber hablado demasiado alto."
+   }
+  },
+  {
+   "item": 73,
+   "enunciado": "El director de un centro de delincuentes debe contratar a un nuevo educador. ¿A cual de estas cualidades dará más importancia?",
+   "opciones": {
+    "a": "Ser irreprochable y poder servir de modelo.",
+    "b": "Tener buenos conocimientos pedagógicos.",
+    "c": "Saber escuchar."
+   }
+  },
+  {
+   "item": 74,
+   "enunciado": "Según su opinión, ¿qué es más importante en una persona que da una fiesta?",
+   "opciones": {
+    "a": "Permitir a todos expresarse.",
+    "b": "Invitar a personas que puedan coincidir con sus intereses.",
+    "c": "Cuidar de que a nadie le falte nada."
+   }
+  },
+  {
+   "item": 75,
+   "enunciado": "R... ha de exponer un proyecto a un colega que no conoce. Para que R... pueda hacerse comprender por su interlocutor, es preferible que:",
+   "opciones": {
+    "a": "Sepa cual es su formación académica.",
+    "b": "Conozca sus antecedentes profesionales.",
+    "c": "Lea el informe sobre un trabajo hecho por un colega."
+   }
+  },
+  {
+   "item": 76,
+   "enunciado": "Si tuviera que hacer algún reproche a la profesión médica. ¿cuál escogería?",
+   "opciones": {
+    "a": "No consagra suficiente tiempo a cada enfermo.",
+    "b": "Da demasiada importancia al dinero.",
+    "c": "Utiliza a menudo un vocabulario incomprensible."
+   }
+  },
+  {
+   "item": 77,
+   "enunciado": "N... tiene que escoger un plan de formación para las personas de su departamento. Desearía una formación interesante para todos, pero a la vez, eficaz y rentable. ¿Qué elegiría?",
+   "opciones": {
+    "a": "Un plan organizado en función de las necesidades del departamento y en el que todas las fases estén definidas de antemano.",
+    "b": "Un plan que tenga en cuenta a cada participante.",
+    "c": "Un plan que incluya de manera regular exámenes de control."
+   }
+  },
+  {
+   "item": 78,
+   "enunciado": "M... acaba de tener un ataque al hígado. Sin embargo, un amigo lo llama para invitarlo a comer, precisando que le ha preparado su plato favorito. Supuesto que este plato está contraindicado para él en este momento, ¿cuál será la reacción de M...?",
+   "opciones": {
+    "a": "Aceptar la invitación pensando que por una vez no hará caso de su régimen.",
+    "b": "Proponer que se le aplace esta invitación para más adelante cuando acabe su régimen."
+   }
+  },
+  {
+   "item": 79,
+   "enunciado": "M... no está satisfecho con la Seguridad Social. Lo que más le desagrada es:",
+   "opciones": {
+    "a": "Lo absurdo de algunas disposiciones de esta entidad.",
+    "b": "La gran dificultad de atenerse a la complejidad de su reglamentación.",
+    "c": "La falta de atención a aspectos que él cree fundamentales."
+   }
+  },
+  {
+   "item": 80,
+   "enunciado": "Y... ha decidido consagrar una parte de su tiempo libre a ayudar a las personas de la tercera edad. Existen varias posibilidades. ¿Cuál elegirá en último lugar cuando no hay otra alternativa?",
+   "opciones": {
+    "a": "Acompañar a las personas ancianas durante el paseo.",
+    "b": "Visitar a una persona mayor cada semana.",
+    "c": "Hacer colectas para la construcción de un hogar de ancianos."
+   }
+  },
+  {
+   "item": 81,
+   "enunciado": "Entre los siguientes argumentos publicitarios, ¿cuál tiene más posibilidades de influir en el público?",
+   "opciones": {
+    "a": "La muestra.",
+    "b": "El \"slogan\".",
+    "c": "El testimonio de una \"estrella\"."
+   }
+  },
+  {
+   "item": 82,
+   "enunciado": "Durante un viaje en tren, D... se encuentra en un compartimento abarrotado. Su vecino fuma y el humo le molesta mucho. Ya le ha rogado que dejara de fumar, sin resultado. ¿Qué hará?",
+   "opciones": {
+    "a": "Pedir el parecer de otros viajeros del compartimento.",
+    "b": "Abrir la ventana.",
+    "c": "Hablar de nuevo con su vecino con el objeto de convencerle de que deje de fumar."
+   }
+  },
+  {
+   "item": 83,
+   "enunciado": "El director del departamento de una empresa de productos alimenticios desea lanzar al mercado un nuevo postre. Dispone de un presupuesto que puede repartir en los tres conceptos que se citan a continuación. ¿En cual de ellos empleará más dinero?",
+   "opciones": {
+    "a": "En estudios de mercado para conocer los gustos de los futuros compradores.",
+    "b": "En publicidad para dar a conocer su producto.",
+    "c": "En la investigación de envases y presentación."
+   }
+  },
+  {
+   "item": 84,
+   "enunciado": "B... toma parte en una discusión muy animada, en el transcurso de la cual sus opiniones son muy atacadas. Entre las actitudes siguientes, ¿cuál será la que adopte?",
+   "opciones": {
+    "a": "Tratar por todos los medios de convencer a los demás.",
+    "b": "Divertirse simplemente en el juego de la discusión.",
+    "c": "Dejarse convencer cuando vea que sus posiciones son poco defendibles."
+   }
+  },
+  {
+   "item": 85,
+   "enunciado": "Cuando usted va a un restaurante, ¿qué tipo de plato prefiere?",
+   "opciones": {
+    "a": "Uno que ya conoce y que le gusta de modo especial.",
+    "b": "La especialidad de la casa.",
+    "c": "Un plato exótico que usted desconoce en absoluto."
+   }
+  },
+  {
+   "item": 86,
+   "enunciado": "Después de un naufragio, C... llega solo a una isla desierta. El clima es muy agradable y la vegetación le permitirá encontrar el alimento necesario. ¿Qué es, a su modo de ver, lo que probablemente le planteará menos problema?",
+   "opciones": {
+    "a": "El carácter nuevo e insólito de la situación.",
+    "b": "La soledad.",
+    "c": "La falta de algunos atractivos de la vida anterior."
+   }
+  },
+  {
+   "item": 87,
+   "enunciado": "J... dirige una importante firma automovilista. Puede escoger entre varias políticas comerciales. ¿Cuál elegirá?",
+   "opciones": {
+    "a": "Orientar sus esfuerzos para sacar de vez en cuando modelos especiales.",
+    "b": "Buscar los efectos de moda y atender a una clientela particular.",
+    "c": "Ofrecer de ordinario modelos clásicos."
+   }
+  }
+ ]
+}

@@ -3,7 +3,8 @@
 import { createServiceClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import { validarDocumento } from '@/lib/documento'
-import type { TestResultData, TestSnapshot } from '@/types/database'
+import type { IPVResult, TestResultData, TestSnapshot } from '@/types/database'
+import { scoreIPV } from '@/lib/ipv/score'
 
 // ─── Start Evaluation ─────────────────────────────────────────────────────────
 
@@ -99,11 +100,20 @@ export async function completeTestAction(
     return { redirect: `/eval/${token}/hub` }
   }
 
+  // IPV: el puntaje se recalcula en el servidor a partir de las respuestas;
+  // no se confía en el `resultado` que envía el navegador.
+  let resultsToSave: TestResultData = results
+  if (testId === 'ipv') {
+    const ipv = results as Partial<IPVResult>
+    const respuestas = Array.isArray(ipv.respuestas) ? ipv.respuestas : []
+    resultsToSave = { ...ipv, tipo: 'ipv', respuestas, resultado: scoreIPV(respuestas) } as IPVResult
+  }
+
   // Save result
   await supabase.from('test_results').insert({
     session_id: sessionId,
     test_id: testId,
-    results: results as never,
+    results: resultsToSave as never,
   })
 
   // Check if all tests are now completed

@@ -1,0 +1,419 @@
+{
+ "formato_respuestas": "string de 87 caracteres; posición 1 = ítem 1; letras a/b/c",
+ "casos": [
+  {
+   "caso": "todas A",
+   "respuestas": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+   "esperado": {
+    "DGV": {
+     "pd": 5,
+     "pt": 1
+    },
+    "R": {
+     "pd": 13,
+     "pt": 1
+    },
+    "A": {
+     "pd": 17,
+     "pt": 8
+    },
+    "I": {
+     "pd": 3,
+     "pt": 3
+    },
+    "II": {
+     "pd": 3,
+     "pt": 3
+    },
+    "III": {
+     "pd": 5,
+     "pt": 5
+    },
+    "IV": {
+     "pd": 2,
+     "pt": 1
+    },
+    "V": {
+     "pd": 3,
+     "pt": 3
+    },
+    "VI": {
+     "pd": 4,
+     "pt": 6
+    },
+    "VII": {
+     "pd": 4,
+     "pt": 7
+    },
+    "VIII": {
+     "pd": 6,
+     "pt": 10
+    },
+    "IX": {
+     "pd": 3,
+     "pt": 3
+    }
+   },
+   "pt_que_da_el_excel_original": {
+    "DGV": 1,
+    "R": 1,
+    "A": 8,
+    "I": 1,
+    "II": 3,
+    "III": 5,
+    "IV": 1,
+    "V": 3,
+    "VI": 6,
+    "VII": 7,
+    "VIII": 10,
+    "IX": 3
+   },
+   "nota": "Solo difiere la escala I (bug del Excel)."
+  },
+  {
+   "caso": "todas B",
+   "respuestas": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+   "esperado": {
+    "DGV": {
+     "pd": 9,
+     "pt": 4
+    },
+    "R": {
+     "pd": 15,
+     "pt": 2
+    },
+    "A": {
+     "pd": 13,
+     "pt": 5
+    },
+    "I": {
+     "pd": 4,
+     "pt": 4
+    },
+    "II": {
+     "pd": 4,
+     "pt": 4
+    },
+    "III": {
+     "pd": 3,
+     "pt": 3
+    },
+    "IV": {
+     "pd": 4,
+     "pt": 2
+    },
+    "V": {
+     "pd": 5,
+     "pt": 5
+    },
+    "VI": {
+     "pd": 3,
+     "pt": 4
+    },
+    "VII": {
+     "pd": 1,
+     "pt": 2
+    },
+    "VIII": {
+     "pd": 4,
+     "pt": 9
+    },
+    "IX": {
+     "pd": 2,
+     "pt": 2
+    }
+   },
+   "pt_que_da_el_excel_original": {
+    "DGV": 4,
+    "R": 2,
+    "A": 5,
+    "I": 1,
+    "II": 4,
+    "III": 3,
+    "IV": 2,
+    "V": 5,
+    "VI": 4,
+    "VII": 2,
+    "VIII": 9,
+    "IX": 2
+   },
+   "nota": "Solo difiere la escala I (bug del Excel)."
+  },
+  {
+   "caso": "todas C (14 y 78 = B)",
+   "respuestas": "cccccccccccccbcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccbccccccccc",
+   "esperado": {
+    "DGV": {
+     "pd": 6,
+     "pt": 2
+    },
+    "R": {
+     "pd": 14,
+     "pt": 1
+    },
+    "A": {
+     "pd": 16,
+     "pt": 7
+    },
+    "I": {
+     "pd": 4,
+     "pt": 4
+    },
+    "II": {
+     "pd": 4,
+     "pt": 4
+    },
+    "III": {
+     "pd": 4,
+     "pt": 4
+    },
+    "IV": {
+     "pd": 2,
+     "pt": 1
+    },
+    "V": {
+     "pd": 3,
+     "pt": 3
+    },
+    "VI": {
+     "pd": 4,
+     "pt": 6
+    },
+    "VII": {
+     "pd": 3,
+     "pt": 5
+    },
+    "VIII": {
+     "pd": 6,
+     "pt": 10
+    },
+    "IX": {
+     "pd": 3,
+     "pt": 3
+    }
+   },
+   "pt_que_da_el_excel_original": {
+    "DGV": 2,
+    "R": 1,
+    "A": 7,
+    "I": 1,
+    "II": 4,
+    "III": 4,
+    "IV": 1,
+    "V": 3,
+    "VI": 6,
+    "VII": 5,
+    "VIII": 10,
+    "IX": 3
+   },
+   "nota": "Solo difiere la escala I (bug del Excel)."
+  },
+  {
+   "caso": "aleatorio 1",
+   "respuestas": "babcaacabcacaaabbaaacbacaacccaccbaaacabbacacbccaacccabaccacacabccbbbcbbbaacaabcbbcbbcaa",
+   "esperado": {
+    "DGV": {
+     "pd": 7,
+     "pt": 3
+    },
+    "R": {
+     "pd": 11,
+     "pt": 1
+    },
+    "A": {
+     "pd": 24,
+     "pt": 10
+    },
+    "I": {
+     "pd": 3,
+     "pt": 3
+    },
+    "II": {
+     "pd": 2,
+     "pt": 2
+    },
+    "III": {
+     "pd": 5,
+     "pt": 5
+    },
+    "IV": {
+     "pd": 1,
+     "pt": 1
+    },
+    "V": {
+     "pd": 5,
+     "pt": 5
+    },
+    "VI": {
+     "pd": 7,
+     "pt": 10
+    },
+    "VII": {
+     "pd": 7,
+     "pt": 10
+    },
+    "VIII": {
+     "pd": 5,
+     "pt": 10
+    },
+    "IX": {
+     "pd": 2,
+     "pt": 2
+    }
+   },
+   "pt_que_da_el_excel_original": {
+    "DGV": 3,
+    "R": 1,
+    "A": 10,
+    "I": 1,
+    "II": 2,
+    "III": 5,
+    "IV": 1,
+    "V": 5,
+    "VI": 10,
+    "VII": 10,
+    "VIII": 10,
+    "IX": 2
+   },
+   "nota": "Solo difiere la escala I (bug del Excel)."
+  },
+  {
+   "caso": "aleatorio 2",
+   "respuestas": "cbababbacaccbbcbcbcbaabbccaaccbcccbbcbcbabbacabaabacabbbaabbcbabcbcbbcbaaaaaaaabcabbaab",
+   "esperado": {
+    "DGV": {
+     "pd": 7,
+     "pt": 3
+    },
+    "R": {
+     "pd": 15,
+     "pt": 2
+    },
+    "A": {
+     "pd": 14,
+     "pt": 6
+    },
+    "I": {
+     "pd": 5,
+     "pt": 6
+    },
+    "II": {
+     "pd": 3,
+     "pt": 3
+    },
+    "III": {
+     "pd": 5,
+     "pt": 5
+    },
+    "IV": {
+     "pd": 2,
+     "pt": 1
+    },
+    "V": {
+     "pd": 2,
+     "pt": 2
+    },
+    "VI": {
+     "pd": 6,
+     "pt": 8
+    },
+    "VII": {
+     "pd": 2,
+     "pt": 4
+    },
+    "VIII": {
+     "pd": 4,
+     "pt": 9
+    },
+    "IX": {
+     "pd": 1,
+     "pt": 1
+    }
+   },
+   "pt_que_da_el_excel_original": {
+    "DGV": 3,
+    "R": 2,
+    "A": 6,
+    "I": 1,
+    "II": 3,
+    "III": 5,
+    "IV": 1,
+    "V": 2,
+    "VI": 8,
+    "VII": 4,
+    "VIII": 9,
+    "IX": 1
+   },
+   "nota": "Solo difiere la escala I (bug del Excel)."
+  },
+  {
+   "caso": "aleatorio 3",
+   "respuestas": "cbccbaccccccabccbbbbabcbaaaabaabcaaacacabcaaacbacbbcbbaabbbbbaaacbcbbcacaacbaacbcacbcba",
+   "esperado": {
+    "DGV": {
+     "pd": 6,
+     "pt": 2
+    },
+    "R": {
+     "pd": 11,
+     "pt": 1
+    },
+    "A": {
+     "pd": 12,
+     "pt": 4
+    },
+    "I": {
+     "pd": 5,
+     "pt": 6
+    },
+    "II": {
+     "pd": 2,
+     "pt": 2
+    },
+    "III": {
+     "pd": 0,
+     "pt": 1
+    },
+    "IV": {
+     "pd": 4,
+     "pt": 2
+    },
+    "V": {
+     "pd": 2,
+     "pt": 2
+    },
+    "VI": {
+     "pd": 3,
+     "pt": 4
+    },
+    "VII": {
+     "pd": 2,
+     "pt": 4
+    },
+    "VIII": {
+     "pd": 5,
+     "pt": 10
+    },
+    "IX": {
+     "pd": 4,
+     "pt": 4
+    }
+   },
+   "pt_que_da_el_excel_original": {
+    "DGV": 2,
+    "R": 1,
+    "A": 4,
+    "I": 1,
+    "II": 2,
+    "III": 1,
+    "IV": 2,
+    "V": 2,
+    "VI": 4,
+    "VII": 4,
+    "VIII": 10,
+    "IX": 4
+   },
+   "nota": "Solo difiere la escala I (bug del Excel)."
+  }
+ ]
+}

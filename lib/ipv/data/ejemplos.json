@@ -1,0 +1,26 @@
+{
+  "fuente": "Cuestionario IPV.doc — página de instrucciones. Ejemplos de demostración: no puntúan.",
+  "ejemplos": [
+    {
+      "tipo": "personal",
+      "intro": "En algunas cuestiones usted estará personalmente implicado, por ejemplo en la siguiente:",
+      "enunciado": "Si usted pudiera elegir el tipo de vivienda de manera completamente libre. ¿Qué preferiría?",
+      "opciones": {
+        "a": "Una casa en el campo con un gran jardín",
+        "b": "Un lujoso apartamento en una gran ciudad",
+        "c": "Una casa situada en una calle tranquila de una pequeña ciudad."
+      }
+    },
+    {
+      "tipo": "tercera_persona",
+      "intro": "En otros casos las situaciones se refieren a personas ajenas, como en el siguiente ejemplo:",
+      "enunciado": "J.... está comprando en un gran almacén cuando advierte que alguien esconde discretamente un CD bajo su ropa. ¿Qué hará?",
+      "opciones": {
+        "a": "Dar cuenta del hecho al primer vendedor que encuentre",
+        "b": "No hacer nada porque piensa que no es cosa suya",
+        "c": "Indicar al infractor con el gesto o de palabra que ha visto lo que ha hecho"
+      },
+      "nota": "En este caso, usted debe contestar lo que en su propia opinión, es más probable que haga J..."
+    }
+  ]
+}
