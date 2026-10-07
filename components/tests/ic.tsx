@@ -99,7 +99,7 @@ function CriteriaCard() {
               <div className="flex items-start gap-2">
                 <span
                   className="mt-0.5 inline-flex items-center justify-center w-5 h-5 rounded-full text-[10px] font-bold shrink-0"
-                  style={{ background: 'oklch(0.72 0.12 68 / 0.18)', color: 'var(--navy)' }}
+                  style={{ background: 'rgb(216 31 15 / 0.18)', color: 'var(--navy)' }}
                 >
                   {c.numero}
                 </span>
@@ -283,7 +283,7 @@ export default function ICTest({ onComplete, isPending }: TestComponentProps) {
         </div>
         <button onClick={() => setFase('test')}
           className="px-8 py-3 rounded-lg text-sm font-medium"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}>
+          style={{ background: 'var(--brand)', color: 'white' }}>
           Entendido — ver tabla →
         </button>
       </div>
@@ -306,7 +306,7 @@ export default function ICTest({ onComplete, isPending }: TestComponentProps) {
         </div>
         <button onClick={() => onComplete(r)} disabled={isPending}
           className="inline-flex items-center gap-2 px-8 py-3 rounded-lg text-sm font-medium disabled:opacity-60"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}>
+          style={{ background: 'var(--brand)', color: 'white' }}>
           {isPending
             ? <><span className="w-3.5 h-3.5 border-2 border-current border-t-transparent rounded-full animate-spin" />Guardando...</>
             : 'Continuar →'}
@@ -345,7 +345,7 @@ export default function ICTest({ onComplete, isPending }: TestComponentProps) {
             onClick={() => handleSubmit()}
             disabled={submitted}
             className="px-4 py-1.5 rounded-lg text-xs font-medium disabled:opacity-50"
-            style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+            style={{ background: 'var(--brand)', color: 'white' }}
           >
             Finalizar prueba
           </button>
@@ -420,7 +420,7 @@ export default function ICTest({ onComplete, isPending }: TestComponentProps) {
                           onChange={() => toggleCheckbox(i, col)}
                           disabled={submitted}
                           className="w-4 h-4 rounded"
-                          style={{ accentColor: 'var(--navy)', cursor: submitted ? 'default' : 'pointer' }}
+                          style={{ accentColor: 'var(--brand)', cursor: submitted ? 'default' : 'pointer' }}
                         />
                       </td>
                     ))}
@@ -435,7 +435,7 @@ export default function ICTest({ onComplete, isPending }: TestComponentProps) {
               onClick={() => handleSubmit()}
               disabled={submitted}
               className="px-8 py-3 rounded-lg text-sm font-medium disabled:opacity-50"
-              style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+              style={{ background: 'var(--brand)', color: 'white' }}
             >
               Finalizar prueba
             </button>

@@ -59,9 +59,9 @@ export function PreguntaSilogismo({ item, value, onChange, disabled, showCorrect
           let textColor = 'var(--navy)'
 
           if (selected && !showCorrect) {
-            background = 'var(--navy)'
+            background = 'var(--brand)'
             textColor = 'var(--cream)'
-            borderColor = 'var(--navy)'
+            borderColor = 'var(--brand)'
           }
           if (isCorrect) {
             background = 'oklch(0.50 0.14 145)'

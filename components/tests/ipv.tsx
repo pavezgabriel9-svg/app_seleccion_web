@@ -347,8 +347,8 @@ export default function IPVTest({ onComplete, isPending, sessionId }: IPVTestPro
           <div
             className="rounded-xl px-4 py-3 text-xs leading-relaxed"
             style={{
-              background: 'oklch(0.72 0.12 68 / 0.08)',
-              border: '1px solid oklch(0.72 0.12 68 / 0.24)',
+              background: 'rgb(216 31 15 / 0.08)',
+              border: '1px solid rgb(216 31 15 / 0.24)',
               color: 'var(--navy)',
             }}
           >
@@ -360,7 +360,7 @@ export default function IPVTest({ onComplete, isPending, sessionId }: IPVTestPro
         <button
           onClick={comenzar}
           className="px-8 py-3 rounded-lg text-sm font-medium"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+          style={{ background: 'var(--brand)', color: 'white' }}
         >
           {borradorPrevio > 0 ? 'Continuar →' : 'Comenzar →'}
         </button>
@@ -398,7 +398,7 @@ export default function IPVTest({ onComplete, isPending, sessionId }: IPVTestPro
           <button
             onClick={enviar}
             className="inline-flex items-center gap-2 px-8 py-3 rounded-lg text-sm font-medium"
-            style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+            style={{ background: 'var(--brand)', color: 'white' }}
           >
             Continuar →
           </button>
@@ -437,7 +437,7 @@ export default function IPVTest({ onComplete, isPending, sessionId }: IPVTestPro
                 className="rounded-lg py-2 text-xs font-medium transition-colors"
                 style={{
                   fontFamily: 'var(--font-geist-mono, monospace)',
-                  background: pendiente ? 'oklch(0.72 0.12 68 / 0.14)' : 'oklch(0.96 0.005 80)',
+                  background: pendiente ? 'rgb(216 31 15 / 0.14)' : 'oklch(0.96 0.005 80)',
                   color: 'var(--navy)',
                   border: '1px solid',
                   borderColor: pendiente ? 'var(--gold)' : 'oklch(0.92 0.005 80)',
@@ -465,7 +465,7 @@ export default function IPVTest({ onComplete, isPending, sessionId }: IPVTestPro
             onClick={enviar}
             disabled={!completo || isPending}
             className="px-8 py-2.5 rounded-lg text-sm font-medium disabled:opacity-40"
-            style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+            style={{ background: 'var(--brand)', color: 'white' }}
           >
             Enviar respuestas
           </button>
@@ -500,7 +500,7 @@ export default function IPVTest({ onComplete, isPending, sessionId }: IPVTestPro
         >
           <div
             className="h-full rounded-full transition-all duration-300"
-            style={{ width: `${progreso}%`, background: 'var(--navy)' }}
+            style={{ width: `${progreso}%`, background: 'var(--brand)' }}
           />
         </div>
       </div>
@@ -528,13 +528,13 @@ export default function IPVTest({ onComplete, isPending, sessionId }: IPVTestPro
               onClick={() => responder(l)}
               className="w-full text-left flex items-start gap-3 rounded-xl px-4 py-3.5 transition-all"
               style={{
-                background: seleccionada ? 'oklch(0.30 0.04 268 / 0.05)' : 'oklch(0.97 0.005 80)',
+                background: seleccionada ? 'rgb(216 31 15 / 0.05)' : 'oklch(0.97 0.005 80)',
                 border: '1px solid',
-                borderColor: seleccionada ? 'var(--navy)' : 'oklch(0.92 0.005 80)',
+                borderColor: seleccionada ? 'var(--brand)' : 'oklch(0.92 0.005 80)',
                 cursor: 'pointer',
               }}
               onMouseEnter={(e) => {
-                if (!seleccionada) e.currentTarget.style.borderColor = 'oklch(0.72 0.12 68 / 0.5)'
+                if (!seleccionada) e.currentTarget.style.borderColor = 'rgb(216 31 15 / 0.5)'
               }}
               onMouseLeave={(e) => {
                 if (!seleccionada) e.currentTarget.style.borderColor = 'oklch(0.92 0.005 80)'
@@ -546,10 +546,10 @@ export default function IPVTest({ onComplete, isPending, sessionId }: IPVTestPro
                   width: '32px',
                   height: '32px',
                   borderRadius: '8px',
-                  background: seleccionada ? 'var(--navy)' : 'white',
+                  background: seleccionada ? 'var(--brand)' : 'white',
                   color: seleccionada ? 'var(--cream)' : 'oklch(0.65 0.03 265)',
                   border: '1px solid',
-                  borderColor: seleccionada ? 'var(--navy)' : 'oklch(0.88 0.005 80)',
+                  borderColor: seleccionada ? 'var(--brand)' : 'oklch(0.88 0.005 80)',
                   fontFamily: 'var(--font-geist-mono, monospace)',
                   fontSize: '14px',
                 }}

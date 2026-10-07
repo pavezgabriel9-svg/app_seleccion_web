@@ -203,7 +203,7 @@ export default function LuscherTest({ onComplete, isPending }: TestComponentProp
         <div className="flex justify-center">
           <button onClick={handleNext} disabled={isPending}
             className="inline-flex items-center gap-2 px-8 py-3 rounded-lg text-sm font-medium disabled:opacity-60"
-            style={{ background: 'var(--navy)', color: 'var(--cream)' }}>
+            style={{ background: 'var(--brand)', color: 'white' }}>
             {isPending
               ? <><span className="w-3.5 h-3.5 border-2 border-current border-t-transparent rounded-full animate-spin" />Guardando...</>
               : isLast ? 'Finalizar Lüscher →' : `Continuar a ${STEP_LABELS[step + 1]} →`}

@@ -94,7 +94,7 @@ function resolveTestComponent(
         onClick={() => baseProps.onComplete({})}
         disabled={baseProps.isPending}
         className="inline-flex items-center gap-2 px-8 py-3 rounded-lg text-sm font-medium disabled:opacity-60"
-        style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+        style={{ background: 'var(--brand)', color: 'white' }}
       >
         {baseProps.isPending
           ? <><span className="w-3.5 h-3.5 border-2 border-current border-t-transparent rounded-full animate-spin" />Guardando...</>
@@ -136,7 +136,7 @@ function TestProgressPanel({
                     background: isCompleted
                       ? 'oklch(0.93 0.05 145)'
                       : isActive
-                      ? 'var(--navy)'
+                      ? 'var(--brand)'
                       : 'oklch(0.93 0.004 80)',
                     color: isCompleted
                       ? 'oklch(0.42 0.13 145)'

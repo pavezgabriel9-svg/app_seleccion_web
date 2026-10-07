@@ -57,7 +57,7 @@ export function ContarCuadrados1({ value, onChange, disabled }: Props) {
             color: 'var(--navy)',
             fontFamily: 'var(--font-geist-mono, monospace)',
           }}
-          onFocus={(e) => (e.currentTarget.style.borderColor = 'var(--navy)')}
+          onFocus={(e) => (e.currentTarget.style.borderColor = 'var(--brand)')}
           onBlur={(e) => (e.currentTarget.style.borderColor = 'oklch(0.92 0.005 80)')}
         />
       </div>

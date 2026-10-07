@@ -29,7 +29,7 @@ function SubmitButton() {
       type="submit"
       disabled={pending}
       className="w-full py-3.5 px-6 rounded-lg text-sm font-medium transition-all duration-200 disabled:opacity-60 flex items-center justify-center gap-2"
-      style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+      style={{ background: 'var(--brand)', color: 'white' }}
     >
       {pending ? (
         <>

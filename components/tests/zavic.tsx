@@ -167,7 +167,7 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
         <button
           onClick={comenzar}
           className="px-8 py-3 rounded-lg text-sm font-medium"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+          style={{ background: 'var(--brand)', color: 'white' }}
         >
           Comenzar →
         </button>
@@ -202,7 +202,7 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
           onClick={() => onComplete(r)}
           disabled={isPending}
           className="inline-flex items-center gap-2 px-8 py-3 rounded-lg text-sm font-medium disabled:opacity-60"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+          style={{ background: 'var(--brand)', color: 'white' }}
         >
           {isPending ? (
             <>
@@ -237,7 +237,7 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
         <div className="h-1.5 rounded-full overflow-hidden" style={{ background: 'oklch(0.92 0.005 80)' }}>
           <div
             className="h-full rounded-full transition-all duration-300"
-            style={{ width: `${progreso}%`, background: 'var(--navy)' }}
+            style={{ width: `${progreso}%`, background: 'var(--brand)' }}
           />
         </div>
       </div>
@@ -291,13 +291,13 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
               onClick={() => clickFrase(f.pos)}
               className="w-full text-left flex items-start gap-3 rounded-xl px-4 py-3.5 transition-all"
               style={{
-                background: isRanked ? 'oklch(0.30 0.04 268 / 0.05)' : 'oklch(0.97 0.005 80)',
+                background: isRanked ? 'rgb(216 31 15 / 0.05)' : 'oklch(0.97 0.005 80)',
                 border: '1px solid',
-                borderColor: isRanked ? 'var(--navy)' : 'oklch(0.92 0.005 80)',
+                borderColor: isRanked ? 'var(--brand)' : 'oklch(0.92 0.005 80)',
                 cursor: 'pointer',
               }}
               onMouseEnter={(e) => {
-                if (!isRanked) e.currentTarget.style.borderColor = 'oklch(0.72 0.12 68 / 0.5)'
+                if (!isRanked) e.currentTarget.style.borderColor = 'rgb(216 31 15 / 0.5)'
               }}
               onMouseLeave={(e) => {
                 if (!isRanked) e.currentTarget.style.borderColor = 'oklch(0.92 0.005 80)'
@@ -309,10 +309,10 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
                   width: '32px',
                   height: '32px',
                   borderRadius: '8px',
-                  background: isRanked ? 'var(--navy)' : 'white',
+                  background: isRanked ? 'var(--brand)' : 'white',
                   color: isRanked ? 'var(--cream)' : 'oklch(0.65 0.03 265)',
                   border: '1px solid',
-                  borderColor: isRanked ? 'var(--navy)' : 'oklch(0.88 0.005 80)',
+                  borderColor: isRanked ? 'var(--brand)' : 'oklch(0.88 0.005 80)',
                   fontFamily: 'var(--font-geist-mono, monospace)',
                   fontSize: '14px',
                 }}
@@ -353,7 +353,7 @@ export default function ZAVICTest({ onComplete, isPending }: TestComponentProps)
           onClick={avanzar}
           disabled={!completo}
           className="px-8 py-2.5 rounded-lg text-sm font-medium disabled:opacity-40"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+          style={{ background: 'var(--brand)', color: 'white' }}
         >
           {esUltimo ? 'Finalizar' : 'Siguiente →'}
         </button>
