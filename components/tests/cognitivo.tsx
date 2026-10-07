@@ -263,7 +263,7 @@ export default function CognitivoTest({ onComplete, isPending }: TestComponentPr
         <button
           onClick={() => setFase('practica')}
           className="px-8 py-3 rounded-lg text-sm font-medium"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+          style={{ background: 'var(--brand)', color: 'white' }}
         >
           Empezar práctica →
         </button>
@@ -325,7 +325,7 @@ export default function CognitivoTest({ onComplete, isPending }: TestComponentPr
               onClick={confirmarPractica}
               disabled={!tieneResp}
               className="px-8 py-2.5 rounded-lg text-sm font-medium disabled:opacity-40"
-              style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+              style={{ background: 'var(--brand)', color: 'white' }}
             >
               Confirmar
             </button>
@@ -333,7 +333,7 @@ export default function CognitivoTest({ onComplete, isPending }: TestComponentPr
             <button
               onClick={siguientePractica}
               className="px-8 py-2.5 rounded-lg text-sm font-medium"
-              style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+              style={{ background: 'var(--brand)', color: 'white' }}
             >
               {esUltima ? 'Empezar el test →' : 'Siguiente →'}
             </button>
@@ -358,7 +358,7 @@ export default function CognitivoTest({ onComplete, isPending }: TestComponentPr
     }
 
     const pct = timeLeft / TIMER_SECONDS
-    const color = pct <= 0.10 ? '#CC2200' : pct <= 0.30 ? 'var(--gold)' : 'var(--navy)'
+    const color = pct <= 0.10 ? '#CC2200' : pct <= 0.30 ? 'oklch(0.72 0.12 68)' : 'var(--navy)'
     const mins = Math.floor(timeLeft / 60)
     const secs = (timeLeft % 60).toString().padStart(2, '0')
 
@@ -384,7 +384,7 @@ export default function CognitivoTest({ onComplete, isPending }: TestComponentPr
             className="h-full rounded-full transition-all duration-300"
             style={{
               width: `${((testIdx + 1) / ITEMS.length) * 100}%`,
-              background: 'var(--navy)',
+              background: 'var(--brand)',
             }}
           />
         </div>
@@ -402,7 +402,7 @@ export default function CognitivoTest({ onComplete, isPending }: TestComponentPr
           <button
             onClick={avanzarTest}
             className="px-8 py-2.5 rounded-lg text-sm font-medium"
-            style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+            style={{ background: 'var(--brand)', color: 'white' }}
           >
             {esUltima ? 'Finalizar' : 'Siguiente →'}
           </button>
@@ -438,7 +438,7 @@ export default function CognitivoTest({ onComplete, isPending }: TestComponentPr
         onClick={() => onComplete(resultRef.current!)}
         disabled={isPending}
         className="inline-flex items-center gap-2 px-8 py-3 rounded-lg text-sm font-medium disabled:opacity-60"
-        style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+        style={{ background: 'var(--brand)', color: 'white' }}
       >
         {isPending ? (
           <>

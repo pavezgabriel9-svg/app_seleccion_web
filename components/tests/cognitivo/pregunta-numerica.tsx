@@ -34,7 +34,7 @@ export function PreguntaNumerica({ item, value, onChange, disabled, showCorrect 
             fontFamily: 'var(--font-geist-mono, monospace)',
             opacity: disabled ? 0.7 : 1,
           }}
-          onFocus={(e) => (e.currentTarget.style.borderColor = 'var(--navy)')}
+          onFocus={(e) => (e.currentTarget.style.borderColor = 'var(--brand)')}
           onBlur={(e) => (e.currentTarget.style.borderColor = 'oklch(0.92 0.005 80)')}
         />
         {item.unidad && (

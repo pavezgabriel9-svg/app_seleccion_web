@@ -148,7 +148,7 @@ export default function DISCTest({ onComplete, isPending }: TestComponentProps) 
         <button
           onClick={() => setFase('test')}
           className="px-8 py-3 rounded-lg text-sm font-medium"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+          style={{ background: 'var(--brand)', color: 'white' }}
         >
           Comenzar →
         </button>
@@ -188,7 +188,7 @@ export default function DISCTest({ onComplete, isPending }: TestComponentProps) 
           onClick={() => onComplete(r)}
           disabled={isPending}
           className="inline-flex items-center gap-2 px-8 py-3 rounded-lg text-sm font-medium disabled:opacity-60"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+          style={{ background: 'var(--brand)', color: 'white' }}
         >
           {isPending ? (
             <>
@@ -221,7 +221,7 @@ export default function DISCTest({ onComplete, isPending }: TestComponentProps) 
         <div className="h-1.5 rounded-full overflow-hidden" style={{ background: 'oklch(0.92 0.005 80)' }}>
           <div
             className="h-full rounded-full transition-all duration-300"
-            style={{ width: `${progreso}%`, background: 'var(--navy)' }}
+            style={{ width: `${progreso}%`, background: 'var(--brand)' }}
           />
         </div>
       </div>
@@ -248,15 +248,15 @@ export default function DISCTest({ onComplete, isPending }: TestComponentProps) 
               className="grid grid-cols-[1fr_64px_64px] items-center gap-2 rounded-xl px-4 py-3"
               style={{
                 background: masSel
-                  ? 'oklch(0.30 0.04 268 / 0.06)'
+                  ? 'rgb(216 31 15 / 0.06)'
                   : menosSel
-                  ? 'oklch(0.72 0.12 68 / 0.08)'
+                  ? 'oklch(0.30 0.01 250 / 0.06)'
                   : 'oklch(0.97 0.005 80)',
                 border: '1px solid',
                 borderColor: masSel
-                  ? 'var(--navy)'
+                  ? 'var(--brand)'
                   : menosSel
-                  ? 'oklch(0.72 0.12 68 / 0.5)'
+                  ? 'oklch(0.45 0.01 250 / 0.5)'
                   : 'oklch(0.92 0.005 80)',
                 transition: 'background 0.15s ease, border-color 0.15s ease',
               }}
@@ -271,7 +271,7 @@ export default function DISCTest({ onComplete, isPending }: TestComponentProps) 
                   checked={masSel}
                   onChange={() => marcar('mas', p.pos)}
                   className="w-4 h-4"
-                  style={{ accentColor: 'var(--navy)', cursor: 'pointer' }}
+                  style={{ accentColor: 'var(--brand)', cursor: 'pointer' }}
                   aria-label={`${p.texto} — más me representa`}
                 />
               </div>
@@ -282,7 +282,7 @@ export default function DISCTest({ onComplete, isPending }: TestComponentProps) 
                   checked={menosSel}
                   onChange={() => marcar('menos', p.pos)}
                   className="w-4 h-4"
-                  style={{ accentColor: 'var(--gold)', cursor: 'pointer' }}
+                  style={{ accentColor: 'var(--navy)', cursor: 'pointer' }}
                   aria-label={`${p.texto} — menos me representa`}
                 />
               </div>
@@ -305,7 +305,7 @@ export default function DISCTest({ onComplete, isPending }: TestComponentProps) 
           onClick={avanzar}
           disabled={!completo}
           className="px-8 py-2.5 rounded-lg text-sm font-medium disabled:opacity-40"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}
+          style={{ background: 'var(--brand)', color: 'white' }}
         >
           {esUltimo ? 'Finalizar' : 'Siguiente →'}
         </button>

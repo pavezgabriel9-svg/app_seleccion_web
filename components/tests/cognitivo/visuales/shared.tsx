@@ -5,7 +5,7 @@ import type { ReactNode } from 'react'
 export const STROKE = 'var(--navy)'
 export const STROKE_HI = 'var(--gold)'
 export const FILL = 'oklch(0.96 0.008 80)'
-export const FILL_SEL = 'oklch(0.72 0.12 68 / 0.18)'
+export const FILL_SEL = 'rgb(216 31 15 / 0.18)'
 
 export function PuzzleBox({ children, label }: { children: ReactNode; label?: string }) {
   return (
@@ -46,9 +46,9 @@ export function OptionButton({
       disabled={disabled}
       className="rounded-lg py-2 px-1 flex flex-col items-center gap-1 transition-all"
       style={{
-        background: selected ? 'oklch(0.30 0.04 268 / 0.06)' : 'oklch(0.97 0.005 80)',
+        background: selected ? 'rgb(216 31 15 / 0.06)' : 'oklch(0.97 0.005 80)',
         border: '1px solid',
-        borderColor: selected ? 'var(--navy)' : 'oklch(0.92 0.005 80)',
+        borderColor: selected ? 'var(--brand)' : 'oklch(0.92 0.005 80)',
         cursor: disabled ? 'default' : 'pointer',
       }}
     >

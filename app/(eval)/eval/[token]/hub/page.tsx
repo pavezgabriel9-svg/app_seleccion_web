@@ -2,6 +2,7 @@ import { createServiceClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import { cookies } from 'next/headers'
 import Link from 'next/link'
+import { ChevronRight } from 'lucide-react'
 import type { TestSnapshot } from '@/types/database'
 
 interface Props {
@@ -95,7 +96,7 @@ export default async function HubPage({ params }: Props) {
           {firstName && (
             <p
               className="text-[11px] font-semibold uppercase tracking-widest"
-              style={{ color: 'var(--gold)' }}
+              style={{ color: 'var(--muted-foreground)' }}
             >
               {firstName}
             </p>
@@ -166,17 +167,17 @@ function TestCard({
       className="flex items-center gap-4 px-5 py-4 rounded-xl border transition-all duration-200"
       style={{
         background: isCompleted ? 'oklch(0.97 0.015 145)' : 'white',
-        borderColor: isCompleted ? 'oklch(0.84 0.05 145)' : 'var(--navy)',
+        borderColor: isCompleted ? 'oklch(0.84 0.05 145)' : '#d5d5d5',
         boxShadow: isCompleted
           ? 'none'
-          : '0 2px 12px oklch(0.20 0.06 268 / 0.08)',
+          : '0 1px 2px rgb(0 0 0 / 0.04)',
       }}
     >
       {/* Step indicator */}
       <div
         className="w-9 h-9 rounded-full flex items-center justify-center shrink-0 text-sm font-bold"
         style={{
-          background: isCompleted ? 'oklch(0.88 0.07 145)' : 'var(--navy)',
+          background: isCompleted ? 'oklch(0.88 0.07 145)' : 'var(--brand)',
           color: isCompleted ? 'oklch(0.38 0.13 145)' : 'var(--cream)',
         }}
       >
@@ -203,8 +204,8 @@ function TestCard({
       {/* Text */}
       <div className="flex-1 min-w-0">
         <p
-          className="text-sm font-medium leading-snug"
-          style={{ color: isCompleted ? 'oklch(0.52 0.005 80)' : 'var(--navy)' }}
+          className="text-sm font-semibold leading-snug"
+          style={{ color: isCompleted ? 'oklch(0.52 0.005 80)' : 'var(--brand)' }}
         >
           {test.name}
         </p>
@@ -226,10 +227,11 @@ function TestCard({
         />
       ) : (
         <span
-          className="text-sm font-medium shrink-0"
-          style={{ color: 'var(--navy)' }}
+          className="inline-flex items-center gap-1 text-sm font-semibold shrink-0"
+          style={{ color: 'var(--brand)' }}
         >
-          Comenzar →
+          Comenzar
+          <ChevronRight className="w-4 h-4" aria-hidden="true" />
         </span>
       )}
     </div>

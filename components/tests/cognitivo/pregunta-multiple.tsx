@@ -26,9 +26,9 @@ export function PreguntaMultiple({ item, value, onChange, disabled, showCorrect 
         let badgeColor = 'oklch(0.65 0.03 265)'
 
         if (selected && !showCorrect) {
-          background = 'oklch(0.30 0.04 268 / 0.06)'
-          borderColor = 'var(--navy)'
-          badgeBg = 'var(--navy)'
+          background = 'rgb(216 31 15 / 0.06)'
+          borderColor = 'var(--brand)'
+          badgeBg = 'var(--brand)'
           badgeColor = 'var(--cream)'
         }
         if (isCorrect) {

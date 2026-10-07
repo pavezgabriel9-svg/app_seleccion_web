@@ -114,13 +114,12 @@ function MemoriaBoard({ pairs, isPractice, onComplete }: BoardProps) {
                 transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
                 transition: 'transform 0.3s ease',
               }}>
-                {/* Frente (tapada) */}
+                {/* Frente (tapada): rojo de marca con el isotipo recortado */}
                 <div style={{
                   position: 'absolute', inset: 0, backfaceVisibility: 'hidden',
-                  background: 'var(--navy)', borderRadius: '10px',
-                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  background: 'var(--brand)', borderRadius: '10px', overflow: 'hidden',
                 }}>
-                  <span style={{ color: 'rgba(255,255,255,0.15)', fontSize: '20px' }}>◈</span>
+                  <span aria-hidden="true" className="memoria-dorso" />
                 </div>
                 {/* Reverso (número) */}
                 <div style={{
@@ -202,7 +201,7 @@ export default function MemoriaTest({ onComplete, isPending, hasPractice }: Test
         </div>
         <button onClick={() => setFase(hasPractice ? 'practica' : 'real')}
           className="px-8 py-3 rounded-lg text-sm font-medium"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}>
+          style={{ background: 'var(--brand)', color: 'white' }}>
           {hasPractice ? 'Comenzar práctica →' : 'Comenzar →'}
         </button>
       </div>
@@ -224,7 +223,7 @@ export default function MemoriaTest({ onComplete, isPending, hasPractice }: Test
           </p>
         </div>
         <button onClick={startReal} className="px-8 py-3 rounded-lg text-sm font-medium"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}>
+          style={{ background: 'var(--brand)', color: 'white' }}>
           Comenzar test real →
         </button>
       </div>
@@ -246,7 +245,7 @@ export default function MemoriaTest({ onComplete, isPending, hasPractice }: Test
         </div>
         <button onClick={() => onComplete(r)} disabled={isPending}
           className="inline-flex items-center gap-2 px-8 py-3 rounded-lg text-sm font-medium disabled:opacity-60"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}>
+          style={{ background: 'var(--brand)', color: 'white' }}>
           {isPending
             ? <><span className="w-3.5 h-3.5 border-2 border-current border-t-transparent rounded-full animate-spin" />Guardando...</>
             : 'Continuar →'}
@@ -260,7 +259,7 @@ export default function MemoriaTest({ onComplete, isPending, hasPractice }: Test
     return (
       <div className="space-y-5">
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium"
-          style={{ background: 'oklch(0.72 0.12 68 / 0.12)', color: 'var(--gold)' }}>
+          style={{ background: 'rgb(216 31 15 / 0.12)', color: 'var(--gold)' }}>
           PRÁCTICA — 3 pares
         </div>
         <MemoriaBoard key={`prac-${boardKey}`} pairs={PRAC_PAIRS} isPractice onComplete={handlePracticeDone} />

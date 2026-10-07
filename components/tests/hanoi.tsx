@@ -137,7 +137,7 @@ function HanoiBoard({
 
   const timerColor =
     timerUrgency === 'critical' ? '#CC2200' :
-    timerUrgency === 'warning'  ? 'var(--gold)' :
+    timerUrgency === 'warning'  ? 'oklch(0.72 0.12 68)' :
     'var(--navy)'
 
   const timerAnimation =
@@ -276,7 +276,7 @@ function HanoiBoard({
                 letterSpacing: '0.07em',
                 textTransform: 'uppercase',
                 color: 'oklch(0.97 0.005 85)',
-                background: 'var(--navy)',
+                background: 'var(--brand)',
                 padding: '2px 8px',
                 borderRadius: '100px',
                 flexShrink: 0,
@@ -293,8 +293,8 @@ function HanoiBoard({
                 letterSpacing: '0.07em',
                 textTransform: 'uppercase',
                 color: 'var(--gold)',
-                background: 'oklch(0.72 0.12 68 / 0.10)',
-                border: '1px solid oklch(0.72 0.12 68 / 0.30)',
+                background: 'rgb(216 31 15 / 0.10)',
+                border: '1px solid rgb(216 31 15 / 0.30)',
                 padding: '2px 8px',
                 borderRadius: '100px',
                 flexShrink: 0,
@@ -438,10 +438,10 @@ function HanoiBoard({
                   paddingTop: '16px',
                   width: '100%',
                   minHeight: 'clamp(140px, 28vh, 260px)',
-                  background: isSelected ? 'oklch(0.72 0.12 68 / 0.06)' : 'transparent',
+                  background: isSelected ? 'rgb(216 31 15 / 0.06)' : 'transparent',
                   borderRadius: '14px',
                   border: isSelected
-                    ? '1.5px dashed oklch(0.72 0.12 68 / 0.55)'
+                    ? '1.5px dashed rgb(216 31 15 / 0.55)'
                     : '1.5px solid transparent',
                   transition: 'background 0.15s ease, border-color 0.15s ease',
                   cursor: finished ? 'default' : 'pointer',
@@ -654,7 +654,7 @@ function PrimaryButton({
         width: '100%',
         padding: '14px',
         borderRadius: '10px',
-        background: 'var(--navy)',
+        background: 'var(--brand)',
         color: 'oklch(0.97 0.005 85)',
         fontSize: '14px',
         fontWeight: 500,
@@ -778,7 +778,7 @@ export default function HanoiTest({
                   letterSpacing: '0.07em',
                   textTransform: 'uppercase',
                   color: 'oklch(0.97 0.005 85)',
-                  background: 'var(--navy)',
+                  background: 'var(--brand)',
                   padding: '3px 10px',
                   borderRadius: '100px',
                   flexShrink: 0,
@@ -809,7 +809,7 @@ export default function HanoiTest({
                     width: '20px',
                     height: '20px',
                     borderRadius: '50%',
-                    background: 'oklch(0.72 0.12 68 / 0.12)',
+                    background: 'rgb(216 31 15 / 0.12)',
                     color: 'var(--gold)',
                     fontSize: '11px',
                     fontWeight: 700,

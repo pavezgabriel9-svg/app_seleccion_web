@@ -26,7 +26,7 @@ export function PreguntaTexto({ item, value, onChange, disabled, showCorrect }: 
           color: 'var(--navy)',
           opacity: disabled ? 0.7 : 1,
         }}
-        onFocus={(e) => (e.currentTarget.style.borderColor = 'var(--navy)')}
+        onFocus={(e) => (e.currentTarget.style.borderColor = 'var(--brand)')}
         onBlur={(e) => (e.currentTarget.style.borderColor = 'oklch(0.92 0.005 80)')}
       />
       {showCorrect && (

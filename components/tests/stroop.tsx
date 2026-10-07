@@ -108,7 +108,7 @@ function StroopGame({ timeLimit, onEnd, isPractice = false }: GameProps) {
     <div className="space-y-6">
       {isPractice && (
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium"
-          style={{ background: 'oklch(0.72 0.12 68 / 0.12)', color: 'var(--gold)' }}>
+          style={{ background: 'rgb(216 31 15 / 0.12)', color: 'var(--gold)' }}>
           PRÁCTICA — {timeLimit}s
         </div>
       )}
@@ -121,7 +121,7 @@ function StroopGame({ timeLimit, onEnd, isPractice = false }: GameProps) {
         </div>
         <div className="h-1.5 rounded-full overflow-hidden" style={{ background: 'oklch(0.88 0.01 80)' }}>
           <div className="h-full rounded-full transition-all duration-1000 ease-linear"
-            style={{ width: `${pct}%`, background: timeLeft <= 5 ? '#CC2200' : 'var(--gold)' }} />
+            style={{ width: `${pct}%`, background: timeLeft <= 5 ? '#8e0b24' : 'var(--brand)' }} />
         </div>
       </div>
 
@@ -195,7 +195,7 @@ export default function StroopTest({ onComplete, isPending, hasPractice }: TestC
         <button
           onClick={() => setFase(hasPractice ? 'practica' : 'real')}
           className="px-8 py-3 rounded-lg text-sm font-medium"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}>
+          style={{ background: 'var(--brand)', color: 'white' }}>
           {hasPractice ? 'Comenzar práctica →' : 'Comenzar →'}
         </button>
       </div>
@@ -228,7 +228,7 @@ export default function StroopTest({ onComplete, isPending, hasPractice }: TestC
         </div>
         <button onClick={handleComplete} disabled={isPending}
           className="inline-flex items-center gap-2 px-8 py-3 rounded-lg text-sm font-medium disabled:opacity-60"
-          style={{ background: 'var(--navy)', color: 'var(--cream)' }}>
+          style={{ background: 'var(--brand)', color: 'white' }}>
           {isPending
             ? <><span className="w-3.5 h-3.5 border-2 border-current border-t-transparent rounded-full animate-spin" />Guardando...</>
             : 'Continuar →'}

@@ -68,7 +68,7 @@ export function DividirCuadrado1({ value, onChange, disabled }: Props) {
                 <g key={p.n} onClick={() => handleClick(p.n)} style={{ cursor: disabled ? 'default' : 'pointer' }}>
                   <circle
                     cx={p.x} cy={p.y} r="10"
-                    fill={sel ? 'var(--navy)' : 'white'}
+                    fill={sel ? 'var(--brand)' : 'white'}
                     stroke={sel ? STROKE_HI : STROKE}
                     strokeWidth="1.5"
                   />

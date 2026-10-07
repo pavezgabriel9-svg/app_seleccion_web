@@ -117,11 +117,57 @@
    Más limpia — fondo blanco puro
    ================================================================ */
 [data-theme="evaluation"] {
-  --background: oklch(0.99 0 0);
-  --foreground: oklch(0.15 0.03 265);
-  --primary: oklch(0.26 0.07 265);
-  --accent: oklch(0.72 0.12 68);
+  --background: oklch(0.99 0 0);              /* #FCFCFC */
+  --foreground: #292d2f;
+  --muted-foreground: #595959;
   --border: oklch(0.92 0.005 80);
+
+  /* Marca: rojo de la empresa */
+  --brand: #d81f0f;                           /* blanco encima: 5,1:1 */
+  --brand-dark: #b91e22;                      /* isotipo del dorso de las cartas */
+  --watermark: #dcdedd;                       /* marca de agua (decorativa) */
+
+  /* Los tokens heredados se remapean a la marca solo en la vista del candidato */
+  --navy: #292d2f;                            /* texto oscuro neutro (antes navy) */
+  --gold: var(--brand);                       /* acento -> rojo */
+  --primary: var(--brand);
+  --accent: var(--brand);
+  --ring: var(--brand);
+}
+
+/* Marca de agua: isotipo grande abajo a la derecha, recortado. Solo decorativa. */
+.eval-watermark {
+  position: fixed;
+  right: -8vw;
+  bottom: -6vw;
+  width: clamp(320px, 52vw, 760px);
+  aspect-ratio: 1000 / 688;
+  background-color: var(--watermark);
+  -webkit-mask: url("/iso_gris.png") center / 100% 100% no-repeat;
+  mask: url("/iso_gris.png") center / 100% 100% no-repeat;
+  pointer-events: none;
+  z-index: 0;
+}
+@media (max-width: 640px) {
+  .eval-watermark {
+    right: -14vw;
+    bottom: -8vw;
+    width: 64vw;
+    opacity: 0.6;
+  }
+}
+
+/* Dorso de las cartas de Memoria: isotipo recortado sobre el rojo de marca */
+.memoria-dorso {
+  position: absolute;
+  left: 2.9%;
+  top: 21%;
+  width: 143%;
+  aspect-ratio: 1000 / 688;
+  background-color: var(--brand-dark);
+  -webkit-mask: url("/iso_gris.png") center / 100% 100% no-repeat;
+  mask: url("/iso_gris.png") center / 100% 100% no-repeat;
+  pointer-events: none;
 }
 
 /* ================================================================
