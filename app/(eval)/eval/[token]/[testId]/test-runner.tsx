@@ -32,6 +32,10 @@ interface IPVTestProps extends TestComponentProps {
   sessionId: string
 }
 
+interface ExcelTestProps extends TestComponentProps {
+  sessionId: string
+}
+
 // ─── Dynamic imports — bundle-dynamic-imports: solo carga el test activo ──────
 
 const StroopTest  = dynamic<TestComponentProps>(() => import('@/components/tests/stroop'))
@@ -43,6 +47,7 @@ const ZAVICTest     = dynamic<TestComponentProps>(() => import('@/components/tes
 const CognitivoTest = dynamic<TestComponentProps>(() => import('@/components/tests/cognitivo'))
 const HanoiTest     = dynamic<HanoiTestProps>(() => import('@/components/tests/hanoi'))
 const IPVTest       = dynamic<IPVTestProps>(() => import('@/components/tests/ipv'))
+const ExcelTest     = dynamic<ExcelTestProps>(() => import('@/components/tests/excel'))
 
 // ─── Hook ─────────────────────────────────────────────────────────────────────
 
@@ -75,6 +80,8 @@ function resolveTestComponent(
 
   // IPV: comparación exacta y ANTES de path.includes('ic') (el resto de los tests usan includes)
   if (path === 'ipv')                 return <IPVTest     {...fullProps} sessionId={sessionId ?? ''} />
+  // Excel: igual que IPV (comparación exacta, antes de los includes)
+  if (path === 'excel')               return <ExcelTest   {...fullProps} sessionId={sessionId ?? ''} />
   if (path.includes('stroop'))        return <StroopTest  {...fullProps} />
   if (path.includes('luscher'))       return <LuscherTest {...fullProps} />
   if (path.includes('memoria'))       return <MemoriaTest {...fullProps} />
