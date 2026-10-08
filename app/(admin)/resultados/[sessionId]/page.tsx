@@ -16,12 +16,15 @@ import type {
   ZAVICResult,
   CognitivoResult,
   IPVResult,
+  ExcelResult,
   TestResultData,
 } from '@/types/database'
 import { DISCResultCard } from '@/components/admin/disc-result-card'
 import { ZAVICResultCard } from '@/components/admin/zavic-result-card'
 import { CognitivoResultCard } from '@/components/admin/cognitivo-result-card'
 import { IPVResultCard } from '@/components/admin/ipv-result-card'
+import { ExcelResultCard } from '@/components/admin/excel-result-card'
+import { detalleExcel, scoreExcel } from '@/lib/excel/score'
 
 export const metadata: Metadata = { title: 'Detalle de evaluación' }
 
@@ -117,6 +120,10 @@ function isZAVIC(r: TestResultData): r is ZAVICResult {
 function isIPV(r: TestResultData): r is IPVResult {
   return typeof r === 'object' && r !== null && (r as { tipo?: unknown }).tipo === 'ipv'
 }
+// También va al inicio de ResultCard: isICv2 ('respuestas' + 'metadata') captura este JSON.
+function isExcel(r: TestResultData): r is ExcelResult {
+  return typeof r === 'object' && r !== null && (r as { tipo?: unknown }).tipo === 'excel'
+}
 function isCognitivo(r: TestResultData): r is CognitivoResult {
   return (
     typeof r === 'object' &&
@@ -157,6 +164,19 @@ function Stat({ label, value }: { label: string; value: string | number }) {
 function ResultCard({ result }: { result: TestResultData }) {
   if (isIPV(result)) {
     return <IPVResultCard data={result} />
+  }
+
+  if (isExcel(result)) {
+    // Se recalcula desde `respuestas` con la pauta vigente (solo en el servidor);
+    // la tarjeta recibe el resultado y el detalle ya corregidos.
+    const respuestas = Array.isArray(result.respuestas) ? result.respuestas : []
+    return (
+      <ExcelResultCard
+        data={result}
+        resultado={scoreExcel(respuestas)}
+        detalle={detalleExcel(respuestas)}
+      />
+    )
   }
 
   if (isDISC(result)) {
