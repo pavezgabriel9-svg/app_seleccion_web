@@ -1,0 +1,556 @@
+{
+  "version": "1.0",
+  "titulo": "Prueba técnica de selección múltiple",
+  "subtitulo": "Manejo de Microsoft Excel — Nivel Básico/Intermedio a Avanzado",
+  "tiempo_minutos": 30,
+  "instrucciones": [
+    "Esta prueba contiene 21 preguntas de selección múltiple sobre el manejo de Excel, organizadas en 6 áreas de conocimiento: búsqueda y manejo de tablas, uso de filtros, funciones de búsqueda (BUSCARV y similares), creación e ingreso de tablas, tablas dinámicas, y validación de datos.",
+    "Seleccione la alternativa que considere correcta en cada pregunta. Cada pregunta tiene una única respuesta correcta.",
+    "Esta evaluación se responde de manera individual y sin apoyo externo (manuales, IA, terceros), ya que su objetivo es medir el conocimiento real del candidato de forma objetiva.",
+    "No se requiere el uso de Excel para responder; todas las preguntas son de tipo conceptual/práctico."
+  ],
+  "areas": [
+    {
+      "id": 1,
+      "nombre": "Búsqueda y manejo de tablas",
+      "items": [
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "id": 2,
+      "nombre": "Uso de filtros",
+      "items": [
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": 3,
+      "nombre": "Funciones de búsqueda (BUSCARV y similares)",
+      "items": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ]
+    },
+    {
+      "id": 4,
+      "nombre": "Creación e ingreso de tablas",
+      "items": [
+        13,
+        14,
+        15
+      ]
+    },
+    {
+      "id": 5,
+      "nombre": "Tablas dinámicas",
+      "items": [
+        16,
+        17,
+        18
+      ]
+    },
+    {
+      "id": 6,
+      "nombre": "Validación de datos",
+      "items": [
+        19,
+        20,
+        21
+      ]
+    }
+  ],
+  "preguntas": [
+    {
+      "id": 1,
+      "area": 1,
+      "enunciado": "¿Cuál es la combinación de teclas para buscar un valor específico dentro de una hoja de cálculo?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Ctrl+B"
+        },
+        {
+          "id": "b",
+          "texto": "Ctrl+F"
+        },
+        {
+          "id": "c",
+          "texto": "Ctrl+H"
+        },
+        {
+          "id": "d",
+          "texto": "Ctrl+L"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "area": 1,
+      "enunciado": "Al convertir un rango de datos en una \"Tabla\" de Excel (Ctrl+T), ¿qué beneficio se obtiene automáticamente?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Los datos se ordenan alfabéticamente"
+        },
+        {
+          "id": "b",
+          "texto": "Se agregan filtros en los encabezados y el rango pasa a tener un nombre dinámico"
+        },
+        {
+          "id": "c",
+          "texto": "Se eliminan los duplicados"
+        },
+        {
+          "id": "d",
+          "texto": "Se protege la hoja con contraseña"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "area": 1,
+      "enunciado": "Tienes una tabla con miles de filas y necesitas ver rápidamente solo las filas donde la columna \"Región\" sea \"Sur\". ¿Qué herramienta usarías primero?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Buscar y reemplazar"
+        },
+        {
+          "id": "b",
+          "texto": "Filtro"
+        },
+        {
+          "id": "c",
+          "texto": "Formato condicional"
+        },
+        {
+          "id": "d",
+          "texto": "Una macro"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "area": 1,
+      "enunciado": "¿Qué ocurre con las fórmulas y el formato cuando agregas una nueva fila al final de una Tabla de Excel (creada con Ctrl+T)?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Debes copiarlos manualmente a la nueva fila"
+        },
+        {
+          "id": "b",
+          "texto": "Se expanden y aplican automáticamente a la nueva fila"
+        },
+        {
+          "id": "c",
+          "texto": "Se eliminan"
+        },
+        {
+          "id": "d",
+          "texto": "Se convierten en valores fijos"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "area": 2,
+      "enunciado": "¿Cómo se llama la función (Excel 365) que permite extraer datos que cumplen una condición sin usar el menú de Filtro tradicional?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "FILTRAR"
+        },
+        {
+          "id": "b",
+          "texto": "EXTRAE"
+        },
+        {
+          "id": "c",
+          "texto": "BUSCARV"
+        },
+        {
+          "id": "d",
+          "texto": "INDICE"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "area": 2,
+      "enunciado": "Al aplicar un Filtro Avanzado, ¿qué debes definir además del rango de datos?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Un rango de criterios"
+        },
+        {
+          "id": "b",
+          "texto": "Una macro"
+        },
+        {
+          "id": "c",
+          "texto": "Una tabla dinámica"
+        },
+        {
+          "id": "d",
+          "texto": "Un formato condicional"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "area": 2,
+      "enunciado": "Si filtras una columna y luego copias los datos visibles, ¿qué ocurre con las filas ocultas por el filtro?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Se copian igual"
+        },
+        {
+          "id": "b",
+          "texto": "No se copian"
+        },
+        {
+          "id": "c",
+          "texto": "Se copian pero en gris"
+        },
+        {
+          "id": "d",
+          "texto": "Se eliminan de la hoja original"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "area": 3,
+      "enunciado": "En la fórmula =BUSCARV(A2,Datos!A:D,3,FALSO), ¿qué representa el número 3?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "La fila donde buscar"
+        },
+        {
+          "id": "b",
+          "texto": "El número de columna del rango del cual se extraerá el valor"
+        },
+        {
+          "id": "c",
+          "texto": "La cantidad de resultados a devolver"
+        },
+        {
+          "id": "d",
+          "texto": "El número de la hoja"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "area": 3,
+      "enunciado": "¿Cuál es la principal limitación de BUSCARV respecto a la columna de búsqueda?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Solo puede buscar texto, no números"
+        },
+        {
+          "id": "b",
+          "texto": "La columna de búsqueda debe ser la primera (más a la izquierda) del rango"
+        },
+        {
+          "id": "c",
+          "texto": "No funciona con más de 100 filas"
+        },
+        {
+          "id": "d",
+          "texto": "No se puede usar dentro de una Tabla"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "area": 3,
+      "enunciado": "¿Qué combinación de funciones se usa habitualmente para buscar un valor 'hacia la izquierda', algo que BUSCARV no puede hacer por sí sola?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "SUMA y PROMEDIO"
+        },
+        {
+          "id": "b",
+          "texto": "INDICE y COINCIDIR"
+        },
+        {
+          "id": "c",
+          "texto": "CONTAR.SI y SI"
+        },
+        {
+          "id": "d",
+          "texto": "BUSCARH y BUSCARV"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "area": 3,
+      "enunciado": "¿Qué devuelve BUSCARV si su cuarto argumento se omite o se coloca en VERDADERO?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Siempre un error"
+        },
+        {
+          "id": "b",
+          "texto": "Una coincidencia exacta obligatoria"
+        },
+        {
+          "id": "c",
+          "texto": "Una coincidencia aproximada, lo que exige que los datos estén ordenados"
+        },
+        {
+          "id": "d",
+          "texto": "El valor de la primera fila del rango"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "area": 3,
+      "enunciado": "¿Cuál es la función que en versiones recientes de Excel reemplaza a BUSCARV por ser más flexible (permite buscar en cualquier dirección)?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "BUSCARX (XLOOKUP)"
+        },
+        {
+          "id": "b",
+          "texto": "CONSULTAV"
+        },
+        {
+          "id": "c",
+          "texto": "DESREF"
+        },
+        {
+          "id": "d",
+          "texto": "BUSCAR"
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "area": 4,
+      "enunciado": "¿Qué atajo de teclado convierte un rango de datos seleccionado en una Tabla de Excel?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Ctrl+T"
+        },
+        {
+          "id": "b",
+          "texto": "Ctrl+N"
+        },
+        {
+          "id": "c",
+          "texto": "Ctrl+Shift+T"
+        },
+        {
+          "id": "d",
+          "texto": "Alt+T"
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "area": 4,
+      "enunciado": "Al nombrar una Tabla de Excel, ¿qué restricción existe?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "No puede contener espacios ni empezar con un número"
+        },
+        {
+          "id": "b",
+          "texto": "Debe tener máximo 3 caracteres"
+        },
+        {
+          "id": "c",
+          "texto": "Debe coincidir con el nombre de la hoja"
+        },
+        {
+          "id": "d",
+          "texto": "No puede repetirse en ningún archivo de Excel"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "area": 4,
+      "enunciado": "¿Cuál es una ventaja de usar rangos con nombre (nombres definidos) al construir fórmulas sobre una tabla?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Hacen las fórmulas más legibles y fáciles de mantener"
+        },
+        {
+          "id": "b",
+          "texto": "Aumentan automáticamente el tamaño del archivo"
+        },
+        {
+          "id": "c",
+          "texto": "Eliminan la necesidad de validar los datos"
+        },
+        {
+          "id": "d",
+          "texto": "Convierten el texto en números"
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "area": 5,
+      "enunciado": "¿Cuál es el propósito principal de una Tabla Dinámica?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Proteger datos con contraseña"
+        },
+        {
+          "id": "b",
+          "texto": "Resumir, agrupar y analizar grandes volúmenes de datos de forma interactiva"
+        },
+        {
+          "id": "c",
+          "texto": "Crear gráficos sin necesidad de datos"
+        },
+        {
+          "id": "d",
+          "texto": "Validar el ingreso de datos"
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "area": 5,
+      "enunciado": "En el panel de campos de una Tabla Dinámica, ¿qué área se usa para calcular totales, promedios o conteos?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Filtros"
+        },
+        {
+          "id": "b",
+          "texto": "Columnas"
+        },
+        {
+          "id": "c",
+          "texto": "Valores"
+        },
+        {
+          "id": "d",
+          "texto": "Filas"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "area": 5,
+      "enunciado": "Si los datos de origen cambian después de crear una Tabla Dinámica, ¿qué debes hacer para reflejar esos cambios?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Nada, se actualiza sola en tiempo real"
+        },
+        {
+          "id": "b",
+          "texto": "Eliminar la tabla y crearla de nuevo"
+        },
+        {
+          "id": "c",
+          "texto": "Usar la opción \"Actualizar\" (Refresh)"
+        },
+        {
+          "id": "d",
+          "texto": "Guardar el archivo y reabrirlo"
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "area": 6,
+      "enunciado": "¿Para qué se utiliza principalmente la herramienta \"Validación de datos\" en Excel?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Para corregir errores ortográficos"
+        },
+        {
+          "id": "b",
+          "texto": "Para restringir el tipo de valores que se pueden ingresar en una celda"
+        },
+        {
+          "id": "c",
+          "texto": "Para dar formato de color a las celdas"
+        },
+        {
+          "id": "d",
+          "texto": "Para ordenar los datos automáticamente"
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "area": 6,
+      "enunciado": "Quieres crear una lista desplegable en una celda para que el usuario solo pueda elegir entre \"Sí\" y \"No\". ¿Qué criterio de Validación de datos usarías?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Número entero"
+        },
+        {
+          "id": "b",
+          "texto": "Lista"
+        },
+        {
+          "id": "c",
+          "texto": "Fecha"
+        },
+        {
+          "id": "d",
+          "texto": "Personalizada"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "area": 6,
+      "enunciado": "¿Qué ocurre si un usuario intenta ingresar un dato que no cumple las reglas de Validación de datos configuradas con el estilo de alerta 'Detener'?",
+      "alternativas": [
+        {
+          "id": "a",
+          "texto": "Excel lo acepta pero lo marca en rojo"
+        },
+        {
+          "id": "b",
+          "texto": "Excel muestra un mensaje de error y no permite el ingreso"
+        },
+        {
+          "id": "c",
+          "texto": "Excel lo convierte automáticamente al formato válido"
+        },
+        {
+          "id": "d",
+          "texto": "No ocurre nada, se ingresa igual"
+        }
+      ]
+    }
+  ]
+}

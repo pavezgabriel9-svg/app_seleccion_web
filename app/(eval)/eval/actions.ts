@@ -3,8 +3,9 @@
 import { createServiceClient } from '@/lib/supabase/server'
 import { redirect } from 'next/navigation'
 import { validarDocumento } from '@/lib/documento'
-import type { IPVResult, TestResultData, TestSnapshot } from '@/types/database'
+import type { ExcelResult, IPVResult, TestResultData, TestSnapshot } from '@/types/database'
 import { scoreIPV } from '@/lib/ipv/score'
+import { scoreExcel } from '@/lib/excel/score'
 
 // ─── Start Evaluation ─────────────────────────────────────────────────────────
 
@@ -107,6 +108,21 @@ export async function completeTestAction(
     const ipv = results as Partial<IPVResult>
     const respuestas = Array.isArray(ipv.respuestas) ? ipv.respuestas : []
     resultsToSave = { ...ipv, tipo: 'ipv', respuestas, resultado: scoreIPV(respuestas) } as IPVResult
+  }
+
+  // Excel: la pauta solo existe en el servidor. Se sanean las respuestas y se calcula
+  // `resultado` acá; el navegador nunca lo envía ni se confía en uno que traiga.
+  if (testId === 'excel') {
+    const excel = results as Partial<ExcelResult>
+    const respuestas = (Array.isArray(excel.respuestas) ? excel.respuestas : [])
+      .filter((r) => r && typeof r === 'object')
+      .map((r) => ({ item: r.item, respuesta: r.respuesta ?? null }))
+    resultsToSave = {
+      ...excel,
+      tipo: 'excel',
+      respuestas,
+      resultado: scoreExcel(respuestas),
+    } as ExcelResult
   }
 
   // Save result

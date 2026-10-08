@@ -587,6 +587,44 @@ export interface IPVResult {
   version: '1.0'
 }
 
+// ─── Excel — Conocimientos (selección múltiple) ──────────────────────────────
+
+export type ExcelOpcion = 'a' | 'b' | 'c' | 'd'
+export type ExcelNivel = 'Básico' | 'Intermedio' | 'Avanzado'
+
+export interface ExcelRespuesta {
+  item: number
+  /** Letra ORIGINAL del Word (no la rotulada en pantalla). null = sin responder. */
+  respuesta: ExcelOpcion | null
+}
+
+export interface ExcelResult {
+  /** Discriminador explícito: isICv2 también captura objetos con respuestas + metadata. */
+  tipo: 'excel'
+  /** 21 respuestas; es la fuente de verdad (el servidor y la tarjeta admin corrigen desde acá). */
+  respuestas: ExcelRespuesta[]
+  /** Orden en que se mostraron las alternativas (letras originales), por ítem. Auditoría. */
+  orden_alternativas?: Record<number, ExcelOpcion[]>
+  /** Lo calcula SOLO el servidor; el cliente no lo envía (no tiene la pauta). */
+  resultado?: {
+    puntaje: number
+    total: number
+    /** 0–100, 1 decimal. */
+    porcentaje: number
+    nivel: ExcelNivel
+    por_area: Record<string, { correctas: number; total: number }>
+    items_respondidos: number
+  }
+  metadata: {
+    duracion_total_s: number
+    tiempo_agotado: boolean
+    items_sin_responder: number
+    tab_switch_count: number
+    out_of_focus_duration: number
+  }
+  version: '1.0'
+}
+
 export type TestResultData =
   | HanoiResult
   | ICResult
@@ -598,6 +636,7 @@ export type TestResultData =
   | ZAVICResult
   | CognitivoResult
   | IPVResult
+  | ExcelResult
   | Record<string, unknown>
 
 export interface TestComponentProps {
